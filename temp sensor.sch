@@ -228,123 +228,123 @@ $EndComp
 $Comp
 L Connector:USB_B_Micro J?
 U 1 1 608282D8
-P 9100 5750
-F 0 "J?" H 9157 6217 50  0000 C CNN
-F 1 "USB_B_Micro" H 9157 6126 50  0000 C CNN
-F 2 "" H 9250 5700 50  0001 C CNN
-F 3 "~" H 9250 5700 50  0001 C CNN
-	1    9100 5750
+P 8000 5550
+F 0 "J?" H 8057 6017 50  0000 C CNN
+F 1 "USB_B_Micro" H 8057 5926 50  0000 C CNN
+F 2 "" H 8150 5500 50  0001 C CNN
+F 3 "~" H 8150 5500 50  0001 C CNN
+	1    8000 5550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 60828B67
-P 1150 7350
-F 0 "R?" H 1218 7396 50  0000 L CNN
-F 1 "510K" H 1218 7305 50  0000 L CNN
-F 2 "" H 1150 7350 50  0001 C CNN
-F 3 "~" H 1150 7350 50  0001 C CNN
-	1    1150 7350
+P -3200 -1450
+F 0 "R?" H -3132 -1404 50  0000 L CNN
+F 1 "510K" H -3132 -1495 50  0000 L CNN
+F 2 "" H -3200 -1450 50  0001 C CNN
+F 3 "~" H -3200 -1450 50  0001 C CNN
+	1    -3200 -1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 60829A42
-P 1550 7350
-F 0 "C?" H 1642 7396 50  0000 L CNN
-F 1 "1u" H 1642 7305 50  0000 L CNN
-F 2 "" H 1550 7350 50  0001 C CNN
-F 3 "~" H 1550 7350 50  0001 C CNN
-	1    1550 7350
+P -2800 -1450
+F 0 "C?" H -2708 -1404 50  0000 L CNN
+F 1 "1u" H -2708 -1495 50  0000 L CNN
+F 2 "" H -2800 -1450 50  0001 C CNN
+F 3 "~" H -2800 -1450 50  0001 C CNN
+	1    -2800 -1450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:D D?
 U 1 1 6082A1A0
-P 1850 7050
-F 0 "D?" H 1850 7267 50  0000 C CNN
-F 1 "D" H 1850 7176 50  0000 C CNN
-F 2 "" H 1850 7050 50  0001 C CNN
-F 3 "~" H 1850 7050 50  0001 C CNN
-	1    1850 7050
+P -2500 -1750
+F 0 "D?" H -2500 -1533 50  0000 C CNN
+F 1 "D" H -2500 -1624 50  0000 C CNN
+F 2 "" H -2500 -1750 50  0001 C CNN
+F 3 "~" H -2500 -1750 50  0001 C CNN
+	1    -2500 -1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 6082BA46
-P 2400 7050
-F 0 "R?" V 2195 7050 50  0000 C CNN
-F 1 "10K" V 2286 7050 50  0000 C CNN
-F 2 "" H 2400 7050 50  0001 C CNN
-F 3 "~" H 2400 7050 50  0001 C CNN
-	1    2400 7050
+P -1950 -1750
+F 0 "R?" V -2155 -1750 50  0000 C CNN
+F 1 "10K" V -2064 -1750 50  0000 C CNN
+F 2 "" H -1950 -1750 50  0001 C CNN
+F 3 "~" H -1950 -1750 50  0001 C CNN
+	1    -1950 -1750
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 6082CC53
-P 2150 7350
-F 0 "C?" H 2242 7396 50  0000 L CNN
-F 1 "sensor track" H 2242 7305 50  0000 L CNN
-F 2 "" H 2150 7350 50  0001 C CNN
-F 3 "~" H 2150 7350 50  0001 C CNN
-	1    2150 7350
+P -2200 -1450
+F 0 "C?" H -2108 -1404 50  0000 L CNN
+F 1 "sensor track" H -2108 -1495 50  0000 L CNN
+F 2 "" H -2200 -1450 50  0001 C CNN
+F 3 "~" H -2200 -1450 50  0001 C CNN
+	1    -2200 -1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 7050 2150 7050
+	-2350 -1750 -2200 -1750
 Wire Wire Line
-	2150 7050 2150 7250
-Connection ~ 2150 7050
+	-2200 -1750 -2200 -1550
+Connection ~ -2200 -1750
 Wire Wire Line
-	2150 7050 2300 7050
+	-2200 -1750 -2050 -1750
 Wire Wire Line
-	1550 7250 1550 7050
+	-2800 -1550 -2800 -1750
 Wire Wire Line
-	1550 7050 1700 7050
+	-2800 -1750 -2650 -1750
 Wire Wire Line
-	1150 7250 1150 7050
+	-3200 -1550 -3200 -1750
 Wire Wire Line
-	1150 7050 1550 7050
-Connection ~ 1550 7050
+	-3200 -1750 -2800 -1750
+Connection ~ -2800 -1750
 Wire Wire Line
-	1150 7450 1150 7550
+	-3200 -1350 -3200 -1250
 Wire Wire Line
-	1150 7550 1550 7550
+	-3200 -1250 -2800 -1250
 Wire Wire Line
-	1550 7550 1550 7450
+	-2800 -1250 -2800 -1350
 Wire Wire Line
-	1550 7550 2150 7550
+	-2800 -1250 -2200 -1250
 Wire Wire Line
-	2150 7550 2150 7450
-Connection ~ 1550 7550
+	-2200 -1250 -2200 -1350
+Connection ~ -2800 -1250
 $Comp
 L power:GND #PWR?
 U 1 1 6083669F
-P 1550 7550
-F 0 "#PWR?" H 1550 7300 50  0001 C CNN
-F 1 "GND" H 1555 7377 50  0000 C CNN
-F 2 "" H 1550 7550 50  0001 C CNN
-F 3 "" H 1550 7550 50  0001 C CNN
-	1    1550 7550
+P -2800 -1250
+F 0 "#PWR?" H -2800 -1500 50  0001 C CNN
+F 1 "GND" H -2795 -1423 50  0000 C CNN
+F 2 "" H -2800 -1250 50  0001 C CNN
+F 3 "" H -2800 -1250 50  0001 C CNN
+	1    -2800 -1250
 	1    0    0    -1  
 $EndComp
-Text Notes 2500 6950 0    50   ~ 0
+Text Notes -1850 -1850 0    50   ~ 0
 CLK_OUT
-Text Label 2500 7050 0    50   ~ 0
+Text Label -1850 -1750 0    50   ~ 0
 CLK_OUT
-Text Label 1150 7050 0    50   ~ 0
+Text Label -3200 -1750 0    50   ~ 0
 Capacitance_V
 Wire Wire Line
 	850  6300 1150 6300
-Text Label 1800 1550 0    50   ~ 0
+Text Label -650 -1450 0    50   ~ 0
 CLK_OUT
-Text Label 1000 1450 0    50   ~ 0
+Text Label -1450 -1550 0    50   ~ 0
 Capacitance_V
 Wire Wire Line
-	1800 1550 2150 1550
+	-650 -1450 -300 -1450
 Wire Wire Line
-	1550 1450 1000 1450
+	-900 -1550 -1450 -1550
 $Comp
 L power:+3.3V #PWR?
 U 1 1 6085A455
@@ -437,14 +437,10 @@ F 3 "" H 7050 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7050 5500 6650 5500
-Text Label 9900 5750 2    50   ~ 0
+Text Label 10150 5100 2    50   ~ 0
 USB_D+
-Text Label 9900 5850 2    50   ~ 0
-USB_D-
 Wire Wire Line
-	9900 5850 9400 5850
-Wire Wire Line
-	9400 5750 9900 5750
+	9800 5100 10150 5100
 Text Label 1650 3250 0    50   ~ 0
 Boot_Option
 $Comp
@@ -473,7 +469,7 @@ Connection ~ 850  6300
 Connection ~ 1150 6300
 Wire Wire Line
 	1150 6300 1450 6300
-Text Notes 10050 5500 0    50   ~ 0
+Text Notes 9150 4850 0    50   ~ 0
 ESD 
 Text Notes 1750 2150 0    50   ~ 0
 RTC\n
@@ -510,70 +506,70 @@ Text Notes 4400 4150 0    50   ~ 0
 switching power supply\n
 Wire Wire Line
 	5950 800  5950 850 
-Text Notes 8350 5450 2    50   ~ 0
+Text Notes 7150 6300 2    50   ~ 0
 JTAG\n
-Text Label 8350 5500 2    50   ~ 0
+Text Label 7150 6350 2    50   ~ 0
 TMS
-Text Label 8350 5600 2    50   ~ 0
+Text Label 7150 6450 2    50   ~ 0
 TDI
-Text Label 8350 5700 2    50   ~ 0
+Text Label 7150 6550 2    50   ~ 0
 TCK
-Text Label 8350 5800 2    50   ~ 0
+Text Label 7150 6650 2    50   ~ 0
 TDO
 Wire Wire Line
-	8350 5500 7900 5500
+	7150 6350 6700 6350
 Wire Wire Line
-	8350 5600 7900 5600
+	7150 6450 6700 6450
 Wire Wire Line
-	8350 5700 7900 5700
+	7150 6550 6700 6550
 Wire Wire Line
-	8350 5800 7900 5800
+	7150 6650 6700 6650
 $Comp
 L Connector:Conn_01x04_Male J?
 U 1 1 608AA734
-P 7700 5600
-F 0 "J?" H 7808 5881 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 7808 5790 50  0000 C CNN
-F 2 "" H 7700 5600 50  0001 C CNN
-F 3 "~" H 7700 5600 50  0001 C CNN
-	1    7700 5600
+P 6500 6450
+F 0 "J?" H 6608 6731 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 6608 6640 50  0000 C CNN
+F 2 "" H 6500 6450 50  0001 C CNN
+F 3 "~" H 6500 6450 50  0001 C CNN
+	1    6500 6450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 608B3119
-P 9600 5450
-F 0 "#PWR?" H 9600 5300 50  0001 C CNN
-F 1 "+5V" H 9615 5623 50  0000 C CNN
-F 2 "" H 9600 5450 50  0001 C CNN
-F 3 "" H 9600 5450 50  0001 C CNN
-	1    9600 5450
+P 8400 5250
+F 0 "#PWR?" H 8400 5100 50  0001 C CNN
+F 1 "+5V" H 8415 5423 50  0000 C CNN
+F 2 "" H 8400 5250 50  0001 C CNN
+F 3 "" H 8400 5250 50  0001 C CNN
+	1    8400 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 5550 9600 5550
+	8300 5350 8400 5350
 Wire Wire Line
-	9600 5550 9600 5450
+	8400 5350 8400 5250
 $Comp
 L power:GND #PWR?
 U 1 1 608BB683
-P 9100 6300
-F 0 "#PWR?" H 9100 6050 50  0001 C CNN
-F 1 "GND" H 9105 6127 50  0000 C CNN
-F 2 "" H 9100 6300 50  0001 C CNN
-F 3 "" H 9100 6300 50  0001 C CNN
-	1    9100 6300
+P 8000 6100
+F 0 "#PWR?" H 8000 5850 50  0001 C CNN
+F 1 "GND" H 8005 5927 50  0000 C CNN
+F 2 "" H 8000 6100 50  0001 C CNN
+F 3 "" H 8000 6100 50  0001 C CNN
+	1    8000 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 6300 9100 6200
+	8000 6100 8000 6000
 Wire Wire Line
-	9000 6150 9000 6200
+	7900 5950 7900 6000
 Wire Wire Line
-	9000 6200 9100 6200
-Connection ~ 9100 6200
+	7900 6000 8000 6000
+Connection ~ 8000 6000
 Wire Wire Line
-	9100 6200 9100 6150
+	8000 6000 8000 5950
 $Comp
 L Device:C_Small C?
 U 1 1 608C55BD
@@ -641,32 +637,10 @@ Wire Wire Line
 	2600 5550 2600 5650
 Wire Wire Line
 	3000 5550 3000 5650
-Text Notes 6600 700  0    50   ~ 0
+Text Notes 7350 2250 0    50   ~ 0
 AHT20\n
-Text Notes 6600 800  0    50   ~ 0
+Text Notes 7350 2350 0    50   ~ 0
 ASAIR\n
-$Comp
-L ESP32-C3-MINI-1:AHT20 U?
-U 1 1 608ECA8E
-P 7850 1450
-F 0 "U?" H 7850 2031 50  0000 C CNN
-F 1 "AHT20" H 7850 1940 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8300 1800 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm73.pdf" H 7450 1900 50  0001 C CNN
-	1    7850 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensor:BME680 U?
-U 1 1 608EE2A6
-P 7700 3400
-F 0 "U?" H 7271 3446 50  0000 R CNN
-F 1 "BME680" H 7271 3355 50  0000 R CNN
-F 2 "Package_LGA:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering" H 9150 2950 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf" H 7700 3200 50  0001 C CNN
-	1    7700 3400
-	1    0    0    -1  
-$EndComp
 $Comp
 L Sensor_Humidity:HDC1080 U?
 U 1 1 608EF4EC
@@ -676,17 +650,6 @@ F 1 "HDC1080" H 9207 1105 50  0000 R CNN
 F 2 "Package_SON:Texas_PWSON-N6" H 9500 900 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/hdc1080.pdf" H 9150 1400 50  0001 C CNN
 	1    9550 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensor_Pressure:MS5611-01BA U?
-U 1 1 608EFDAE
-P 9450 3200
-F 0 "U?" H 9780 3246 50  0000 L CNN
-F 1 "MS5611-01BA" H 9780 3155 50  0000 L CNN
-F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 9450 3200 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English" H 9450 3200 50  0001 C CNN
-	1    9450 3200
 	1    0    0    -1  
 $EndComp
 Text Label 2000 2150 0    50   ~ 0
@@ -710,29 +673,29 @@ Connection ~ 3000 5150
 $Comp
 L Device:R_Small_US R?
 U 1 1 60909F25
-P 1550 1550
-F 0 "R?" H 1618 1596 50  0000 L CNN
-F 1 "10K" H 1618 1505 50  0000 L CNN
-F 2 "" H 1550 1550 50  0001 C CNN
-F 3 "~" H 1550 1550 50  0001 C CNN
-	1    1550 1550
+P -900 -1450
+F 0 "R?" H -832 -1404 50  0000 L CNN
+F 1 "10K" H -832 -1495 50  0000 L CNN
+F 2 "" H -900 -1450 50  0001 C CNN
+F 3 "~" H -900 -1450 50  0001 C CNN
+	1    -900 -1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 1450 1550 1450
+	-300 -1550 -900 -1550
 $Comp
 L power:GND #PWR?
 U 1 1 609100DE
-P 1550 1750
-F 0 "#PWR?" H 1550 1500 50  0001 C CNN
-F 1 "GND" H 1555 1577 50  0000 C CNN
-F 2 "" H 1550 1750 50  0001 C CNN
-F 3 "" H 1550 1750 50  0001 C CNN
-	1    1550 1750
+P -900 -1250
+F 0 "#PWR?" H -900 -1500 50  0001 C CNN
+F 1 "GND" H -895 -1423 50  0000 C CNN
+F 2 "" H -900 -1250 50  0001 C CNN
+F 3 "" H -900 -1250 50  0001 C CNN
+	1    -900 -1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 1650 1550 1750
+	-900 -1350 -900 -1250
 $Comp
 L power:GND #PWR?
 U 1 1 60914CC4
@@ -924,7 +887,7 @@ Wire Wire Line
 	1400 2750 1400 2850
 Wire Wire Line
 	1400 2550 2150 2550
-Connection ~ 1550 1450
+Connection ~ -900 -1550
 Text Label 10050 1050 2    50   ~ 0
 SCL
 Text Label 10050 1150 2    50   ~ 0
@@ -934,12 +897,12 @@ Wire Wire Line
 Wire Wire Line
 	10050 1150 9850 1150
 Wire Wire Line
-	7050 1550 7250 1550
+	9150 3250 9350 3250
 Wire Wire Line
-	7250 1350 7050 1350
-Text Label 7050 1550 0    50   ~ 0
+	9350 3050 9150 3050
+Text Label 9150 3250 0    50   ~ 0
 SDA
-Text Label 7050 1350 0    50   ~ 0
+Text Label 9150 3050 0    50   ~ 0
 SCL
 $Comp
 L Sensor:BME280 U?
@@ -953,20 +916,20 @@ F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-D
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 3200 9050 3200
+	7400 3000 7600 3000
 Wire Wire Line
-	9050 3300 8850 3300
-Text Label 8850 3200 0    50   ~ 0
+	7600 3200 7400 3200
+Text Label 7400 3000 0    50   ~ 0
 SDA
-Text Label 8850 3300 0    50   ~ 0
+Text Label 7400 3200 0    50   ~ 0
 SCL
 Wire Wire Line
-	8500 3500 8300 3500
+	4250 2800 4450 2800
 Wire Wire Line
-	8300 3300 8500 3300
-Text Label 8500 3500 2    50   ~ 0
+	4450 3000 4250 3000
+Text Label 4250 2800 0    50   ~ 0
 SDA
-Text Label 8500 3300 2    50   ~ 0
+Text Label 4250 3000 0    50   ~ 0
 SCL
 Wire Wire Line
 	6650 1600 6450 1600
@@ -979,23 +942,23 @@ SCL
 $Comp
 L power:GND #PWR?
 U 1 1 60A2672E
-P 7600 4300
-F 0 "#PWR?" H 7600 4050 50  0001 C CNN
-F 1 "GND" H 7605 4127 50  0000 C CNN
-F 2 "" H 7600 4300 50  0001 C CNN
-F 3 "" H 7600 4300 50  0001 C CNN
-	1    7600 4300
+P 4750 3700
+F 0 "#PWR?" H 4750 3450 50  0001 C CNN
+F 1 "GND" H 4755 3527 50  0000 C CNN
+F 2 "" H 4750 3700 50  0001 C CNN
+F 3 "" H 4750 3700 50  0001 C CNN
+	1    4750 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 4300 7600 4150
+	4750 3700 4750 3550
 Wire Wire Line
-	7800 4000 7800 4150
+	4950 3400 4950 3550
 Wire Wire Line
-	7800 4150 7600 4150
-Connection ~ 7600 4150
+	4950 3550 4750 3550
+Connection ~ 4750 3550
 Wire Wire Line
-	7600 4150 7600 4000
+	4750 3550 4750 3400
 $Comp
 L power:+5V #PWR?
 U 1 1 608B4F61
@@ -1017,36 +980,36 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR?
 U 1 1 60A4E060
-P 7800 2700
-F 0 "#PWR?" H 7800 2550 50  0001 C CNN
-F 1 "+3.3V" H 7815 2873 50  0000 C CNN
-F 2 "" H 7800 2700 50  0001 C CNN
-F 3 "" H 7800 2700 50  0001 C CNN
-	1    7800 2700
+P 4850 2300
+F 0 "#PWR?" H 4850 2150 50  0001 C CNN
+F 1 "+3.3V" H 4865 2473 50  0000 C CNN
+F 2 "" H 4850 2300 50  0001 C CNN
+F 3 "" H 4850 2300 50  0001 C CNN
+	1    4850 2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7800 2700 7800 2750
+	4850 2300 4850 2350
 Wire Wire Line
-	7800 2750 7600 2750
-Connection ~ 7800 2750
+	4850 2350 4950 2350
+Connection ~ 4850 2350
 Wire Wire Line
-	7800 2750 7800 2800
+	4850 2350 4850 2400
 Wire Wire Line
-	7600 2750 7600 2800
+	4950 2350 4950 2400
 $Comp
 L power:+3.3V #PWR?
 U 1 1 60A5F700
-P 7850 800
-F 0 "#PWR?" H 7850 650 50  0001 C CNN
-F 1 "+3.3V" H 7865 973 50  0000 C CNN
-F 2 "" H 7850 800 50  0001 C CNN
-F 3 "" H 7850 800 50  0001 C CNN
-	1    7850 800 
+P 9950 2500
+F 0 "#PWR?" H 9950 2350 50  0001 C CNN
+F 1 "+3.3V" H 9965 2673 50  0000 C CNN
+F 2 "" H 9950 2500 50  0001 C CNN
+F 3 "" H 9950 2500 50  0001 C CNN
+	1    9950 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 800  7850 1050
+	9950 2500 9950 2750
 $Comp
 L power:+3.3V #PWR?
 U 1 1 60A6784E
@@ -1063,16 +1026,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 60A777B9
-P 9450 3750
-F 0 "#PWR?" H 9450 3500 50  0001 C CNN
-F 1 "GND" H 9455 3577 50  0000 C CNN
-F 2 "" H 9450 3750 50  0001 C CNN
-F 3 "" H 9450 3750 50  0001 C CNN
-	1    9450 3750
+P 8000 3550
+F 0 "#PWR?" H 8000 3300 50  0001 C CNN
+F 1 "GND" H 8005 3377 50  0000 C CNN
+F 2 "" H 8000 3550 50  0001 C CNN
+F 3 "" H 8000 3550 50  0001 C CNN
+	1    8000 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9450 3750 9450 3600
+	8000 3550 8000 3500
 $Comp
 L power:GND #PWR?
 U 1 1 60A7F41F
@@ -1089,29 +1052,29 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 60A9987B
-P 7850 2000
-F 0 "#PWR?" H 7850 1750 50  0001 C CNN
-F 1 "GND" H 7855 1827 50  0000 C CNN
-F 2 "" H 7850 2000 50  0001 C CNN
-F 3 "" H 7850 2000 50  0001 C CNN
-	1    7850 2000
+P 9950 3700
+F 0 "#PWR?" H 9950 3450 50  0001 C CNN
+F 1 "GND" H 9955 3527 50  0000 C CNN
+F 2 "" H 9950 3700 50  0001 C CNN
+F 3 "" H 9950 3700 50  0001 C CNN
+	1    9950 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 2000 7850 1850
+	9950 3700 9950 3550
 $Comp
 L power:+3.3V #PWR?
 U 1 1 60AA195F
-P 9450 2750
-F 0 "#PWR?" H 9450 2600 50  0001 C CNN
-F 1 "+3.3V" H 9465 2923 50  0000 C CNN
-F 2 "" H 9450 2750 50  0001 C CNN
-F 3 "" H 9450 2750 50  0001 C CNN
-	1    9450 2750
+P 8100 2750
+F 0 "#PWR?" H 8100 2600 50  0001 C CNN
+F 1 "+3.3V" H 8115 2923 50  0000 C CNN
+F 2 "" H 8100 2750 50  0001 C CNN
+F 3 "" H 8100 2750 50  0001 C CNN
+	1    8100 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9450 2750 9450 2800
+	8100 2750 8100 2800
 $Comp
 L Regulator_Switching:TLV62569DBV U?
 U 1 1 60B8C567
@@ -1268,4 +1231,164 @@ Text Notes 4050 6850 0    50   ~ 0
 Figure out GPIO and which are actually needed
 Text Notes 4050 7000 0    50   ~ 0
 Prototype USB interface, confirm it works
+$Comp
+L Device:R_Small_US R?
+U 1 1 60C9F461
+P 9700 5100
+F 0 "R?" V 9905 5100 50  0000 C CNN
+F 1 "27" V 9814 5100 50  0000 C CNN
+F 2 "" H 9700 5100 50  0001 C CNN
+F 3 "~" H 9700 5100 50  0001 C CNN
+	1    9700 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9600 5100 9400 5100
+Wire Wire Line
+	8950 6500 8550 6500
+Wire Wire Line
+	8550 6500 8550 5650
+Wire Wire Line
+	8550 5650 8300 5650
+Connection ~ 8950 6500
+Wire Wire Line
+	8950 5100 8550 5100
+Wire Wire Line
+	8550 5100 8550 5550
+Wire Wire Line
+	8550 5550 8300 5550
+Connection ~ 8950 5100
+$Comp
+L Device:R_Small_US R?
+U 1 1 60D1664F
+P 9400 5400
+F 0 "R?" H 9468 5446 50  0000 L CNN
+F 1 "15K" H 9468 5355 50  0000 L CNN
+F 2 "" H 9400 5400 50  0001 C CNN
+F 3 "~" H 9400 5400 50  0001 C CNN
+	1    9400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 60D182A2
+P 9400 6200
+F 0 "R?" H 9468 6246 50  0000 L CNN
+F 1 "15K" H 9468 6155 50  0000 L CNN
+F 2 "" H 9400 6200 50  0001 C CNN
+F 3 "~" H 9400 6200 50  0001 C CNN
+	1    9400 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 6500 8950 6400
+Wire Wire Line
+	8950 5100 8950 5200
+Wire Wire Line
+	9600 6500 9400 6500
+Text Label 10150 6500 2    50   ~ 0
+USB_D-
+Wire Wire Line
+	10150 6500 9800 6500
+$Comp
+L Power_Protection:SN65220 U?
+U 1 1 60C545EF
+P 8950 5800
+F 0 "U?" V 8996 5888 50  0000 L CNN
+F 1 "SN65220" V 8905 5888 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9300 5650 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn65220.pdf" H 8950 5950 50  0001 C CNN
+	1    8950 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 60CC5D3E
+P 9700 6500
+F 0 "R?" V 9905 6500 50  0000 C CNN
+F 1 "27" V 9814 6500 50  0000 C CNN
+F 2 "" H 9700 6500 50  0001 C CNN
+F 3 "~" H 9700 6500 50  0001 C CNN
+	1    9700 6500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9400 5900 9400 6100
+Wire Wire Line
+	9250 5900 9400 5900
+Wire Wire Line
+	9400 6300 9400 6500
+Connection ~ 9400 6500
+Wire Wire Line
+	9400 6500 8950 6500
+Wire Wire Line
+	9250 5700 9400 5700
+Wire Wire Line
+	9400 5700 9400 5500
+Wire Wire Line
+	9400 5100 9400 5300
+Connection ~ 9400 5100
+Wire Wire Line
+	9400 5100 8950 5100
+Text Notes 1900 650  0    50   ~ 0
+pin compatable with ESP32-PICO-MINI-02
+Text Notes 4400 4350 0    50   ~ 0
+M3406-ADJ\nhttps://lcsc.com/product-detail/DC-DC-Converters_M3406_C83224.html
+Text Notes 450  -2150 0    50   ~ 0
+KXOB25-12X1F-TR\nMONOCRYS SOLAR CELL 24.5MW 690MV
+$Comp
+L Sensor_Motion:LIS2DE12 U?
+U 1 1 60DB33D8
+P 4850 2900
+F 0 "U?" H 4900 3581 50  0000 C CNN
+F 1 "LIS2DE12" H 4900 3490 50  0000 C CNN
+F 2 "Package_LGA:LGA-12_2x2mm_P0.5mm" H 5000 3450 50  0001 L CNN
+F 3 "https://www.st.com/resource/en/datasheet/lis2DE12.pdf" H 4500 2900 50  0001 C CNN
+	1    4850 2900
+	1    0    0    -1  
+$EndComp
+Text Notes 4500 2000 0    50   ~ 0
+MC3479
+Text Notes 4500 2100 0    50   ~ 0
+LIS2DS12
+Text Notes 4500 1900 0    50   ~ 0
+Accelerometer
+$Comp
+L Sensor_Humidity:Si7020-A20 U?
+U 1 1 60DEE713
+P 8100 3100
+F 0 "U?" H 8544 3146 50  0000 L CNN
+F 1 "Si7020-A20" H 8544 3055 50  0000 L CNN
+F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 8100 2700 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/Si7020-A20.pdf" H 7900 3400 50  0001 C CNN
+	1    8100 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3500 8200 3500
+Wire Wire Line
+	8200 3500 8200 3400
+Connection ~ 8000 3500
+Wire Wire Line
+	8000 3500 8000 3400
+Text Notes 7350 2550 0    50   ~ 0
+AHT20 pin compatable but rotated 180
+Text Label 850  2800 2    50   ~ 0
+SCL
+Text Label 850  2900 2    50   ~ 0
+SDA
+Wire Wire Line
+	650  2800 850  2800
+Wire Wire Line
+	850  2900 650  2900
+Text Label 1950 1450 0    50   ~ 0
+SCL
+Text Label 1950 1550 0    50   ~ 0
+SDA
+Wire Wire Line
+	2150 1450 1950 1450
+Wire Wire Line
+	1950 1550 2150 1550
+Text Notes 4050 7150 0    50   ~ 0
+Removing Capacitance soil moisture measuring for now
 $EndSCHEMATC
