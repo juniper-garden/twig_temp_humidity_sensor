@@ -236,115 +236,8 @@ F 3 "~" H 8150 5500 50  0001 C CNN
 	1    8000 5550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small_US R1
-U 1 1 60828B67
-P -3200 -1450
-F 0 "R1" H -3132 -1404 50  0000 L CNN
-F 1 "510K" H -3132 -1495 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H -3200 -1450 50  0001 C CNN
-F 3 "~" H -3200 -1450 50  0001 C CNN
-	1    -3200 -1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C1
-U 1 1 60829A42
-P -2800 -1450
-F 0 "C1" H -2708 -1404 50  0000 L CNN
-F 1 "1u" H -2708 -1495 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H -2800 -1450 50  0001 C CNN
-F 3 "~" H -2800 -1450 50  0001 C CNN
-	1    -2800 -1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D1
-U 1 1 6082A1A0
-P -2500 -1750
-F 0 "D1" H -2500 -1533 50  0000 C CNN
-F 1 "D" H -2500 -1624 50  0000 C CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H -2500 -1750 50  0001 C CNN
-F 3 "~" H -2500 -1750 50  0001 C CNN
-	1    -2500 -1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R2
-U 1 1 6082BA46
-P -1950 -1750
-F 0 "R2" V -2155 -1750 50  0000 C CNN
-F 1 "10K" V -2064 -1750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H -1950 -1750 50  0001 C CNN
-F 3 "~" H -1950 -1750 50  0001 C CNN
-	1    -1950 -1750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 6082CC53
-P -2200 -1450
-F 0 "C2" H -2108 -1404 50  0000 L CNN
-F 1 "sensor track" H -2108 -1495 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H -2200 -1450 50  0001 C CNN
-F 3 "~" H -2200 -1450 50  0001 C CNN
-	1    -2200 -1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	-2350 -1750 -2200 -1750
-Wire Wire Line
-	-2200 -1750 -2200 -1550
-Connection ~ -2200 -1750
-Wire Wire Line
-	-2200 -1750 -2050 -1750
-Wire Wire Line
-	-2800 -1550 -2800 -1750
-Wire Wire Line
-	-2800 -1750 -2650 -1750
-Wire Wire Line
-	-3200 -1550 -3200 -1750
-Wire Wire Line
-	-3200 -1750 -2800 -1750
-Connection ~ -2800 -1750
-Wire Wire Line
-	-3200 -1350 -3200 -1250
-Wire Wire Line
-	-3200 -1250 -2800 -1250
-Wire Wire Line
-	-2800 -1250 -2800 -1350
-Wire Wire Line
-	-2800 -1250 -2200 -1250
-Wire Wire Line
-	-2200 -1250 -2200 -1350
-Connection ~ -2800 -1250
-$Comp
-L power:GND #PWR01
-U 1 1 6083669F
-P -2800 -1250
-F 0 "#PWR01" H -2800 -1500 50  0001 C CNN
-F 1 "GND" H -2795 -1423 50  0000 C CNN
-F 2 "" H -2800 -1250 50  0001 C CNN
-F 3 "" H -2800 -1250 50  0001 C CNN
-	1    -2800 -1250
-	1    0    0    -1  
-$EndComp
-Text Notes -1850 -1850 0    50   ~ 0
-CLK_OUT
-Text Label -1850 -1750 0    50   ~ 0
-CLK_OUT
-Text Label -3200 -1750 0    50   ~ 0
-Capacitance_V
 Wire Wire Line
 	850  6300 1150 6300
-Text Label -650 -1450 0    50   ~ 0
-CLK_OUT
-Text Label -1450 -1550 0    50   ~ 0
-Capacitance_V
-Wire Wire Line
-	-650 -1450 -300 -1450
-Wire Wire Line
-	-900 -1550 -1450 -1550
 $Comp
 L power:+3.3V #PWR020
 U 1 1 6085A455
@@ -671,32 +564,6 @@ Wire Wire Line
 Connection ~ 2600 5150
 Connection ~ 3000 5150
 $Comp
-L Device:R_Small_US R3
-U 1 1 60909F25
-P -900 -1450
-F 0 "R3" H -832 -1404 50  0000 L CNN
-F 1 "10K" H -832 -1495 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H -900 -1450 50  0001 C CNN
-F 3 "~" H -900 -1450 50  0001 C CNN
-	1    -900 -1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	-300 -1550 -900 -1550
-$Comp
-L power:GND #PWR02
-U 1 1 609100DE
-P -900 -1250
-F 0 "#PWR02" H -900 -1500 50  0001 C CNN
-F 1 "GND" H -895 -1423 50  0000 C CNN
-F 2 "" H -900 -1250 50  0001 C CNN
-F 3 "" H -900 -1250 50  0001 C CNN
-	1    -900 -1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	-900 -1350 -900 -1250
-$Comp
 L power:GND #PWR05
 U 1 1 60914CC4
 P 850 6600
@@ -887,7 +754,6 @@ Wire Wire Line
 	1400 2750 1400 2850
 Wire Wire Line
 	1400 2550 2150 2550
-Connection ~ -900 -1550
 Text Label 10050 1050 2    50   ~ 0
 SCL
 Text Label 10050 1150 2    50   ~ 0
