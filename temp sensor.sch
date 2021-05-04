@@ -790,14 +790,6 @@ SDA
 Text Label 7400 3200 0    50   ~ 0
 SCL
 Wire Wire Line
-	4250 2800 4450 2800
-Wire Wire Line
-	4450 3000 4250 3000
-Text Label 4250 2800 0    50   ~ 0
-SDA
-Text Label 4250 3000 0    50   ~ 0
-SCL
-Wire Wire Line
 	6650 1600 6450 1600
 Wire Wire Line
 	6450 1400 6650 1400
@@ -805,26 +797,6 @@ Text Label 6650 1600 2    50   ~ 0
 SDA
 Text Label 6650 1400 2    50   ~ 0
 SCL
-$Comp
-L power:GND #PWR015
-U 1 1 60A2672E
-P 4750 3700
-F 0 "#PWR015" H 4750 3450 50  0001 C CNN
-F 1 "GND" H 4755 3527 50  0000 C CNN
-F 2 "" H 4750 3700 50  0001 C CNN
-F 3 "" H 4750 3700 50  0001 C CNN
-	1    4750 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 3700 4750 3550
-Wire Wire Line
-	4950 3400 4950 3550
-Wire Wire Line
-	4950 3550 4750 3550
-Connection ~ 4750 3550
-Wire Wire Line
-	4750 3550 4750 3400
 $Comp
 L power:+5V #PWR013
 U 1 1 608B4F61
@@ -843,26 +815,6 @@ Wire Wire Line
 	5950 850  5950 900 
 Wire Wire Line
 	5750 850  5750 900 
-$Comp
-L power:+3.3V #PWR016
-U 1 1 60A4E060
-P 4850 2300
-F 0 "#PWR016" H 4850 2150 50  0001 C CNN
-F 1 "+3.3V" H 4865 2473 50  0000 C CNN
-F 2 "" H 4850 2300 50  0001 C CNN
-F 3 "" H 4850 2300 50  0001 C CNN
-	1    4850 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 2300 4850 2350
-Wire Wire Line
-	4850 2350 4950 2350
-Connection ~ 4850 2350
-Wire Wire Line
-	4850 2350 4850 2400
-Wire Wire Line
-	4950 2350 4950 2400
 $Comp
 L power:+3.3V #PWR030
 U 1 1 60A5F700
@@ -1202,22 +1154,11 @@ Text Notes 4400 4350 0    50   ~ 0
 M3406-ADJ\nhttps://lcsc.com/product-detail/DC-DC-Converters_M3406_C83224.html
 Text Notes 450  -2150 0    50   ~ 0
 KXOB25-12X1F-TR\nMONOCRYS SOLAR CELL 24.5MW 690MV
-$Comp
-L Sensor_Motion:LIS2DE12 U1
-U 1 1 60DB33D8
-P 4850 2900
-F 0 "U1" H 4900 3581 50  0000 C CNN
-F 1 "LIS2DE12" H 4900 3490 50  0000 C CNN
-F 2 "Package_LGA:LGA-12_2x2mm_P0.5mm" H 5000 3450 50  0001 L CNN
-F 3 "https://www.st.com/resource/en/datasheet/lis2DE12.pdf" H 4500 2900 50  0001 C CNN
-	1    4850 2900
-	1    0    0    -1  
-$EndComp
-Text Notes 4500 2000 0    50   ~ 0
+Text Notes 450  -1900 0    50   ~ 0
 MC3479
-Text Notes 4500 2100 0    50   ~ 0
+Text Notes 450  -1800 0    50   ~ 0
 LIS2DS12
-Text Notes 4500 1900 0    50   ~ 0
+Text Notes 450  -2000 0    50   ~ 0
 Accelerometer
 $Comp
 L Sensor_Humidity:Si7020-A20 U4
@@ -1239,14 +1180,6 @@ Wire Wire Line
 	8000 3500 8000 3400
 Text Notes 7350 2550 0    50   ~ 0
 AHT20 pin compatable but rotated 180
-Text Label 850  2800 2    50   ~ 0
-SCL
-Text Label 850  2900 2    50   ~ 0
-SDA
-Wire Wire Line
-	650  2800 850  2800
-Wire Wire Line
-	850  2900 650  2900
 Text Label 1950 1450 0    50   ~ 0
 SCL
 Text Label 1950 1550 0    50   ~ 0
@@ -1257,4 +1190,15 @@ Wire Wire Line
 	1950 1550 2150 1550
 Text Notes 4050 7150 0    50   ~ 0
 Removing Capacitance soil moisture measuring for now
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 60908C06
+P 7950 4500
+F 0 "J?" H 8058 4781 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 8058 4690 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7950 4500 50  0001 C CNN
+F 3 "~" H 7950 4500 50  0001 C CNN
+	1    7950 4500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
