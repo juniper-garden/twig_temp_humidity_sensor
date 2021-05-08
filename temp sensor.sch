@@ -277,14 +277,14 @@ Wire Wire Line
 	1650 3550 2150 3550
 Wire Wire Line
 	2150 3650 1650 3650
-Text Label 1650 3950 0    50   ~ 0
+Text Label 1400 3950 0    50   ~ 0
 RTX0
-Text Label 1100 4050 0    50   ~ 0
+Text Label 1000 4050 0    50   ~ 0
 TDX0
 Wire Wire Line
-	1650 3950 2150 3950
+	1400 3950 1600 3950
 Wire Wire Line
-	1300 4050 1100 4050
+	1200 4050 1000 4050
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 6086D9A4
@@ -390,7 +390,7 @@ U 1 1 608A2A34
 P 5350 4200
 F 0 "L2" V 5169 4200 50  0000 C CNN
 F 1 "2.2uH" V 5260 4200 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 5350 4200 50  0001 C CNN
+F 2 "Inductor_SMD:L_Taiyo-Yuden_MD-4040" H 5350 4200 50  0001 C CNN
 F 3 "~" H 5350 4200 50  0001 C CNN
 	1    5350 4200
 	0    1    1    0   
@@ -463,9 +463,9 @@ Wire Wire Line
 Connection ~ 8000 6000
 Wire Wire Line
 	8000 6000 8000 5950
-Text Notes 7350 2250 0    50   ~ 0
+Text Notes 6600 2000 0    50   ~ 0
 AHT20\n
-Text Notes 7350 2350 0    50   ~ 0
+Text Notes 6600 2100 0    50   ~ 0
 ASAIR\n
 Text Label 2000 2150 0    50   ~ 0
 io0
@@ -586,7 +586,7 @@ Text Label 1950 6300 2    50   ~ 0
 3v3
 Wire Wire Line
 	1950 6300 1650 6300
-Text Notes 2500 6250 0    50   ~ 0
+Text Notes 2500 6000 0    50   ~ 0
 Strapping pins\nGPIO2\nGPIO8\nGPIO9\nGPIO10\n
 $Comp
 L Device:R_Small_US R4
@@ -678,12 +678,12 @@ F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-D
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 3000 7600 3000
+	6650 2750 6850 2750
 Wire Wire Line
-	7600 3200 7400 3200
-Text Label 7400 3000 0    50   ~ 0
+	6850 2950 6650 2950
+Text Label 6650 2750 0    50   ~ 0
 SDA
-Text Label 7400 3200 0    50   ~ 0
+Text Label 6650 2950 0    50   ~ 0
 SCL
 Wire Wire Line
 	6650 1600 6450 1600
@@ -714,29 +714,29 @@ Wire Wire Line
 $Comp
 L power:GND #PWR024
 U 1 1 60A777B9
-P 8000 3550
-F 0 "#PWR024" H 8000 3300 50  0001 C CNN
-F 1 "GND" H 8005 3377 50  0000 C CNN
-F 2 "" H 8000 3550 50  0001 C CNN
-F 3 "" H 8000 3550 50  0001 C CNN
-	1    8000 3550
+P 7250 3300
+F 0 "#PWR024" H 7250 3050 50  0001 C CNN
+F 1 "GND" H 7255 3127 50  0000 C CNN
+F 2 "" H 7250 3300 50  0001 C CNN
+F 3 "" H 7250 3300 50  0001 C CNN
+	1    7250 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 3550 8000 3500
+	7250 3300 7250 3250
 $Comp
 L power:+3.3V #PWR026
 U 1 1 60AA195F
-P 8100 2750
-F 0 "#PWR026" H 8100 2600 50  0001 C CNN
-F 1 "+3.3V" H 8115 2923 50  0000 C CNN
-F 2 "" H 8100 2750 50  0001 C CNN
-F 3 "" H 8100 2750 50  0001 C CNN
-	1    8100 2750
+P 7350 2500
+F 0 "#PWR026" H 7350 2350 50  0001 C CNN
+F 1 "+3.3V" H 7365 2673 50  0000 C CNN
+F 2 "" H 7350 2500 50  0001 C CNN
+F 3 "" H 7350 2500 50  0001 C CNN
+	1    7350 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8100 2750 8100 2800
+	7350 2500 7350 2550
 $Comp
 L Regulator_Switching:TLV62569DBV U2
 U 1 1 60B8C567
@@ -755,8 +755,8 @@ L Device:C_Small C8
 U 1 1 60BA5250
 P 4250 4300
 F 0 "C8" H 4342 4346 50  0000 L CNN
-F 1 "C_Small" H 4342 4255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4250 4300 50  0001 C CNN
+F 1 "4.7u" H 4342 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4250 4300 50  0001 C CNN
 F 3 "~" H 4250 4300 50  0001 C CNN
 	1    4250 4300
 	1    0    0    -1  
@@ -800,8 +800,8 @@ L Device:C_Small C9
 U 1 1 60BBF67B
 P 5950 4350
 F 0 "C9" H 6042 4396 50  0000 L CNN
-F 1 "C_Small" H 6042 4305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5950 4350 50  0001 C CNN
+F 1 "10u" H 6042 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5950 4350 50  0001 C CNN
 F 3 "~" H 5950 4350 50  0001 C CNN
 	1    5950 4350
 	1    0    0    -1  
@@ -811,7 +811,7 @@ L Device:R_Small_US R8
 U 1 1 60BC0C5A
 P 5600 4350
 F 0 "R8" V 5395 4350 50  0000 C CNN
-F 1 "10K" V 5486 4350 50  0000 C CNN
+F 1 "470k" V 5486 4350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5600 4350 50  0001 C CNN
 F 3 "~" H 5600 4350 50  0001 C CNN
 	1    5600 4350
@@ -822,7 +822,7 @@ L Device:R_Small_US R9
 U 1 1 60BC2DBD
 P 5600 4650
 F 0 "R9" H 5532 4604 50  0000 R CNN
-F 1 "10K" H 5532 4695 50  0000 R CNN
+F 1 "120K" H 5532 4695 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5600 4650 50  0001 C CNN
 F 3 "~" H 5600 4650 50  0001 C CNN
 	1    5600 4650
@@ -887,7 +887,7 @@ Text Notes 4000 5950 0    50   ~ 0
 Configure temp/humidity IO lines\n
 Text Notes 4000 6100 0    50   ~ 0
 Figure out boot pulldown resistors
-Text Notes 4000 6250 0    50   ~ 0
+Text Notes 350  -1500 0    50   ~ 0
 check out soil moisture sensor circuit\n
 Text Notes 4000 6400 0    50   ~ 0
 Figure out GPIO and which are actually needed
@@ -1007,22 +1007,22 @@ Accelerometer
 $Comp
 L Sensor_Humidity:Si7020-A20 U4
 U 1 1 60DEE713
-P 8100 3100
-F 0 "U4" H 8544 3146 50  0000 L CNN
-F 1 "Si7020-A20" H 8544 3055 50  0000 L CNN
-F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 8100 2700 50  0001 C CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/Si7020-A20.pdf" H 7900 3400 50  0001 C CNN
-	1    8100 3100
+P 7350 2850
+F 0 "U4" H 7794 2896 50  0000 L CNN
+F 1 "Si7020-A20" H 7794 2805 50  0000 L CNN
+F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 7350 2450 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/Si7020-A20.pdf" H 7150 3150 50  0001 C CNN
+	1    7350 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 3500 8200 3500
+	7250 3250 7450 3250
 Wire Wire Line
-	8200 3500 8200 3400
-Connection ~ 8000 3500
+	7450 3250 7450 3150
+Connection ~ 7250 3250
 Wire Wire Line
-	8000 3500 8000 3400
-Text Notes 7350 2550 0    50   ~ 0
+	7250 3250 7250 3150
+Text Notes 6600 2300 0    50   ~ 0
 AHT20 pin compatable but rotated 180
 Text Label 1950 1550 0    50   ~ 0
 SCL
@@ -1032,7 +1032,7 @@ Wire Wire Line
 	2150 1550 1950 1550
 Wire Wire Line
 	1950 1450 2150 1450
-Text Notes 4000 6700 0    50   ~ 0
+Text Notes 400  -1650 0    50   ~ 0
 Removing Capacitance soil moisture measuring for now
 $Comp
 L power:GND #PWR0101
@@ -1047,7 +1047,7 @@ F 3 "" H 7050 6150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7050 6150 6650 6150
-Text Notes 7350 2450 0    50   ~ 0
+Text Notes 6600 2200 0    50   ~ 0
 HDC1080
 $Comp
 L Device:D_TVS D1
@@ -1078,16 +1078,119 @@ Wire Wire Line
 $Comp
 L Device:R_Small_US R1
 U 1 1 609ADAE9
-P 1400 4050
-F 0 "R1" V 1195 4050 50  0000 C CNN
-F 1 "499R" V 1286 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1400 4050 50  0001 C CNN
-F 3 "~" H 1400 4050 50  0001 C CNN
-	1    1400 4050
+P 1300 4050
+F 0 "R1" V 1095 4050 50  0000 C CNN
+F 1 "499R" V 1186 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 4050 50  0001 C CNN
+F 3 "~" H 1300 4050 50  0001 C CNN
+	1    1300 4050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1500 4050 2150 4050
+	1400 4050 2150 4050
 Text Notes 1600 1250 0    50   ~ 0
 25mil
+Text Label 7100 1600 0    50   ~ 0
+io0
+Text Label 7100 1700 0    50   ~ 0
+io1
+$Comp
+L ESP32-C3-MINI-1:LED_RGB D2
+U 1 1 6096940A
+P 7550 1000
+F 0 "D2" V 7596 670 50  0000 R CNN
+F 1 "LED_RGB" V 7505 670 50  0000 R CNN
+F 2 "LED_SMD:LED_Cree-PLCC6_4.7x1.5mm" H 7550 950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/723/1397_QLS6BFKW-2257848.pdf" H 7550 950 50  0001 C CNN
+	1    7550 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 6096A5B0
+P 1700 3950
+F 0 "R2" V 1495 3950 50  0000 C CNN
+F 1 "499R" V 1586 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1700 3950 50  0001 C CNN
+F 3 "~" H 1700 3950 50  0001 C CNN
+	1    1700 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 3950 1800 3950
+$Comp
+L Device:R_Small_US R3
+U 1 1 609DAEED
+P 7350 1400
+F 0 "R3" V 7145 1400 50  0000 C CNN
+F 1 "10K" V 7236 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7350 1400 50  0001 C CNN
+F 3 "~" H 7350 1400 50  0001 C CNN
+	1    7350 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R14
+U 1 1 609DD244
+P 7550 1550
+F 0 "R14" V 7345 1550 50  0000 C CNN
+F 1 "10K" V 7436 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7550 1550 50  0001 C CNN
+F 3 "~" H 7550 1550 50  0001 C CNN
+	1    7550 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R15
+U 1 1 609DDBCB
+P 7750 1400
+F 0 "R15" V 7545 1400 50  0000 C CNN
+F 1 "10K" V 7636 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7750 1400 50  0001 C CNN
+F 3 "~" H 7750 1400 50  0001 C CNN
+	1    7750 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 1600 7350 1500
+Wire Wire Line
+	7100 1600 7350 1600
+Wire Wire Line
+	7550 1700 7550 1650
+Wire Wire Line
+	7100 1700 7550 1700
+Wire Wire Line
+	7350 1300 7350 1200
+Wire Wire Line
+	7550 1200 7550 1450
+Wire Wire Line
+	7750 1300 7750 1200
+Wire Wire Line
+	7750 1500 7750 1700
+Text Label 1650 2550 0    50   ~ 0
+io10
+Text Label 7750 1700 0    50   ~ 0
+io10
+$Comp
+L power:+3.3V #PWR01
+U 1 1 60A1024F
+P 7550 700
+F 0 "#PWR01" H 7550 550 50  0001 C CNN
+F 1 "+3.3V" H 7565 873 50  0000 C CNN
+F 2 "" H 7550 700 50  0001 C CNN
+F 3 "" H 7550 700 50  0001 C CNN
+	1    7550 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 800  7350 700 
+Wire Wire Line
+	7350 700  7550 700 
+Wire Wire Line
+	7550 700  7550 800 
+Connection ~ 7550 700 
+Wire Wire Line
+	7550 700  7750 700 
+Wire Wire Line
+	7750 700  7750 800 
 $EndSCHEMATC
