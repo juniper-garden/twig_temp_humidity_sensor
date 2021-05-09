@@ -463,9 +463,9 @@ Wire Wire Line
 Connection ~ 8000 6000
 Wire Wire Line
 	8000 6000 8000 5950
-Text Notes 6600 2000 0    50   ~ 0
+Text Notes 8850 1850 0    50   ~ 0
 AHT20\n
-Text Notes 6600 2100 0    50   ~ 0
+Text Notes 8850 1950 0    50   ~ 0
 ASAIR\n
 Text Label 2000 2150 0    50   ~ 0
 io0
@@ -678,12 +678,12 @@ F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-D
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 2750 6850 2750
+	8550 2750 8750 2750
 Wire Wire Line
-	6850 2950 6650 2950
-Text Label 6650 2750 0    50   ~ 0
+	8750 2950 8550 2950
+Text Label 8550 2750 0    50   ~ 0
 SDA
-Text Label 6650 2950 0    50   ~ 0
+Text Label 8550 2950 0    50   ~ 0
 SCL
 Wire Wire Line
 	6650 1600 6450 1600
@@ -714,29 +714,29 @@ Wire Wire Line
 $Comp
 L power:GND #PWR024
 U 1 1 60A777B9
-P 7250 3300
-F 0 "#PWR024" H 7250 3050 50  0001 C CNN
-F 1 "GND" H 7255 3127 50  0000 C CNN
-F 2 "" H 7250 3300 50  0001 C CNN
-F 3 "" H 7250 3300 50  0001 C CNN
-	1    7250 3300
+P 9150 3300
+F 0 "#PWR024" H 9150 3050 50  0001 C CNN
+F 1 "GND" H 9155 3127 50  0000 C CNN
+F 2 "" H 9150 3300 50  0001 C CNN
+F 3 "" H 9150 3300 50  0001 C CNN
+	1    9150 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 3300 7250 3250
+	9150 3300 9150 3250
 $Comp
 L power:+3.3V #PWR026
 U 1 1 60AA195F
-P 7350 2500
-F 0 "#PWR026" H 7350 2350 50  0001 C CNN
-F 1 "+3.3V" H 7365 2673 50  0000 C CNN
-F 2 "" H 7350 2500 50  0001 C CNN
-F 3 "" H 7350 2500 50  0001 C CNN
-	1    7350 2500
+P 9250 2500
+F 0 "#PWR026" H 9250 2350 50  0001 C CNN
+F 1 "+3.3V" H 9265 2673 50  0000 C CNN
+F 2 "" H 9250 2500 50  0001 C CNN
+F 3 "" H 9250 2500 50  0001 C CNN
+	1    9250 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 2500 7350 2550
+	9250 2500 9250 2550
 $Comp
 L Regulator_Switching:TLV62569DBV U2
 U 1 1 60B8C567
@@ -1007,22 +1007,22 @@ Accelerometer
 $Comp
 L Sensor_Humidity:Si7020-A20 U4
 U 1 1 60DEE713
-P 7350 2850
-F 0 "U4" H 7794 2896 50  0000 L CNN
-F 1 "Si7020-A20" H 7794 2805 50  0000 L CNN
-F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 7350 2450 50  0001 C CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/Si7020-A20.pdf" H 7150 3150 50  0001 C CNN
-	1    7350 2850
+P 9250 2850
+F 0 "U4" H 9694 2896 50  0000 L CNN
+F 1 "Si7020-A20" H 9694 2805 50  0000 L CNN
+F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 9250 2450 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/Si7020-A20.pdf" H 9050 3150 50  0001 C CNN
+	1    9250 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 3250 7450 3250
+	9150 3250 9350 3250
 Wire Wire Line
-	7450 3250 7450 3150
-Connection ~ 7250 3250
+	9350 3250 9350 3150
+Connection ~ 9150 3250
 Wire Wire Line
-	7250 3250 7250 3150
-Text Notes 6600 2300 0    50   ~ 0
+	9150 3250 9150 3150
+Text Notes 8850 2150 0    50   ~ 0
 AHT20 pin compatable but rotated 180
 Text Label 1950 1550 0    50   ~ 0
 SCL
@@ -1047,7 +1047,7 @@ F 3 "" H 7050 6150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7050 6150 6650 6150
-Text Notes 6600 2200 0    50   ~ 0
+Text Notes 8850 2050 0    50   ~ 0
 HDC1080
 $Comp
 L Device:D_TVS D1
@@ -1095,7 +1095,7 @@ io0
 Text Label 7100 1700 0    50   ~ 0
 io1
 $Comp
-L ESP32-C3-MINI-1:LED_RGB D2
+L Device:LED_RGB D2
 U 1 1 6096940A
 P 7550 1000
 F 0 "D2" V 7596 670 50  0000 R CNN
