@@ -26,7 +26,7 @@ F 5 "2.55" H 3300 850 50  0001 L CNN "Height"
 F 6 "Espressif Systems" H 3300 750 50  0001 L CNN "Manufacturer_Name"
 F 7 "ESP32-C3-MINI-1-H4" H 3300 650 50  0001 L CNN "Manufacturer_Part_Number"
 F 8 "356-ESP32-C3-MINI1H4" H 3300 550 50  0001 L CNN "Mouser Part Number"
-F 9 "$1.90" H 3300 450 50  0001 L CNN "Mouser Price/Stock"
+F 9 "$1.90/0" H 3300 450 50  0001 L CNN "Mouser Price/Stock"
 	1    2150 1050
 	1    0    0    -1  
 $EndComp
@@ -241,34 +241,30 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR020
 U 1 1 6085A455
-P 5950 800
-F 0 "#PWR020" H 5950 650 50  0001 C CNN
-F 1 "+3.3V" H 5965 973 50  0000 C CNN
-F 2 "" H 5950 800 50  0001 C CNN
-F 3 "" H 5950 800 50  0001 C CNN
-	1    5950 800 
+P 5050 1000
+F 0 "#PWR020" H 5050 850 50  0001 C CNN
+F 1 "+3.3V" H 5065 1173 50  0000 C CNN
+F 2 "" H 5050 1000 50  0001 C CNN
+F 3 "" H 5050 1000 50  0001 C CNN
+	1    5050 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR019
 U 1 1 6085DBEF
-P 5750 2400
-F 0 "#PWR019" H 5750 2150 50  0001 C CNN
-F 1 "GND" H 5755 2227 50  0000 C CNN
-F 2 "" H 5750 2400 50  0001 C CNN
-F 3 "" H 5750 2400 50  0001 C CNN
-	1    5750 2400
+P 4850 2600
+F 0 "#PWR019" H 4850 2350 50  0001 C CNN
+F 1 "GND" H 4855 2427 50  0000 C CNN
+F 2 "" H 4850 2600 50  0001 C CNN
+F 3 "" H 4850 2600 50  0001 C CNN
+	1    4850 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 2400 5750 2250
+	4850 2600 4850 2450
 Wire Wire Line
-	5950 2100 5950 2250
-Wire Wire Line
-	5950 2250 5750 2250
-Connection ~ 5750 2250
-Wire Wire Line
-	5750 2250 5750 2100
+	5050 2450 4850 2450
+Connection ~ 4850 2450
 Text Label 1650 3650 0    50   ~ 0
 USB_D+
 Text Label 1650 3550 0    50   ~ 0
@@ -353,7 +349,7 @@ U 1 1 60890C11
 P 850 6400
 F 0 "C3" H 942 6446 50  0000 L CNN
 F 1 "10u" H 942 6355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 850 6400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 850 6400 50  0001 C CNN
 F 3 "~" H 850 6400 50  0001 C CNN
 	1    850  6400
 	1    0    0    -1  
@@ -398,34 +394,34 @@ $EndComp
 Text Notes 4350 3700 0    50   ~ 0
 switching power supply\n
 Wire Wire Line
-	5950 800  5950 850 
-Text Notes 7100 5700 2    50   ~ 0
+	5050 1000 5050 1050
+Text Notes 6400 5700 2    50   ~ 0
 JTAG\n
-Text Label 7100 5750 2    50   ~ 0
-TMS
-Text Label 7100 5850 2    50   ~ 0
-TDI
 Text Label 7100 5950 2    50   ~ 0
-TCK
+TMS
 Text Label 7100 6050 2    50   ~ 0
+TDI
+Text Label 7100 6150 2    50   ~ 0
+TCK
+Text Label 7100 6250 2    50   ~ 0
 TDO
-Wire Wire Line
-	7100 5750 6650 5750
-Wire Wire Line
-	7100 5850 6650 5850
 Wire Wire Line
 	7100 5950 6650 5950
 Wire Wire Line
 	7100 6050 6650 6050
+Wire Wire Line
+	7100 6150 6650 6150
+Wire Wire Line
+	7100 6250 6650 6250
 $Comp
 L Connector:Conn_01x05_Male J3
 U 1 1 608AA734
-P 6450 5950
-F 0 "J3" H 6550 6350 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 6550 6250 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6450 5950 50  0001 C CNN
-F 3 "~" H 6450 5950 50  0001 C CNN
-	1    6450 5950
+P 6450 6150
+F 0 "J3" H 6550 6550 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 6550 6450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6450 6150 50  0001 C CNN
+F 3 "~" H 6450 6150 50  0001 C CNN
+	1    6450 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -463,9 +459,9 @@ Wire Wire Line
 Connection ~ 8000 6000
 Wire Wire Line
 	8000 6000 8000 5950
-Text Notes 8850 1850 0    50   ~ 0
+Text Notes 8800 850  0    50   ~ 0
 AHT20\n
-Text Notes 8850 1950 0    50   ~ 0
+Text Notes 8800 950  0    50   ~ 0
 ASAIR\n
 Text Label 2000 2150 0    50   ~ 0
 io0
@@ -529,28 +525,13 @@ Wire Wire Line
 	1200 5600 1400 5600
 Wire Wire Line
 	1400 5600 1400 5500
-$Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 60942E7E
-P 1150 5000
-F 0 "J1" V 1212 5044 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 1303 5044 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1150 5000 50  0001 C CNN
-F 3 "~" H 1150 5000 50  0001 C CNN
-	1    1150 5000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	1150 5200 1150 5350
+	1250 5100 1250 5250
 Wire Wire Line
-	1150 5350 1400 5350
+	1250 5250 1400 5250
 Wire Wire Line
-	1400 5350 1400 5500
+	1400 5250 1400 5500
 Connection ~ 1400 5500
-Wire Wire Line
-	1050 5200 850  5200
-Wire Wire Line
-	850  5200 850  5600
 Wire Wire Line
 	850  5600 1000 5600
 $Comp
@@ -669,29 +650,34 @@ Wire Wire Line
 $Comp
 L Sensor:BME280 U3
 U 1 1 608272E9
-P 5850 1500
-F 0 "U3" H 5421 1546 50  0000 R CNN
-F 1 "BME280" H 5421 1455 50  0000 R CNN
-F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 7350 1050 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf" H 5850 1300 50  0001 C CNN
-	1    5850 1500
+P 4950 1700
+F 0 "U3" H 4521 1746 50  0000 R CNN
+F 1 "BME280" H 4521 1655 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 6450 1250 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf" H 4950 1500 50  0001 C CNN
+F 4 "MEMS humidity, pressure and temperature sensor" H 4950 1700 50  0001 C CNN "Description"
+F 5 "Bosch Sensortec" H 4950 1700 50  0001 C CNN "Manufacturer_Name"
+F 6 "BME280" H 4950 1700 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "262-BME280" H 4950 1700 50  0001 C CNN "Mouser Part Number"
+F 8 "$5.78/0" H 4950 1700 50  0001 C CNN "Mouser Price/Stock"
+	1    4950 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 2750 8750 2750
+	8500 1750 8700 1750
 Wire Wire Line
-	8750 2950 8550 2950
-Text Label 8550 2750 0    50   ~ 0
+	8700 1950 8500 1950
+Text Label 8500 1750 0    50   ~ 0
 SDA
-Text Label 8550 2950 0    50   ~ 0
+Text Label 8500 1950 0    50   ~ 0
 SCL
 Wire Wire Line
-	6650 1600 6450 1600
+	5750 1800 5550 1800
 Wire Wire Line
-	6450 1400 6650 1400
-Text Label 6650 1600 2    50   ~ 0
+	5550 1600 5750 1600
+Text Label 5750 1800 2    50   ~ 0
 SDA
-Text Label 6650 1400 2    50   ~ 0
+Text Label 5750 1600 2    50   ~ 0
 SCL
 $Comp
 L power:+5V #PWR013
@@ -705,38 +691,38 @@ F 3 "" H 4250 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 850  5750 850 
-Connection ~ 5950 850 
+	5050 1050 4850 1050
+Connection ~ 5050 1050
 Wire Wire Line
-	5950 850  5950 900 
+	5050 1050 5050 1100
 Wire Wire Line
-	5750 850  5750 900 
+	4850 1050 4850 1100
 $Comp
 L power:GND #PWR024
 U 1 1 60A777B9
-P 9150 3300
-F 0 "#PWR024" H 9150 3050 50  0001 C CNN
-F 1 "GND" H 9155 3127 50  0000 C CNN
-F 2 "" H 9150 3300 50  0001 C CNN
-F 3 "" H 9150 3300 50  0001 C CNN
-	1    9150 3300
+P 9100 2300
+F 0 "#PWR024" H 9100 2050 50  0001 C CNN
+F 1 "GND" H 9105 2127 50  0000 C CNN
+F 2 "" H 9100 2300 50  0001 C CNN
+F 3 "" H 9100 2300 50  0001 C CNN
+	1    9100 2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 3300 9150 3250
+	9100 2300 9100 2250
 $Comp
 L power:+3.3V #PWR026
 U 1 1 60AA195F
-P 9250 2500
-F 0 "#PWR026" H 9250 2350 50  0001 C CNN
-F 1 "+3.3V" H 9265 2673 50  0000 C CNN
-F 2 "" H 9250 2500 50  0001 C CNN
-F 3 "" H 9250 2500 50  0001 C CNN
-	1    9250 2500
+P 9200 1500
+F 0 "#PWR026" H 9200 1350 50  0001 C CNN
+F 1 "+3.3V" H 9215 1673 50  0000 C CNN
+F 2 "" H 9200 1500 50  0001 C CNN
+F 3 "" H 9200 1500 50  0001 C CNN
+	1    9200 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9250 2500 9250 2550
+	9200 1500 9200 1550
 $Comp
 L Regulator_Switching:TLV62569DBV U2
 U 1 1 60B8C567
@@ -745,6 +731,11 @@ F 0 "U2" H 4800 4667 50  0000 C CNN
 F 1 "TLV62569DBV" H 4800 4576 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4850 4050 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv62569.pdf" H 4550 4750 50  0001 C CNN
+F 4 "Switching Voltage Regulators 2.5V-5.5V input, 2-A high efficiency step-down buck converter in" H 4800 4300 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 4800 4300 50  0001 C CNN "Manufacturer_Name"
+F 6 "TLV62569DBVR" H 4800 4300 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "595-TLV62569DBVR" H 4800 4300 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.60/0" H 4800 4300 50  0001 C CNN "Mouser Price/Stock"
 	1    4800 4300
 	1    0    0    -1  
 $EndComp
@@ -852,8 +843,6 @@ Wire Wire Line
 Connection ~ 5600 4200
 Wire Wire Line
 	5950 4450 5950 4500
-Wire Wire Line
-	5950 4500 5600 4500
 $Comp
 L power:GND #PWR018
 U 1 1 60C467F0
@@ -879,19 +868,17 @@ F 3 "" H 5950 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5950 4200
-Text Notes 4000 5750 0    50   ~ 0
+Text Notes 3650 6000 0    50   ~ 0
 ToDo:\n\n
-Text Notes 4000 5800 0    50   ~ 0
+Text Notes 3650 6050 0    50   ~ 0
 Adjust switching power supply resistor adjust values
-Text Notes 4000 5950 0    50   ~ 0
-Configure temp/humidity IO lines\n
-Text Notes 4000 6100 0    50   ~ 0
+Text Notes 3650 6350 0    50   ~ 0
 Figure out boot pulldown resistors
 Text Notes 350  -1500 0    50   ~ 0
 check out soil moisture sensor circuit\n
-Text Notes 4000 6400 0    50   ~ 0
+Text Notes 3650 6650 0    50   ~ 0
 Figure out GPIO and which are actually needed
-Text Notes 4000 6550 0    50   ~ 0
+Text Notes 3650 6800 0    50   ~ 0
 Prototype USB interface, confirm it works
 $Comp
 L Device:R_Small_US R12
@@ -960,6 +947,11 @@ F 0 "U5" V 8996 5888 50  0000 L CNN
 F 1 "SN65220" V 8905 5888 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9300 5650 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn65220.pdf" H 8950 5950 50  0001 C CNN
+F 4 "ESD Suppressors / TVS Diodes Single USB Port" H 8950 5800 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 8950 5800 50  0001 C CNN "Manufacturer_Name"
+F 6 "SN65220DBVT" H 8950 5800 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "595-SN65220DBVT" H 8950 5800 50  0001 C CNN "Mouser Part Number"
+F 8 "$1.03/12.700" H 8950 5800 50  0001 C CNN "Mouser Price/Stock"
 	1    8950 5800
 	0    -1   1    0   
 $EndComp
@@ -1007,22 +999,28 @@ Accelerometer
 $Comp
 L Sensor_Humidity:Si7020-A20 U4
 U 1 1 60DEE713
-P 9250 2850
-F 0 "U4" H 9694 2896 50  0000 L CNN
-F 1 "Si7020-A20" H 9694 2805 50  0000 L CNN
-F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 9250 2450 50  0001 C CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/Si7020-A20.pdf" H 9050 3150 50  0001 C CNN
-	1    9250 2850
+P 9200 1850
+F 0 "U4" H 9644 1896 50  0000 L CNN
+F 1 "Si7020-A20" H 9644 1805 50  0000 L CNN
+F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 9200 1450 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/Si7020-A20.pdf" H 9000 2150 50  0001 C CNN
+F 4 "Digital RH ( 4% max) & temperature sensor," H 9200 1850 50  0001 C CNN "Description"
+F 5 "Silicon Labs" H 9200 1850 50  0001 C CNN "Manufacturer_Name"
+F 6 "SI7020-A20-GMR" H 9200 1850 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "634-SI7020-A20-GMR" H 9200 1850 50  0001 C CNN "Mouser Part Number"
+F 8 "$2.57/0" H 9200 1850 50  0001 C CNN "Mouser Price/Stock"
+F 9 "0.75" H 9200 1850 50  0001 C CNN "Height"
+	1    9200 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 3250 9350 3250
+	9100 2250 9300 2250
 Wire Wire Line
-	9350 3250 9350 3150
-Connection ~ 9150 3250
+	9300 2250 9300 2150
+Connection ~ 9100 2250
 Wire Wire Line
-	9150 3250 9150 3150
-Text Notes 8850 2150 0    50   ~ 0
+	9100 2250 9100 2150
+Text Notes 8800 1150 0    50   ~ 0
 AHT20 pin compatable but rotated 180
 Text Label 1950 1550 0    50   ~ 0
 SCL
@@ -1037,26 +1035,31 @@ Removing Capacitance soil moisture measuring for now
 $Comp
 L power:GND #PWR0101
 U 1 1 60946B45
-P 7050 6150
-F 0 "#PWR0101" H 7050 5900 50  0001 C CNN
-F 1 "GND" H 7055 5977 50  0000 C CNN
-F 2 "" H 7050 6150 50  0001 C CNN
-F 3 "" H 7050 6150 50  0001 C CNN
-	1    7050 6150
+P 7050 6350
+F 0 "#PWR0101" H 7050 6100 50  0001 C CNN
+F 1 "GND" H 7055 6177 50  0000 C CNN
+F 2 "" H 7050 6350 50  0001 C CNN
+F 3 "" H 7050 6350 50  0001 C CNN
+	1    7050 6350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 6150 6650 6150
-Text Notes 8850 2050 0    50   ~ 0
+	7050 6350 6650 6350
+Text Notes 8800 1050 0    50   ~ 0
 HDC1080
 $Comp
 L Device:D_TVS D1
 U 1 1 6098B074
 P 1950 6500
 F 0 "D1" V 1904 6580 50  0000 L CNN
-F 1 "D_TVS" V 1995 6580 50  0000 L CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 1950 6500 50  0001 C CNN
-F 3 "~" H 1950 6500 50  0001 C CNN
+F 1 "3.3v_TVS" V 1995 6580 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1950 6500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/SD03C-1594733.pdf" H 1950 6500 50  0001 C CNN
+F 4 "ESD Suppressors / TVS Diodes Surge Protection PP" H 1950 6500 50  0001 C CNN "Description"
+F 5 "Diodes Incorporated" H 1950 6500 50  0001 C CNN "Manufacturer_Name"
+F 6 "SD03C-7" H 1950 6500 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "621-SD03C-7" H 1950 6500 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.37/852" H 1950 6500 50  0001 C CNN "Mouser Price/Stock"
 	1    1950 6500
 	0    1    1    0   
 $EndComp
@@ -1090,19 +1093,25 @@ Wire Wire Line
 	1400 4050 2150 4050
 Text Notes 1600 1250 0    50   ~ 0
 25mil
-Text Label 7100 1600 0    50   ~ 0
+Text Label 8300 4300 0    50   ~ 0
 io0
-Text Label 7100 1700 0    50   ~ 0
+Text Label 8300 4400 0    50   ~ 0
 io1
 $Comp
 L Device:LED_RGB D2
 U 1 1 6096940A
-P 7550 1000
-F 0 "D2" V 7596 670 50  0000 R CNN
-F 1 "LED_RGB" V 7505 670 50  0000 R CNN
-F 2 "LED_SMD:LED_Cree-PLCC6_4.7x1.5mm" H 7550 950 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/723/1397_QLS6BFKW-2257848.pdf" H 7550 950 50  0001 C CNN
-	1    7550 1000
+P 8750 3700
+F 0 "D2" V 8796 3370 50  0000 R CNN
+F 1 "LED_RGB" V 8705 3370 50  0000 R CNN
+F 2 "LED_SMD:LED_Cree-PLCC6_4.7x1.5mm" H 8750 3650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/723/1397_QLS6BFKW-2257848.pdf" H 8750 3650 50  0001 C CNN
+F 4 "Standard LEDs - SMD RGB Side View" H 8750 3700 50  0001 C CNN "Description"
+F 5 "Cree LED" H 8750 3700 50  0001 C CNN "Manufacturer_Name"
+F 6 "QLS6A-FKW-CNSNSF043" H 8750 3700 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "941-QLS6AFKWNSNSF043" H 8750 3700 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.40/29,835" H 8750 3700 50  0001 C CNN "Mouser Price/Stock"
+F 9 "1.33" H 8750 3700 50  0001 C CNN "Height"
+	1    8750 3700
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1121,76 +1130,293 @@ Wire Wire Line
 $Comp
 L Device:R_Small_US R3
 U 1 1 609DAEED
-P 7350 1400
-F 0 "R3" V 7145 1400 50  0000 C CNN
-F 1 "10K" V 7236 1400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7350 1400 50  0001 C CNN
-F 3 "~" H 7350 1400 50  0001 C CNN
-	1    7350 1400
+P 8550 4100
+F 0 "R3" V 8345 4100 50  0000 C CNN
+F 1 "200" V 8436 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8550 4100 50  0001 C CNN
+F 3 "~" H 8550 4100 50  0001 C CNN
+	1    8550 4100
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small_US R14
 U 1 1 609DD244
-P 7550 1550
-F 0 "R14" V 7345 1550 50  0000 C CNN
-F 1 "10K" V 7436 1550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7550 1550 50  0001 C CNN
-F 3 "~" H 7550 1550 50  0001 C CNN
-	1    7550 1550
+P 8750 4250
+F 0 "R14" V 8545 4250 50  0000 C CNN
+F 1 "100" V 8636 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8750 4250 50  0001 C CNN
+F 3 "~" H 8750 4250 50  0001 C CNN
+	1    8750 4250
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small_US R15
 U 1 1 609DDBCB
-P 7750 1400
-F 0 "R15" V 7545 1400 50  0000 C CNN
-F 1 "10K" V 7636 1400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7750 1400 50  0001 C CNN
-F 3 "~" H 7750 1400 50  0001 C CNN
-	1    7750 1400
+P 8950 4100
+F 0 "R15" V 8745 4100 50  0000 C CNN
+F 1 "100" V 8836 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8950 4100 50  0001 C CNN
+F 3 "~" H 8950 4100 50  0001 C CNN
+	1    8950 4100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7350 1600 7350 1500
+	8550 4300 8550 4200
 Wire Wire Line
-	7100 1600 7350 1600
+	8300 4300 8550 4300
 Wire Wire Line
-	7550 1700 7550 1650
+	8750 4400 8750 4350
 Wire Wire Line
-	7100 1700 7550 1700
+	8300 4400 8750 4400
 Wire Wire Line
-	7350 1300 7350 1200
+	8550 4000 8550 3900
 Wire Wire Line
-	7550 1200 7550 1450
+	8750 3900 8750 4150
 Wire Wire Line
-	7750 1300 7750 1200
+	8950 4000 8950 3900
 Wire Wire Line
-	7750 1500 7750 1700
+	8950 4200 8950 4400
 Text Label 1650 2550 0    50   ~ 0
 io10
-Text Label 7750 1700 0    50   ~ 0
+Text Label 8950 4400 0    50   ~ 0
 io10
 $Comp
 L power:+3.3V #PWR01
 U 1 1 60A1024F
-P 7550 700
-F 0 "#PWR01" H 7550 550 50  0001 C CNN
-F 1 "+3.3V" H 7565 873 50  0000 C CNN
-F 2 "" H 7550 700 50  0001 C CNN
-F 3 "" H 7550 700 50  0001 C CNN
-	1    7550 700 
+P 8750 3400
+F 0 "#PWR01" H 8750 3250 50  0001 C CNN
+F 1 "+3.3V" H 8765 3573 50  0000 C CNN
+F 2 "" H 8750 3400 50  0001 C CNN
+F 3 "" H 8750 3400 50  0001 C CNN
+	1    8750 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 800  7350 700 
+	8550 3500 8550 3400
 Wire Wire Line
-	7350 700  7550 700 
+	8550 3400 8750 3400
 Wire Wire Line
-	7550 700  7550 800 
-Connection ~ 7550 700 
+	8750 3400 8750 3500
+Connection ~ 8750 3400
 Wire Wire Line
-	7550 700  7750 700 
+	8750 3400 8950 3400
 Wire Wire Line
-	7750 700  7750 800 
+	8950 3400 8950 3500
+Text Label 8550 5100 0    50   ~ 0
+D+
+Text Label 8550 6500 0    50   ~ 0
+D-
+Wire Wire Line
+	9800 5700 9400 5700
+Connection ~ 9400 5700
+$Comp
+L power:GND #PWR0103
+U 1 1 609FE1D8
+P 9800 5900
+F 0 "#PWR0103" H 9800 5650 50  0001 C CNN
+F 1 "GND" H 9805 5727 50  0000 C CNN
+F 2 "" H 9800 5900 50  0001 C CNN
+F 3 "" H 9800 5900 50  0001 C CNN
+	1    9800 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5900 9400 5900
+Connection ~ 9400 5900
+Wire Wire Line
+	9800 5700 9800 5900
+Connection ~ 9800 5900
+NoConn ~ 8300 5750
+$Comp
+L Sensor_Humidity:SHTC3 U1
+U 1 1 60A2E91B
+P 7350 1800
+F 0 "U1" H 7594 1846 50  0000 L CNN
+F 1 "SHTC3" H 7594 1755 50  0000 L CNN
+F 2 "Sensor_Humidity:Sensirion_DFN-4-1EP_2x2mm_P1mm_EP0.7x1.6mm" H 7550 1450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/682/seri_s_a0003561073_1-2291167.pdf" H 7050 2250 50  0001 C CNN
+F 4 "Board Mount Humidity Sensors Humidity and Temperature Sensor" H 7350 1800 50  0001 C CNN "Description"
+F 5 "Sensirion" H 7350 1800 50  0001 C CNN "Manufacturer_Name"
+F 6 "SHTC3" H 7350 1800 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "403-SHTC3" H 7350 1800 50  0001 C CNN "Mouser Part Number"
+F 8 "$2.44/6,227 " H 7350 1800 50  0001 C CNN "Mouser Price/Stock"
+	1    7350 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1900 6500 1900
+Wire Wire Line
+	7050 1700 6950 1700
+Text Label 6300 1900 0    50   ~ 0
+SDA
+Text Label 6650 1700 0    50   ~ 0
+SCL
+$Comp
+L power:GND #PWR0104
+U 1 1 60A57121
+P 7450 2150
+F 0 "#PWR0104" H 7450 1900 50  0001 C CNN
+F 1 "GND" H 7455 1977 50  0000 C CNN
+F 2 "" H 7450 2150 50  0001 C CNN
+F 3 "" H 7450 2150 50  0001 C CNN
+	1    7450 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2150 7450 2100
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 60A61176
+P 7450 1300
+F 0 "#PWR0105" H 7450 1150 50  0001 C CNN
+F 1 "+3.3V" H 7465 1473 50  0000 C CNN
+F 2 "" H 7450 1300 50  0001 C CNN
+F 3 "" H 7450 1300 50  0001 C CNN
+	1    7450 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1300 7450 1350
+Wire Wire Line
+	4850 2300 4850 2450
+Wire Wire Line
+	5050 2300 5050 2450
+$Comp
+L power:GND #PWR0106
+U 1 1 60AA10BD
+P 5950 4500
+F 0 "#PWR0106" H 5950 4250 50  0001 C CNN
+F 1 "GND" H 5955 4327 50  0000 C CNN
+F 2 "" H 5950 4500 50  0001 C CNN
+F 3 "" H 5950 4500 50  0001 C CNN
+	1    5950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 60AB27C5
+P 1050 5100
+F 0 "SW1" H 1050 5385 50  0000 C CNN
+F 1 "SW_Push" H 1050 5294 50  0000 C CNN
+F 2 "" H 1050 5300 50  0001 C CNN
+F 3 "~" H 1050 5300 50  0001 C CNN
+	1    1050 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  5100 850  5600
+$Comp
+L Device:C_Small C1
+U 1 1 60B376BE
+P 8000 1650
+F 0 "C1" H 8092 1696 50  0000 L CNN
+F 1 "0.1u" H 8092 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8000 1650 50  0001 C CNN
+F 3 "~" H 8000 1650 50  0001 C CNN
+	1    8000 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1350 8000 1350
+$Comp
+L power:GND #PWR0107
+U 1 1 60B43C2D
+P 8000 1800
+F 0 "#PWR0107" H 8000 1550 50  0001 C CNN
+F 1 "GND" H 8005 1627 50  0000 C CNN
+F 2 "" H 8000 1800 50  0001 C CNN
+F 3 "" H 8000 1800 50  0001 C CNN
+	1    8000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1800 8000 1750
+$Comp
+L Device:R_Small_US R17
+U 1 1 60B4E9BA
+P 6950 1500
+F 0 "R17" V 6745 1500 50  0000 C CNN
+F 1 "10K" V 6836 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6950 1500 50  0001 C CNN
+F 3 "~" H 6950 1500 50  0001 C CNN
+	1    6950 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R16
+U 1 1 60B9115C
+P 6500 1500
+F 0 "R16" V 6295 1500 50  0000 C CNN
+F 1 "10K" V 6386 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6500 1500 50  0001 C CNN
+F 3 "~" H 6500 1500 50  0001 C CNN
+	1    6500 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6950 1600 6950 1700
+Connection ~ 6950 1700
+Wire Wire Line
+	6950 1700 6650 1700
+Wire Wire Line
+	6500 1600 6500 1900
+Connection ~ 6500 1900
+Wire Wire Line
+	6500 1900 7050 1900
+Wire Wire Line
+	6950 1400 6950 1350
+Wire Wire Line
+	6950 1350 7450 1350
+Connection ~ 7450 1350
+Wire Wire Line
+	6500 1400 6500 1350
+Wire Wire Line
+	6500 1350 6950 1350
+Connection ~ 6950 1350
+Wire Wire Line
+	8000 1350 8000 1550
+Wire Wire Line
+	7450 1350 7450 1500
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 60BCEE9B
+P 5900 1950
+F 0 "#PWR0108" H 5900 1800 50  0001 C CNN
+F 1 "+3.3V" H 5915 2123 50  0000 C CNN
+F 2 "" H 5900 1950 50  0001 C CNN
+F 3 "" H 5900 1950 50  0001 C CNN
+	1    5900 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1950 5900 2000
+Wire Wire Line
+	5550 2000 5900 2000
+$Comp
+L power:GND #PWR0109
+U 1 1 60BE54E3
+P 5900 1450
+F 0 "#PWR0109" H 5900 1200 50  0001 C CNN
+F 1 "GND" H 5905 1277 50  0000 C CNN
+F 2 "" H 5900 1450 50  0001 C CNN
+F 3 "" H 5900 1450 50  0001 C CNN
+	1    5900 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1450 5900 1400
+Wire Wire Line
+	5550 1400 5900 1400
+Wire Notes Line
+	4000 600  10400 600 
+Wire Notes Line
+	10400 600  10400 3000
+Wire Notes Line
+	10400 3000 4000 3000
+Wire Notes Line
+	4000 3000 4000 600 
+Text Notes 4050 2950 0    50   ~ 0
+Temp/Humidity option
+Text Notes 1250 -2000 0    50   ~ 0
+LTC3109
 $EndSCHEMATC
