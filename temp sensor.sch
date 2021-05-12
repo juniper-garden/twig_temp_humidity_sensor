@@ -27,6 +27,7 @@ F 6 "Espressif Systems" H 3300 750 50  0001 L CNN "Manufacturer_Name"
 F 7 "ESP32-C3-MINI-1-H4" H 3300 650 50  0001 L CNN "Manufacturer_Part_Number"
 F 8 "356-ESP32-C3-MINI1H4" H 3300 550 50  0001 L CNN "Mouser Part Number"
 F 9 "$1.90/0" H 3300 450 50  0001 L CNN "Mouser Price/Stock"
+F 10 "ESP32-PICO-MINI-02" H 2150 1050 50  0001 C CNN "Alternate Part Number 1"
 	1    2150 1050
 	1    0    0    -1  
 $EndComp
@@ -1010,6 +1011,9 @@ F 6 "SI7020-A20-GMR" H 9200 1850 50  0001 C CNN "Manufacturer_Part_Number"
 F 7 "634-SI7020-A20-GMR" H 9200 1850 50  0001 C CNN "Mouser Part Number"
 F 8 "$2.57/0" H 9200 1850 50  0001 C CNN "Mouser Price/Stock"
 F 9 "0.75" H 9200 1850 50  0001 C CNN "Height"
+F 10 "ASAIR" H 9200 1850 50  0001 C CNN "Alt Part Number 2"
+F 11 "HDC1080" H 9200 1850 50  0001 C CNN "Alt Part Number 3"
+F 12 "AHT20" H 9200 1850 50  0001 C CNN "Alternate Part Number 1"
 	1    9200 1850
 	1    0    0    -1  
 $EndComp
