@@ -27,6 +27,7 @@ F 6 "Espressif Systems" H 3300 750 50  0001 L CNN "Manufacturer_Name"
 F 7 "ESP32-C3-MINI-1-H4" H 3300 650 50  0001 L CNN "Manufacturer_Part_Number"
 F 8 "356-ESP32-C3-MINI1H4" H 3300 550 50  0001 L CNN "Mouser Part Number"
 F 9 "$1.90/0" H 3300 450 50  0001 L CNN "Mouser Price/Stock"
+F 10 "ESP32-PICO-MINI-02" H 2150 1050 50  0001 C CNN "Alternate Part Number 1"
 	1    2150 1050
 	1    0    0    -1  
 $EndComp
@@ -1301,8 +1302,8 @@ U 1 1 60AB27C5
 P 1050 5100
 F 0 "SW1" H 1050 5385 50  0000 C CNN
 F 1 "SW_Push" H 1050 5294 50  0000 C CNN
-F 2 "" H 1050 5300 50  0001 C CNN
-F 3 "~" H 1050 5300 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ" H 1050 5300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/60/ksc3-1841668.pdf" H 1050 5300 50  0001 C CNN
 	1    1050 5100
 	1    0    0    -1  
 $EndComp

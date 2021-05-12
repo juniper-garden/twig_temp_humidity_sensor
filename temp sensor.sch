@@ -496,59 +496,54 @@ Text Label 1900 1750 0    50   ~ 0
 EN
 Wire Wire Line
 	2150 1750 1900 1750
-Text Label 1850 5500 2    50   ~ 0
+Text Label 4150 7200 2    50   ~ 0
 EN
 Wire Wire Line
-	1600 5500 1850 5500
+	3900 7200 4150 7200
 $Comp
 L Device:C_Small C4
 U 1 1 609271A1
-P 1100 5600
-F 0 "C4" V 1329 5600 50  0000 C CNN
-F 1 "1u" V 1238 5600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1100 5600 50  0001 C CNN
-F 3 "~" H 1100 5600 50  0001 C CNN
-	1    1100 5600
+P 3600 7200
+F 0 "C4" V 3829 7200 50  0000 C CNN
+F 1 "0.1u" V 3738 7200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3600 7200 50  0001 C CNN
+F 3 "~" H 3600 7200 50  0001 C CNN
+	1    3600 7200
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small_US R7
 U 1 1 60927BBC
-P 1500 5500
-F 0 "R7" V 1295 5500 50  0000 C CNN
-F 1 "10K" V 1386 5500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1500 5500 50  0001 C CNN
-F 3 "~" H 1500 5500 50  0001 C CNN
-	1    1500 5500
-	0    1    1    0   
+P 3900 6600
+F 0 "R7" V 3695 6600 50  0000 C CNN
+F 1 "10K" V 3786 6600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 6600 50  0001 C CNN
+F 3 "~" H 3900 6600 50  0001 C CNN
+	1    3900 6600
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1200 5600 1400 5600
+	3700 7200 3900 7200
 Wire Wire Line
-	1400 5600 1400 5500
+	3750 6700 3750 6850
 Wire Wire Line
-	1250 5100 1250 5250
+	3750 6850 3900 6850
 Wire Wire Line
-	1250 5250 1400 5250
-Wire Wire Line
-	1400 5250 1400 5500
-Connection ~ 1400 5500
-Wire Wire Line
-	850  5600 1000 5600
+	3350 7200 3500 7200
 $Comp
 L power:GND #PWR03
 U 1 1 6094DF59
-P 850 5700
-F 0 "#PWR03" H 850 5450 50  0001 C CNN
-F 1 "GND" H 855 5527 50  0000 C CNN
-F 2 "" H 850 5700 50  0001 C CNN
-F 3 "" H 850 5700 50  0001 C CNN
-	1    850  5700
+P 3350 7300
+F 0 "#PWR03" H 3350 7050 50  0001 C CNN
+F 1 "GND" H 3355 7127 50  0000 C CNN
+F 2 "" H 3350 7300 50  0001 C CNN
+F 3 "" H 3350 7300 50  0001 C CNN
+	1    3350 7300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  5600 850  5700
-Connection ~ 850  5600
+	3350 7200 3350 7300
+Connection ~ 3350 7200
 $Comp
 L Device:L_Core_Ferrite_Small L1
 U 1 1 6096912D
@@ -869,17 +864,17 @@ F 3 "" H 5950 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5950 4200
-Text Notes 3650 6000 0    50   ~ 0
+Text Notes -2500 200  0    50   ~ 0
 ToDo:\n\n
-Text Notes 3650 6050 0    50   ~ 0
+Text Notes -2500 250  0    50   ~ 0
 Adjust switching power supply resistor adjust values
-Text Notes 3650 6350 0    50   ~ 0
+Text Notes -2500 550  0    50   ~ 0
 Figure out boot pulldown resistors
 Text Notes 350  -1500 0    50   ~ 0
 check out soil moisture sensor circuit\n
-Text Notes 3650 6650 0    50   ~ 0
+Text Notes -2500 850  0    50   ~ 0
 Figure out GPIO and which are actually needed
-Text Notes 3650 6800 0    50   ~ 0
+Text Notes -2500 1000 0    50   ~ 0
 Prototype USB interface, confirm it works
 $Comp
 L Device:R_Small_US R12
@@ -1299,16 +1294,16 @@ $EndComp
 $Comp
 L Switch:SW_Push SW1
 U 1 1 60AB27C5
-P 1050 5100
-F 0 "SW1" H 1050 5385 50  0000 C CNN
-F 1 "SW_Push" H 1050 5294 50  0000 C CNN
-F 2 "" H 1050 5300 50  0001 C CNN
-F 3 "~" H 1050 5300 50  0001 C CNN
-	1    1050 5100
+P 3550 6700
+F 0 "SW1" H 3550 6985 50  0000 C CNN
+F 1 "SW_Push" H 3550 6894 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ" H 3550 6900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/60/ksc3-1841668.pdf" H 3550 6900 50  0001 C CNN
+	1    3550 6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  5100 850  5600
+	3350 6700 3350 7200
 $Comp
 L Device:C_Small C1
 U 1 1 60B376BE
@@ -1423,4 +1418,23 @@ Text Notes 4050 2950 0    50   ~ 0
 Temp/Humidity option
 Text Notes 1250 -2000 0    50   ~ 0
 LTC3109
+Wire Wire Line
+	3900 6850 3900 7200
+Connection ~ 3900 7200
+Wire Wire Line
+	3900 6700 3900 6850
+Connection ~ 3900 6850
+$Comp
+L power:+3.3V #PWR?
+U 1 1 609EE85F
+P 3900 6400
+F 0 "#PWR?" H 3900 6250 50  0001 C CNN
+F 1 "+3.3V" H 3915 6573 50  0000 C CNN
+F 2 "" H 3900 6400 50  0001 C CNN
+F 3 "" H 3900 6400 50  0001 C CNN
+	1    3900 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 6400 3900 6500
 $EndSCHEMATC
