@@ -218,12 +218,12 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR04
 U 1 1 60823B29
-P 850 6300
-F 0 "#PWR04" H 850 6150 50  0001 C CNN
-F 1 "+3.3V" H 865 6473 50  0000 C CNN
-F 2 "" H 850 6300 50  0001 C CNN
-F 3 "" H 850 6300 50  0001 C CNN
-	1    850  6300
+P 1150 6850
+F 0 "#PWR04" H 1150 6700 50  0001 C CNN
+F 1 "+3.3V" H 1165 7023 50  0000 C CNN
+F 2 "" H 1150 6850 50  0001 C CNN
+F 3 "" H 1150 6850 50  0001 C CNN
+	1    1150 6850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -238,7 +238,7 @@ F 3 "~" H 8150 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  6300 1150 6300
+	1150 6850 1450 6850
 $Comp
 L power:+3.3V #PWR020
 U 1 1 6085A455
@@ -274,14 +274,12 @@ Wire Wire Line
 	1650 3550 2150 3550
 Wire Wire Line
 	2150 3650 1650 3650
-Text Label 1400 3950 0    50   ~ 0
+Text Label 1600 3950 0    50   ~ 0
 RTX0
-Text Label 1000 4050 0    50   ~ 0
+Text Label 1200 4050 0    50   ~ 0
 TDX0
 Wire Wire Line
-	1400 3950 1600 3950
-Wire Wire Line
-	1200 4050 1000 4050
+	1600 3950 1800 3950
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 6086D9A4
@@ -336,51 +334,51 @@ Boot_Option
 $Comp
 L Device:C_Small C5
 U 1 1 6088F66D
-P 1150 6400
-F 0 "C5" H 1242 6446 50  0000 L CNN
-F 1 "0.1u" H 1242 6355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1150 6400 50  0001 C CNN
-F 3 "~" H 1150 6400 50  0001 C CNN
-	1    1150 6400
+P 1450 6950
+F 0 "C5" H 1542 6996 50  0000 L CNN
+F 1 "0.1u" H 1542 6905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1450 6950 50  0001 C CNN
+F 3 "~" H 1450 6950 50  0001 C CNN
+	1    1450 6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C3
 U 1 1 60890C11
-P 850 6400
-F 0 "C3" H 942 6446 50  0000 L CNN
-F 1 "10u" H 942 6355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 850 6400 50  0001 C CNN
-F 3 "~" H 850 6400 50  0001 C CNN
-	1    850  6400
+P 1150 6950
+F 0 "C3" H 1242 6996 50  0000 L CNN
+F 1 "10u" H 1242 6905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1150 6950 50  0001 C CNN
+F 3 "~" H 1150 6950 50  0001 C CNN
+	1    1150 6950
 	1    0    0    -1  
 $EndComp
-Connection ~ 850  6300
-Connection ~ 1150 6300
+Connection ~ 1150 6850
+Connection ~ 1450 6850
 Wire Wire Line
-	1150 6300 1450 6300
+	1450 6850 1750 6850
 Text Notes 9150 4850 0    50   ~ 0
 ESD 
 Text Notes 1750 2150 0    50   ~ 0
 RTC\n
-Text Notes 1700 2700 0    50   ~ 0
+Text Notes 1450 2650 0    50   ~ 0
 JTAG\n
-Text Label 1700 2750 0    50   ~ 0
+Text Label 1650 2750 0    50   ~ 0
 TMS
-Text Label 1700 2850 0    50   ~ 0
+Text Label 1650 2850 0    50   ~ 0
 TDI
-Text Label 1700 2950 0    50   ~ 0
+Text Label 1650 2950 0    50   ~ 0
 TCK
-Text Label 1700 3050 0    50   ~ 0
+Text Label 1650 3050 0    50   ~ 0
 TDO
 Wire Wire Line
-	1700 2750 2150 2750
+	1650 2750 2150 2750
 Wire Wire Line
-	1700 2850 2150 2850
+	1650 2850 2150 2850
 Wire Wire Line
-	1700 2950 2150 2950
+	1650 2950 2150 2950
 Wire Wire Line
-	1700 3050 2150 3050
+	1650 3050 2150 3050
 $Comp
 L Device:L L2
 U 1 1 608A2A34
@@ -475,23 +473,23 @@ Wire Wire Line
 $Comp
 L power:GND #PWR05
 U 1 1 60914CC4
-P 850 6600
-F 0 "#PWR05" H 850 6350 50  0001 C CNN
-F 1 "GND" H 855 6427 50  0000 C CNN
-F 2 "" H 850 6600 50  0001 C CNN
-F 3 "" H 850 6600 50  0001 C CNN
-	1    850  6600
+P 1150 7150
+F 0 "#PWR05" H 1150 6900 50  0001 C CNN
+F 1 "GND" H 1155 6977 50  0000 C CNN
+F 2 "" H 1150 7150 50  0001 C CNN
+F 3 "" H 1150 7150 50  0001 C CNN
+	1    1150 7150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  6500 850  6550
+	1150 7050 1150 7100
 Wire Wire Line
-	1150 6500 1150 6550
+	1450 7050 1450 7100
 Wire Wire Line
-	1150 6550 850  6550
-Connection ~ 850  6550
+	1450 7100 1150 7100
+Connection ~ 1150 7100
 Wire Wire Line
-	850  6550 850  6600
+	1150 7100 1150 7150
 Text Label 1900 1750 0    50   ~ 0
 EN
 Wire Wire Line
@@ -525,10 +523,6 @@ $EndComp
 Wire Wire Line
 	3700 7200 3900 7200
 Wire Wire Line
-	3750 6700 3750 6850
-Wire Wire Line
-	3750 6850 3900 6850
-Wire Wire Line
 	3350 7200 3500 7200
 $Comp
 L power:GND #PWR03
@@ -547,102 +541,24 @@ Connection ~ 3350 7200
 $Comp
 L Device:L_Core_Ferrite_Small L1
 U 1 1 6096912D
-P 1550 6300
-F 0 "L1" V 1755 6300 50  0000 C CNN
-F 1 "L_Core_Ferrite_Small" V 1664 6300 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 1550 6300 50  0001 C CNN
-F 3 "~" H 1550 6300 50  0001 C CNN
-	1    1550 6300
+P 1850 6850
+F 0 "L1" V 2055 6850 50  0000 C CNN
+F 1 "L_Core_Ferrite_Small" V 1964 6850 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 1850 6850 50  0001 C CNN
+F 3 "~" H 1850 6850 50  0001 C CNN
+	1    1850 6850
 	0    -1   -1   0   
 $EndComp
 Text Label 1850 1250 0    50   ~ 0
 3v3
 Wire Wire Line
 	1850 1250 2150 1250
-Text Label 1950 6300 2    50   ~ 0
+Text Label 2250 6850 2    50   ~ 0
 3v3
 Wire Wire Line
-	1950 6300 1650 6300
-Text Notes 2500 6000 0    50   ~ 0
+	2250 6850 1950 6850
+Text Notes 850  5350 0    50   ~ 0
 Strapping pins\nGPIO2\nGPIO8\nGPIO9\nGPIO10\n
-$Comp
-L Device:R_Small_US R4
-U 1 1 60975D2C
-P 1100 3250
-F 0 "R4" H 1168 3296 50  0000 L CNN
-F 1 "10K" H 1168 3205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1100 3250 50  0001 C CNN
-F 3 "~" H 1100 3250 50  0001 C CNN
-	1    1100 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 3150 1100 3150
-$Comp
-L power:GND #PWR07
-U 1 1 60975D37
-P 1100 3450
-F 0 "#PWR07" H 1100 3200 50  0001 C CNN
-F 1 "GND" H 1105 3277 50  0000 C CNN
-F 2 "" H 1100 3450 50  0001 C CNN
-F 3 "" H 1100 3450 50  0001 C CNN
-	1    1100 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 3350 1100 3450
-$Comp
-L Device:R_Small_US R6
-U 1 1 6098F432
-P 1400 3350
-F 0 "R6" H 1468 3396 50  0000 L CNN
-F 1 "10K" H 1468 3305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1400 3350 50  0001 C CNN
-F 3 "~" H 1400 3350 50  0001 C CNN
-	1    1400 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 6098F43C
-P 1400 3550
-F 0 "#PWR09" H 1400 3300 50  0001 C CNN
-F 1 "GND" H 1405 3377 50  0000 C CNN
-F 2 "" H 1400 3550 50  0001 C CNN
-F 3 "" H 1400 3550 50  0001 C CNN
-	1    1400 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 3450 1400 3550
-Wire Wire Line
-	1400 3250 2150 3250
-$Comp
-L Device:R_Small_US R5
-U 1 1 6099C7E5
-P 1400 2650
-F 0 "R5" H 1468 2696 50  0000 L CNN
-F 1 "10K" H 1468 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1400 2650 50  0001 C CNN
-F 3 "~" H 1400 2650 50  0001 C CNN
-	1    1400 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 6099C7EF
-P 1400 2850
-F 0 "#PWR08" H 1400 2600 50  0001 C CNN
-F 1 "GND" H 1405 2677 50  0000 C CNN
-F 2 "" H 1400 2850 50  0001 C CNN
-F 3 "" H 1400 2850 50  0001 C CNN
-	1    1400 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 2750 1400 2850
-Wire Wire Line
-	1400 2550 2150 2550
 $Comp
 L Sensor:BME280 U3
 U 1 1 608272E9
@@ -1049,47 +965,47 @@ HDC1080
 $Comp
 L Device:D_TVS D1
 U 1 1 6098B074
-P 1950 6500
-F 0 "D1" V 1904 6580 50  0000 L CNN
-F 1 "3.3v_TVS" V 1995 6580 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 1950 6500 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/115/SD03C-1594733.pdf" H 1950 6500 50  0001 C CNN
-F 4 "ESD Suppressors / TVS Diodes Surge Protection PP" H 1950 6500 50  0001 C CNN "Description"
-F 5 "Diodes Incorporated" H 1950 6500 50  0001 C CNN "Manufacturer_Name"
-F 6 "SD03C-7" H 1950 6500 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "621-SD03C-7" H 1950 6500 50  0001 C CNN "Mouser Part Number"
-F 8 "$0.37/852" H 1950 6500 50  0001 C CNN "Mouser Price/Stock"
-	1    1950 6500
+P 2250 7050
+F 0 "D1" V 2204 7130 50  0000 L CNN
+F 1 "3.3v_TVS" V 2295 7130 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2250 7050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/SD03C-1594733.pdf" H 2250 7050 50  0001 C CNN
+F 4 "ESD Suppressors / TVS Diodes Surge Protection PP" H 2250 7050 50  0001 C CNN "Description"
+F 5 "Diodes Incorporated" H 2250 7050 50  0001 C CNN "Manufacturer_Name"
+F 6 "SD03C-7" H 2250 7050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "621-SD03C-7" H 2250 7050 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.37/852" H 2250 7050 50  0001 C CNN "Mouser Price/Stock"
+	1    2250 7050
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 6098B7A2
-P 1950 6700
-F 0 "#PWR0102" H 1950 6450 50  0001 C CNN
-F 1 "GND" H 1955 6527 50  0000 C CNN
-F 2 "" H 1950 6700 50  0001 C CNN
-F 3 "" H 1950 6700 50  0001 C CNN
-	1    1950 6700
+P 2250 7250
+F 0 "#PWR0102" H 2250 7000 50  0001 C CNN
+F 1 "GND" H 2255 7077 50  0000 C CNN
+F 2 "" H 2250 7250 50  0001 C CNN
+F 3 "" H 2250 7250 50  0001 C CNN
+	1    2250 7250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 6350 1950 6300
+	2250 6900 2250 6850
 Wire Wire Line
-	1950 6700 1950 6650
+	2250 7250 2250 7200
 $Comp
 L Device:R_Small_US R1
 U 1 1 609ADAE9
-P 1300 4050
-F 0 "R1" V 1095 4050 50  0000 C CNN
-F 1 "499R" V 1186 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1300 4050 50  0001 C CNN
-F 3 "~" H 1300 4050 50  0001 C CNN
-	1    1300 4050
+P 1500 4050
+F 0 "R1" V 1295 4050 50  0000 C CNN
+F 1 "499R" V 1386 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1500 4050 50  0001 C CNN
+F 3 "~" H 1500 4050 50  0001 C CNN
+	1    1500 4050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1400 4050 2150 4050
+	1600 4050 2150 4050
 Text Notes 1600 1250 0    50   ~ 0
 25mil
 Text Label 8300 4300 0    50   ~ 0
@@ -1116,16 +1032,16 @@ $EndComp
 $Comp
 L Device:R_Small_US R2
 U 1 1 6096A5B0
-P 1700 3950
-F 0 "R2" V 1495 3950 50  0000 C CNN
-F 1 "499R" V 1586 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1700 3950 50  0001 C CNN
-F 3 "~" H 1700 3950 50  0001 C CNN
-	1    1700 3950
+P 1900 3950
+F 0 "R2" V 1695 3950 50  0000 C CNN
+F 1 "499R" V 1786 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1900 3950 50  0001 C CNN
+F 3 "~" H 1900 3950 50  0001 C CNN
+	1    1900 3950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2150 3950 1800 3950
+	2150 3950 2000 3950
 $Comp
 L Device:R_Small_US R3
 U 1 1 609DAEED
@@ -1227,7 +1143,7 @@ Wire Wire Line
 Connection ~ 9800 5900
 NoConn ~ 8300 5750
 $Comp
-L Sensor_Humidity:SHTC3 U1
+L ESP32-C3-MINI-1:SHTC1 U1
 U 1 1 60A2E91B
 P 7350 1800
 F 0 "U1" H 7594 1846 50  0000 L CNN
@@ -1294,16 +1210,16 @@ $EndComp
 $Comp
 L Switch:SW_Push SW1
 U 1 1 60AB27C5
-P 3550 6700
-F 0 "SW1" H 3550 6985 50  0000 C CNN
-F 1 "SW_Push" H 3550 6894 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ" H 3550 6900 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/60/ksc3-1841668.pdf" H 3550 6900 50  0001 C CNN
-	1    3550 6700
+P 3550 6850
+F 0 "SW1" H 3550 7135 50  0000 C CNN
+F 1 "SW_Push" H 3550 7044 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ" H 3550 7050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/60/ksc3-1841668.pdf" H 3550 7050 50  0001 C CNN
+	1    3550 6850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 6700 3350 7200
+	3350 6850 3350 7200
 $Comp
 L Device:C_Small C1
 U 1 1 60B376BE
@@ -1425,10 +1341,10 @@ Wire Wire Line
 	3900 6700 3900 6850
 Connection ~ 3900 6850
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0110
 U 1 1 609EE85F
 P 3900 6400
-F 0 "#PWR?" H 3900 6250 50  0001 C CNN
+F 0 "#PWR0110" H 3900 6250 50  0001 C CNN
 F 1 "+3.3V" H 3915 6573 50  0000 C CNN
 F 2 "" H 3900 6400 50  0001 C CNN
 F 3 "" H 3900 6400 50  0001 C CNN
@@ -1437,4 +1353,71 @@ F 3 "" H 3900 6400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3900 6400 3900 6500
+Text Notes -4500 1700 0    50   ~ 0
+Set the module to UART Download mode by pulling IO0 (pulled up by default) and IO2 (pulled down by\ndefault) low. The chip IOs are pulled down internally by default.
+Text Label 4950 6850 2    50   ~ 0
+Boot_Option
+$Comp
+L Device:C_Small C2
+U 1 1 609D5B16
+P 4450 7150
+F 0 "C2" H 4542 7196 50  0000 L CNN
+F 1 "0.1u" H 4542 7105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4450 7150 50  0001 C CNN
+F 3 "~" H 4450 7150 50  0001 C CNN
+	1    4450 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 609D94A2
+P 4450 7350
+F 0 "#PWR0111" H 4450 7100 50  0001 C CNN
+F 1 "GND" H 4455 7177 50  0000 C CNN
+F 2 "" H 4450 7350 50  0001 C CNN
+F 3 "" H 4450 7350 50  0001 C CNN
+	1    4450 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 7250 4450 7350
+$Comp
+L Device:R_Small_US R18
+U 1 1 609FB05C
+P 4200 6850
+F 0 "R18" V 3995 6850 50  0000 C CNN
+F 1 "2.2K" V 4086 6850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4200 6850 50  0001 C CNN
+F 3 "~" H 4200 6850 50  0001 C CNN
+	1    4200 6850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 6850 4100 6850
+Wire Wire Line
+	4300 6850 4450 6850
+Wire Wire Line
+	4450 7050 4450 6850
+Connection ~ 4450 6850
+Wire Wire Line
+	4450 6850 4950 6850
+Wire Wire Line
+	3750 6850 3900 6850
+Wire Wire Line
+	1650 3250 2150 3250
+Wire Wire Line
+	1400 4050 1200 4050
+Wire Wire Line
+	1650 2550 2150 2550
+Text Label 1650 3150 0    50   ~ 0
+io8
+Wire Wire Line
+	2150 3150 1650 3150
+Wire Wire Line
+	7650 1800 7750 1800
+Wire Wire Line
+	7750 1800 7750 2150
+Wire Wire Line
+	7750 2150 7450 2150
+Connection ~ 7450 2150
 $EndSCHEMATC
