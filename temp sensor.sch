@@ -28,7 +28,7 @@ NoConn ~ 2150 2650
 NoConn ~ 2150 3350
 NoConn ~ 2150 3450
 $Comp
-L power:GND #PWR012
+L temp-sensor-rescue:GND-power #PWR012
 U 1 1 6081521F
 P 3700 4400
 F 0 "#PWR012" H 3700 4150 50  0001 C CNN
@@ -168,7 +168,7 @@ Connection ~ 3700 3950
 Wire Wire Line
 	3700 3950 3700 3850
 $Comp
-L power:GND #PWR06
+L temp-sensor-rescue:GND-power #PWR06
 U 1 1 6081CA9A
 P 950 4400
 F 0 "#PWR06" H 950 4150 50  0001 C CNN
@@ -198,7 +198,7 @@ Connection ~ 950  2350
 Wire Wire Line
 	950  2350 950  2050
 $Comp
-L power:+3.3V #PWR04
+L temp-sensor-rescue:+3.3V-power #PWR04
 U 1 1 60823B29
 P 1150 6850
 F 0 "#PWR04" H 1150 6700 50  0001 C CNN
@@ -211,7 +211,7 @@ $EndComp
 Wire Wire Line
 	1150 6850 1450 6850
 $Comp
-L power:+3.3V #PWR020
+L temp-sensor-rescue:+3.3V-power #PWR020
 U 1 1 6085A455
 P 5050 1000
 F 0 "#PWR020" H 5050 850 50  0001 C CNN
@@ -222,7 +222,7 @@ F 3 "" H 5050 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR019
+L temp-sensor-rescue:GND-power #PWR019
 U 1 1 6085DBEF
 P 4850 2600
 F 0 "#PWR019" H 4850 2350 50  0001 C CNN
@@ -260,7 +260,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 5150 7100 5150
 $Comp
-L power:GND #PWR023
+L temp-sensor-rescue:GND-power #PWR023
 U 1 1 6087640E
 P 7000 5350
 F 0 "#PWR023" H 7000 5100 50  0001 C CNN
@@ -273,7 +273,7 @@ $EndComp
 Wire Wire Line
 	7000 5350 6600 5350
 $Comp
-L power:+3.3V #PWR022
+L temp-sensor-rescue:+3.3V-power #PWR022
 U 1 1 60878F6C
 P 7000 5050
 F 0 "#PWR022" H 7000 4900 50  0001 C CNN
@@ -338,7 +338,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 6250 6650 6250
 $Comp
-L power:+5V #PWR027
+L temp-sensor-rescue:+5V-power #PWR027
 U 1 1 608B3119
 P 8400 5250
 F 0 "#PWR027" H 8400 5100 50  0001 C CNN
@@ -353,7 +353,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 5350 8400 5250
 $Comp
-L power:GND #PWR025
+L temp-sensor-rescue:GND-power #PWR025
 U 1 1 608BB683
 P 8000 6100
 F 0 "#PWR025" H 8000 5850 50  0001 C CNN
@@ -385,7 +385,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 2250 2150 2250
 $Comp
-L power:GND #PWR05
+L temp-sensor-rescue:GND-power #PWR05
 U 1 1 60914CC4
 P 1150 7150
 F 0 "#PWR05" H 1150 6900 50  0001 C CNN
@@ -417,7 +417,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 7200 3500 7200
 $Comp
-L power:GND #PWR03
+L temp-sensor-rescue:GND-power #PWR03
 U 1 1 6094DF59
 P 3350 7300
 F 0 "#PWR03" H 3350 7050 50  0001 C CNN
@@ -453,7 +453,7 @@ SDA
 Text Label 5750 1600 2    50   ~ 0
 SCL
 $Comp
-L power:+5V #PWR013
+L temp-sensor-rescue:+5V-power #PWR013
 U 1 1 608B4F61
 P 4250 4200
 F 0 "#PWR013" H 4250 4050 50  0001 C CNN
@@ -471,7 +471,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 1050 4850 1100
 $Comp
-L power:GND #PWR024
+L temp-sensor-rescue:GND-power #PWR024
 U 1 1 60A777B9
 P 9100 2300
 F 0 "#PWR024" H 9100 2050 50  0001 C CNN
@@ -484,7 +484,7 @@ $EndComp
 Wire Wire Line
 	9100 2300 9100 2250
 $Comp
-L power:+3.3V #PWR026
+L temp-sensor-rescue:+3.3V-power #PWR026
 U 1 1 60AA195F
 P 9200 1500
 F 0 "#PWR026" H 9200 1350 50  0001 C CNN
@@ -507,7 +507,7 @@ Connection ~ 4400 4200
 Wire Wire Line
 	4400 4200 4500 4200
 $Comp
-L power:GND #PWR017
+L temp-sensor-rescue:GND-power #PWR017
 U 1 1 60BAD9DE
 P 4800 4800
 F 0 "#PWR017" H 4800 4550 50  0001 C CNN
@@ -520,7 +520,7 @@ $EndComp
 Wire Wire Line
 	4800 4800 4800 4600
 $Comp
-L power:GND #PWR014
+L temp-sensor-rescue:GND-power #PWR014
 U 1 1 60BB6D13
 P 4250 4600
 F 0 "#PWR014" H 4250 4350 50  0001 C CNN
@@ -534,10 +534,6 @@ Wire Wire Line
 	4250 4400 4250 4600
 Wire Wire Line
 	5600 4250 5600 4200
-Wire Wire Line
-	5600 4200 5500 4200
-Wire Wire Line
-	5100 4200 5200 4200
 Wire Wire Line
 	5100 4300 5350 4300
 Wire Wire Line
@@ -557,7 +553,7 @@ Connection ~ 5600 4200
 Wire Wire Line
 	5950 4450 5950 4500
 $Comp
-L power:GND #PWR018
+L temp-sensor-rescue:GND-power #PWR018
 U 1 1 60C467F0
 P 5600 4850
 F 0 "#PWR018" H 5600 4600 50  0001 C CNN
@@ -570,7 +566,7 @@ $EndComp
 Wire Wire Line
 	5600 4750 5600 4850
 $Comp
-L power:+3.3V #PWR021
+L temp-sensor-rescue:+3.3V-power #PWR021
 U 1 1 60C50732
 P 5950 4200
 F 0 "#PWR021" H 5950 4050 50  0001 C CNN
@@ -667,7 +663,7 @@ Wire Wire Line
 Text Notes 400  -1650 0    50   ~ 0
 Removing Capacitance soil moisture measuring for now
 $Comp
-L power:GND #PWR0101
+L temp-sensor-rescue:GND-power #PWR0101
 U 1 1 60946B45
 P 7050 6350
 F 0 "#PWR0101" H 7050 6100 50  0001 C CNN
@@ -712,7 +708,7 @@ io10
 Text Label 8950 4400 0    50   ~ 0
 io10
 $Comp
-L power:+3.3V #PWR01
+L temp-sensor-rescue:+3.3V-power #PWR01
 U 1 1 60A1024F
 P 8750 3400
 F 0 "#PWR01" H 8750 3250 50  0001 C CNN
@@ -741,7 +737,7 @@ Wire Wire Line
 	9800 5700 9400 5700
 Connection ~ 9400 5700
 $Comp
-L power:GND #PWR0103
+L temp-sensor-rescue:GND-power #PWR0103
 U 1 1 609FE1D8
 P 9800 5900
 F 0 "#PWR0103" H 9800 5650 50  0001 C CNN
@@ -767,7 +763,7 @@ SDA
 Text Label 6650 1700 0    50   ~ 0
 SCL
 $Comp
-L power:GND #PWR0104
+L temp-sensor-rescue:GND-power #PWR0104
 U 1 1 60A57121
 P 7450 2150
 F 0 "#PWR0104" H 7450 1900 50  0001 C CNN
@@ -780,7 +776,7 @@ $EndComp
 Wire Wire Line
 	7450 2150 7450 2100
 $Comp
-L power:+3.3V #PWR0105
+L temp-sensor-rescue:+3.3V-power #PWR0105
 U 1 1 60A61176
 P 7450 1300
 F 0 "#PWR0105" H 7450 1150 50  0001 C CNN
@@ -797,7 +793,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 2300 5050 2450
 $Comp
-L power:GND #PWR0106
+L temp-sensor-rescue:GND-power #PWR0106
 U 1 1 60AA10BD
 P 5950 4500
 F 0 "#PWR0106" H 5950 4250 50  0001 C CNN
@@ -812,7 +808,7 @@ Wire Wire Line
 Wire Wire Line
 	7450 1350 8000 1350
 $Comp
-L power:GND #PWR0107
+L temp-sensor-rescue:GND-power #PWR0107
 U 1 1 60B43C2D
 P 8000 1800
 F 0 "#PWR0107" H 8000 1550 50  0001 C CNN
@@ -849,7 +845,7 @@ Wire Wire Line
 Wire Wire Line
 	7450 1350 7450 1500
 $Comp
-L power:+3.3V #PWR0108
+L temp-sensor-rescue:+3.3V-power #PWR0108
 U 1 1 60BCEE9B
 P 5900 1950
 F 0 "#PWR0108" H 5900 1800 50  0001 C CNN
@@ -864,7 +860,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 2000 5900 2000
 $Comp
-L power:GND #PWR0109
+L temp-sensor-rescue:GND-power #PWR0109
 U 1 1 60BE54E3
 P 5900 1450
 F 0 "#PWR0109" H 5900 1200 50  0001 C CNN
@@ -897,7 +893,7 @@ Wire Wire Line
 	3900 6700 3900 6850
 Connection ~ 3900 6850
 $Comp
-L power:+3.3V #PWR0110
+L temp-sensor-rescue:+3.3V-power #PWR0110
 U 1 1 609EE85F
 P 3900 6400
 F 0 "#PWR0110" H 3900 6250 50  0001 C CNN
@@ -914,7 +910,7 @@ Set the module to UART Download mode by pulling IO0 (pulled up by default) and I
 Text Label 4950 6850 2    50   ~ 0
 Boot_Option
 $Comp
-L power:GND #PWR0111
+L temp-sensor-rescue:GND-power #PWR0111
 U 1 1 609D94A2
 P 4450 7350
 F 0 "#PWR0111" H 4450 7100 50  0001 C CNN
@@ -956,6 +952,27 @@ Wire Wire Line
 Connection ~ 7450 2150
 Text Notes -2500 350  0    50   ~ 0
 USB Micro B might need to be IP rated
+Wire Wire Line
+	1450 6850 1750 6850
+Wire Wire Line
+	2250 7250 2250 7200
+Wire Wire Line
+	2250 6900 2250 6850
+$Comp
+L temp-sensor-rescue:GND-power #PWR0102
+U 1 1 6098B7A2
+P 2250 7250
+F 0 "#PWR0102" H 2250 7000 50  0001 C CNN
+F 1 "GND" H 2255 7077 50  0000 C CNN
+F 2 "" H 2250 7250 50  0001 C CNN
+F 3 "" H 2250 7250 50  0001 C CNN
+	1    2250 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6850 1950 6850
+Text Label 2250 6850 2    50   ~ 0
+3v3
 $Comp
 L ESP32-C3-MINI-1:ESP32-C3-MINI-1 IC1
 U 1 1 6081109C
@@ -975,7 +992,7 @@ F 10 "ESP32-PICO-MINI-02" H 2150 1050 50  0001 C CNN "Alternate Part Number 1"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J4
+L temp-sensor-rescue:USB_B_Micro-Connector J4
 U 1 1 608282D8
 P 8000 5550
 F 0 "J4" H 8057 6017 50  0000 C CNN
@@ -991,7 +1008,7 @@ F 8 "$0.88/15,819" H 8000 5550 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Male J2
+L temp-sensor-rescue:Conn_01x04_Male-Connector J2
 U 1 1 6086D9A4
 P 6400 5150
 F 0 "J2" H 6508 5431 50  0000 C CNN
@@ -1002,7 +1019,7 @@ F 3 "~" H 6400 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C5
+L temp-sensor-rescue:C_Small-Device C5
 U 1 1 6088F66D
 P 1450 6950
 F 0 "C5" H 1542 6996 50  0000 L CNN
@@ -1019,7 +1036,7 @@ F 9 "$0.10/110000" H 1450 6950 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L temp-sensor-rescue:C_Small-Device C3
 U 1 1 60890C11
 P 1150 6950
 F 0 "C3" H 1242 6996 50  0000 L CNN
@@ -1035,7 +1052,7 @@ F 8 "$0.13/104348" H 1150 6950 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L L2
+L Device:L_Core_Ferrite_Small L2
 U 1 1 608A2A34
 P 5350 4200
 F 0 "L2" V 5169 4200 50  0000 C CNN
@@ -1052,7 +1069,7 @@ F 9 "2" H 5350 4200 50  0001 C CNN "Height"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x05_Male J3
+L temp-sensor-rescue:Conn_01x05_Male-Connector J3
 U 1 1 608AA734
 P 6450 6150
 F 0 "J3" H 6550 6550 50  0000 C CNN
@@ -1063,7 +1080,7 @@ F 3 "~" H 6450 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C4
+L temp-sensor-rescue:C_Small-Device C4
 U 1 1 609271A1
 P 3600 7200
 F 0 "C4" V 3829 7200 50  0000 C CNN
@@ -1080,7 +1097,7 @@ F 9 "$0.10/110000" H 3600 7200 50  0001 C CNN "Mouser Price/Stock"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small_US R7
+L temp-sensor-rescue:R_Small_US-Device R7
 U 1 1 60927BBC
 P 3900 6600
 F 0 "R7" V 3695 6600 50  0000 C CNN
@@ -1096,7 +1113,7 @@ F 8 "$0.10/256000" H 3900 6600 50  0001 C CNN "Mouser Price/Stock"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:L_Core_Ferrite_Small L1
+L temp-sensor-rescue:L_Core_Ferrite_Small-Device L1
 U 1 1 6096912D
 P 1850 6850
 F 0 "L1" V 2055 6850 50  0000 C CNN
@@ -1111,7 +1128,7 @@ F 7 "810-MPZ1608Y101BTA00" H 1850 6850 50  0001 C CNN "Mouser Part Number"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Sensor:BME280 U3
+L temp-sensor-rescue:BME280-Sensor U3
 U 1 1 608272E9
 P 4950 1700
 F 0 "U3" H 4521 1746 50  0000 R CNN
@@ -1127,7 +1144,7 @@ F 8 "$5.78/0" H 4950 1700 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:TLV62569DBV U2
+L temp-sensor-rescue:TLV62569DBV-Regulator_Switching U2
 U 1 1 60B8C567
 P 4800 4300
 F 0 "U2" H 4800 4667 50  0000 C CNN
@@ -1145,7 +1162,7 @@ F 10 "MP2128DT-LF-Z" H 4800 4300 50  0001 C CNN "Alternate Part Number 1"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C8
+L temp-sensor-rescue:C_Small-Device C8
 U 1 1 60BA5250
 P 4250 4300
 F 0 "C8" H 4342 4346 50  0000 L CNN
@@ -1161,7 +1178,7 @@ F 8 "$0.16/1200" H 4250 4300 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C9
+L temp-sensor-rescue:C_Small-Device C9
 U 1 1 60BBF67B
 P 5950 4350
 F 0 "C9" H 6042 4396 50  0000 L CNN
@@ -1177,7 +1194,7 @@ F 8 "$0.13/104348" H 5950 4350 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R8
+L temp-sensor-rescue:R_Small_US-Device R8
 U 1 1 60BC0C5A
 P 5600 4350
 F 0 "R8" V 5395 4350 50  0000 C CNN
@@ -1193,7 +1210,7 @@ F 8 "$0.10/100000" H 5600 4350 50  0001 C CNN "Mouser Price/Stock"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R9
+L temp-sensor-rescue:R_Small_US-Device R9
 U 1 1 60BC2DBD
 P 5600 4650
 F 0 "R9" H 5532 4604 50  0000 R CNN
@@ -1209,7 +1226,7 @@ F 8 "$0.10/100000" H 5600 4650 50  0001 C CNN "Mouser Price/Stock"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R12
+L temp-sensor-rescue:R_Small_US-Device R12
 U 1 1 60C9F461
 P 9700 5100
 F 0 "R12" V 9905 5100 50  0000 C CNN
@@ -1225,7 +1242,7 @@ F 8 "$0.10/100000" H 9700 5100 50  0001 C CNN "Mouser Price/Stock"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small_US R10
+L temp-sensor-rescue:R_Small_US-Device R10
 U 1 1 60D1664F
 P 9400 5400
 F 0 "R10" H 9468 5446 50  0000 L CNN
@@ -1241,7 +1258,7 @@ F 8 "$0.10/78000" H 9400 5400 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R11
+L temp-sensor-rescue:R_Small_US-Device R11
 U 1 1 60D182A2
 P 9400 6200
 F 0 "R11" H 9468 6246 50  0000 L CNN
@@ -1257,7 +1274,7 @@ F 8 "$0.10/78000" H 9400 6200 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power_Protection:SN65220 U5
+L temp-sensor-rescue:SN65220-Power_Protection U5
 U 1 1 60C545EF
 P 8950 5800
 F 0 "U5" V 8996 5888 50  0000 L CNN
@@ -1273,7 +1290,7 @@ F 8 "$1.03/12.700" H 8950 5800 50  0001 C CNN "Mouser Price/Stock"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R13
+L temp-sensor-rescue:R_Small_US-Device R13
 U 1 1 60CC5D3E
 P 9700 6500
 F 0 "R13" V 9905 6500 50  0000 C CNN
@@ -1289,7 +1306,7 @@ F 8 "$0.10/100000" H 9700 6500 50  0001 C CNN "Mouser Price/Stock"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Sensor_Humidity:Si7020-A20 U4
+L temp-sensor-rescue:Si7020-A20-Sensor_Humidity U4
 U 1 1 60DEE713
 P 9200 1850
 F 0 "U4" H 9644 1896 50  0000 L CNN
@@ -1309,7 +1326,7 @@ F 12 "AHT20" H 9200 1850 50  0001 C CNN "Alternate Part Number 1"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R1
+L temp-sensor-rescue:R_Small_US-Device R1
 U 1 1 609ADAE9
 P 1500 4050
 F 0 "R1" V 1295 4050 50  0000 C CNN
@@ -1325,7 +1342,7 @@ F 8 "$0.10/19000" H 1500 4050 50  0001 C CNN "Mouser Price/Stock"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED_RGB D2
+L temp-sensor-rescue:LED_RGB-Device D2
 U 1 1 6096940A
 P 8750 3700
 F 0 "D2" V 8796 3370 50  0000 R CNN
@@ -1342,7 +1359,7 @@ F 9 "1.33" H 8750 3700 50  0001 C CNN "Height"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small_US R2
+L temp-sensor-rescue:R_Small_US-Device R2
 U 1 1 6096A5B0
 P 1900 3950
 F 0 "R2" V 1695 3950 50  0000 C CNN
@@ -1358,7 +1375,7 @@ F 8 "$0.10/19000" H 1900 3950 50  0001 C CNN "Mouser Price/Stock"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R3
+L temp-sensor-rescue:R_Small_US-Device R3
 U 1 1 609DAEED
 P 8550 4100
 F 0 "R3" V 8345 4100 50  0000 C CNN
@@ -1374,7 +1391,7 @@ F 8 "$0.10/78000" H 8550 4100 50  0001 C CNN "Mouser Price/Stock"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R14
+L temp-sensor-rescue:R_Small_US-Device R14
 U 1 1 609DD244
 P 8750 4250
 F 0 "R14" V 8545 4250 50  0000 C CNN
@@ -1390,7 +1407,7 @@ F 8 "$0.10/2,633,578" H 8750 4250 50  0001 C CNN "Mouser Price/Stock"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R15
+L temp-sensor-rescue:R_Small_US-Device R15
 U 1 1 609DDBCB
 P 8950 4100
 F 0 "R15" V 8745 4100 50  0000 C CNN
@@ -1422,7 +1439,7 @@ F 8 "$2.44/6,227 " H 7350 1800 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW1
+L temp-sensor-rescue:SW_Push-Switch SW1
 U 1 1 60AB27C5
 P 3550 6850
 F 0 "SW1" H 3550 7135 50  0000 C CNN
@@ -1438,7 +1455,7 @@ F 8 "$0.39/10000" H 3550 6850 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C1
+L temp-sensor-rescue:C_Small-Device C1
 U 1 1 60B376BE
 P 8000 1650
 F 0 "C1" H 8092 1696 50  0000 L CNN
@@ -1455,7 +1472,7 @@ F 9 "$0.10/110000" H 8000 1650 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R17
+L temp-sensor-rescue:R_Small_US-Device R17
 U 1 1 60B4E9BA
 P 6950 1500
 F 0 "R17" V 6745 1500 50  0000 C CNN
@@ -1471,7 +1488,7 @@ F 8 "$0.10/256000" H 6950 1500 50  0001 C CNN "Mouser Price/Stock"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R16
+L temp-sensor-rescue:R_Small_US-Device R16
 U 1 1 60B9115C
 P 6500 1500
 F 0 "R16" V 6295 1500 50  0000 C CNN
@@ -1487,7 +1504,7 @@ F 8 "$0.10/256000" H 6500 1500 50  0001 C CNN "Mouser Price/Stock"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C2
+L temp-sensor-rescue:C_Small-Device C2
 U 1 1 609D5B16
 P 4450 7150
 F 0 "C2" H 4542 7196 50  0000 L CNN
@@ -1504,7 +1521,7 @@ F 9 "$0.10/110000" H 4450 7150 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R18
+L temp-sensor-rescue:R_Small_US-Device R18
 U 1 1 609FB05C
 P 4200 6850
 F 0 "R18" V 3995 6850 50  0000 C CNN
@@ -1519,10 +1536,8 @@ F 8 "$0.10/375000" H 4200 6850 50  0001 C CNN "Mouser Price/Stock"
 	1    4200 6850
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1450 6850 1750 6850
 $Comp
-L Device:D_TVS D1
+L temp-sensor-rescue:D_TVS-Device D1
 U 1 1 6098B074
 P 2250 7050
 F 0 "D1" V 2204 7130 50  0000 L CNN
@@ -1538,22 +1553,7 @@ F 8 "$0.37/852" H 2250 7050 50  0001 C CNN "Mouser Price/Stock"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2250 7250 2250 7200
+	5100 4200 5250 4200
 Wire Wire Line
-	2250 6900 2250 6850
-$Comp
-L power:GND #PWR0102
-U 1 1 6098B7A2
-P 2250 7250
-F 0 "#PWR0102" H 2250 7000 50  0001 C CNN
-F 1 "GND" H 2255 7077 50  0000 C CNN
-F 2 "" H 2250 7250 50  0001 C CNN
-F 3 "" H 2250 7250 50  0001 C CNN
-	1    2250 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 6850 1950 6850
-Text Label 2250 6850 2    50   ~ 0
-3v3
+	5450 4200 5600 4200
 $EndSCHEMATC
