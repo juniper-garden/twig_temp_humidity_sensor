@@ -1,0 +1,40 @@
+### Module positions - created on 05/15/21 21:09:53 ###
+### Printed by Pcbnew version kicad (5.1.10)-1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                   Package                                                   PosX       PosY       Rot  Side
+C1        0.1u                  C_0603_1608Metric                                      63.2460   -54.1020  180.0000  top
+C2        0.1u                  C_0603_1608Metric                                      82.5500   -56.6420    0.0000  top
+C3        10u                   C_0805_2012Metric                                      59.4360   -46.7360   90.0000  top
+C4        0.1u                  C_0603_1608Metric                                      68.7070   -51.9430    0.0000  top
+C5        0.1u                  C_0603_1608Metric                                      61.9760   -45.0850  180.0000  top
+C8        4.7u                  C_0805_2012Metric                                      95.5040   -56.2610    0.0000  top
+C9        10u                   C_0805_2012Metric                                      86.1060   -58.4200   90.0000  top
+D1        3.3v_TVS              D_SOD-323_HandSoldering                                69.2150   -46.1210   90.0000  top
+D2        LED_RGB               LED_Cree-PLCC6_4.7x1.5mm                               54.6100   -50.8000  270.0000  top
+IC1       ESP32-C3-MINI-1       ESP32C3MINI1                                           76.7080   -47.4980    0.0000  top
+J4        USB_B_Micro           USB_Micro-B_Molex-105017-0001                          98.4000   -50.8000   90.0000  top
+L1        L_Core_Ferrite_Small  L_0603_1608Metric                                      67.4370   -45.8470  270.0000  top
+L2        2.2uH                 L_Taiyo-Yuden_MD-4040                                  89.4080   -60.0710  180.0000  top
+R1        499R                  R_0603_1608Metric                                      84.8360   -48.2600    0.0000  top
+R2        499R                  R_0603_1608Metric                                      84.8360   -49.7840    0.0000  top
+R3        200                   R_0603_1608Metric                                      56.5150   -46.6090  180.0000  top
+R7        10K                   R_0603_1608Metric                                      67.1830   -53.4670  180.0000  top
+R8        680k                  R_0603_1608Metric                                      83.8200   -61.2140    0.0000  top
+R9        150K                  R_0603_1608Metric                                      83.0580   -58.9280  270.0000  top
+R10       15K                   R_0603_1608Metric                                      91.0590   -50.6730   90.0000  top
+R11       15K                   R_0603_1608Metric                                      91.0590   -54.2290   90.0000  top
+R12       27                    R_0603_1608Metric                                      87.8840   -49.7840  180.0000  top
+R13       27                    R_0603_1608Metric                                      87.8840   -55.1180  180.0000  top
+R14       100                   R_0603_1608Metric                                      56.7690   -48.8950  270.0000  top
+R15       100                   R_0603_1608Metric                                      56.7690   -51.9430   90.0000  top
+R16       10K                   R_0603_1608Metric                                      64.2620   -45.5930   90.0000  top
+R17       10K                   R_0603_1608Metric                                      65.7860   -45.5930   90.0000  top
+R18       2.2K                  R_0603_1608Metric                                      69.4690   -54.2290  270.0000  top
+SW1       SW_Push               SW_Push_1P1T_NO_CK_KSC6xxJ                             63.6270   -58.2930  180.0000  top
+U1        SHTC3                 Sensirion_DFN-4-1EP_2x2mm_P1mm_EP0.7x1.6mm             68.3260   -49.6570   90.0000  top
+U2        TLV62569DBV           SOT-23-5                                               93.5990   -59.1820    0.0000  top
+U3        BME280                Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering    65.5320   -49.6570    0.0000  top
+U4        Si7020-A20            DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm                       62.2300   -49.7840  270.0000  top
+U5        SN65220               SOT-23-6                                               88.3920   -52.4510    0.0000  top
+## End

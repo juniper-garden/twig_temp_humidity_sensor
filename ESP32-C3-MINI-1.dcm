@@ -11,10 +11,28 @@ D Smallsized module with onboard PCB antenna
 F https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf
 $ENDCMP
 #
+$CMP LED_RGB
+D RGB LED, 6 pin package
+K LED RGB diode
+F ~
+$ENDCMP
+#
 $CMP LM73-1
 D 11 to 14 Bit digital temperature sensor with 2 wire interface, SOT23-6
 K digital temperature sensor
 F http://www.ti.com/lit/ds/symlink/lm73.pdf
+$ENDCMP
+#
+$CMP SHTC1
+D Humidity and Temperature Sensor, +/-3%RH, +/-0.3degC, I2C, 1.62-1.98V, DFN-4
+K Sensirion environment environmental measurement digital
+F https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/0_Datasheets/Humidity/Sensirion_Humidity_Sensors_SHTC1_Datasheet.pdf
+$ENDCMP
+#
+$CMP SHTC3
+D Humidity and Temperature Sensor, +/-2%RH, +/-0.2degC, I2C, 1.62-3.6V, DFN-4
+K Sensirion environment environmental measurement digital
+F https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/0_Datasheets/Humidity/Sensirion_Humidity_Sensors_SHTC3_Datasheet.pdf
 $ENDCMP
 #
 #End Doc Library

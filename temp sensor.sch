@@ -13,28 +13,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L ESP32-C3-MINI-1:ESP32-C3-MINI-1 IC?
-U 1 1 6081109C
-P 2150 1050
-F 0 "IC?" H 2800 1315 50  0000 C CNN
-F 1 "ESP32-C3-MINI-1" H 2800 1224 50  0000 C CNN
-F 2 "ESP32C3MINI1" H 3300 1150 50  0001 L CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf" H 3300 1050 50  0001 L CNN
-F 4 "Smallsized module with onboard PCB antenna" H 3300 950 50  0001 L CNN "Description"
-F 5 "2.55" H 3300 850 50  0001 L CNN "Height"
-F 6 "Espressif Systems" H 3300 750 50  0001 L CNN "Manufacturer_Name"
-F 7 "ESP32-C3-MINI-1-H4" H 3300 650 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "356-ESP32-C3-MINI1H4" H 3300 550 50  0001 L CNN "Mouser Part Number"
-F 9 "$1.90" H 3300 450 50  0001 L CNN "Mouser Price/Stock"
-	1    2150 1050
-	1    0    0    -1  
-$EndComp
 NoConn ~ 3450 1050
 NoConn ~ 3450 1150
 NoConn ~ 3450 1250
 NoConn ~ 3450 1350
-NoConn ~ 2150 1350
+NoConn ~ 1800 1350
 NoConn ~ 2150 3750
 NoConn ~ 2150 3850
 NoConn ~ 2150 2450
@@ -45,10 +28,10 @@ NoConn ~ 2150 2650
 NoConn ~ 2150 3350
 NoConn ~ 2150 3450
 $Comp
-L power:GND #PWR?
+L temp-sensor-rescue:GND-power #PWR012
 U 1 1 6081521F
 P 3700 4400
-F 0 "#PWR?" H 3700 4150 50  0001 C CNN
+F 0 "#PWR012" H 3700 4150 50  0001 C CNN
 F 1 "GND" H 3705 4227 50  0000 C CNN
 F 2 "" H 3700 4400 50  0001 C CNN
 F 3 "" H 3700 4400 50  0001 C CNN
@@ -185,10 +168,10 @@ Connection ~ 3700 3950
 Wire Wire Line
 	3700 3950 3700 3850
 $Comp
-L power:GND #PWR?
+L temp-sensor-rescue:GND-power #PWR06
 U 1 1 6081CA9A
 P 950 4400
-F 0 "#PWR?" H 950 4150 50  0001 C CNN
+F 0 "#PWR06" H 950 4150 50  0001 C CNN
 F 1 "GND" H 955 4227 50  0000 C CNN
 F 2 "" H 950 4400 50  0001 C CNN
 F 3 "" H 950 4400 50  0001 C CNN
@@ -215,1057 +198,1448 @@ Connection ~ 950  2350
 Wire Wire Line
 	950  2350 950  2050
 $Comp
-L power:+3.3V #PWR?
+L temp-sensor-rescue:+3.3V-power #PWR04
 U 1 1 60823B29
-P 850 6300
-F 0 "#PWR?" H 850 6150 50  0001 C CNN
-F 1 "+3.3V" H 865 6473 50  0000 C CNN
-F 2 "" H 850 6300 50  0001 C CNN
-F 3 "" H 850 6300 50  0001 C CNN
-	1    850  6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_B_Micro J?
-U 1 1 608282D8
-P 9100 5750
-F 0 "J?" H 9157 6217 50  0000 C CNN
-F 1 "USB_B_Micro" H 9157 6126 50  0000 C CNN
-F 2 "" H 9250 5700 50  0001 C CNN
-F 3 "~" H 9250 5700 50  0001 C CNN
-	1    9100 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 60828B67
-P 1150 7350
-F 0 "R?" H 1218 7396 50  0000 L CNN
-F 1 "510K" H 1218 7305 50  0000 L CNN
-F 2 "" H 1150 7350 50  0001 C CNN
-F 3 "~" H 1150 7350 50  0001 C CNN
-	1    1150 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 60829A42
-P 1550 7350
-F 0 "C?" H 1642 7396 50  0000 L CNN
-F 1 "1u" H 1642 7305 50  0000 L CNN
-F 2 "" H 1550 7350 50  0001 C CNN
-F 3 "~" H 1550 7350 50  0001 C CNN
-	1    1550 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D?
-U 1 1 6082A1A0
-P 1850 7050
-F 0 "D?" H 1850 7267 50  0000 C CNN
-F 1 "D" H 1850 7176 50  0000 C CNN
-F 2 "" H 1850 7050 50  0001 C CNN
-F 3 "~" H 1850 7050 50  0001 C CNN
-	1    1850 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 6082BA46
-P 2400 7050
-F 0 "R?" V 2195 7050 50  0000 C CNN
-F 1 "10K" V 2286 7050 50  0000 C CNN
-F 2 "" H 2400 7050 50  0001 C CNN
-F 3 "~" H 2400 7050 50  0001 C CNN
-	1    2400 7050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 6082CC53
-P 2150 7350
-F 0 "C?" H 2242 7396 50  0000 L CNN
-F 1 "sensor track" H 2242 7305 50  0000 L CNN
-F 2 "" H 2150 7350 50  0001 C CNN
-F 3 "~" H 2150 7350 50  0001 C CNN
-	1    2150 7350
+P 1150 6850
+F 0 "#PWR04" H 1150 6700 50  0001 C CNN
+F 1 "+3.3V" H 1165 7023 50  0000 C CNN
+F 2 "" H 1150 6850 50  0001 C CNN
+F 3 "" H 1150 6850 50  0001 C CNN
+	1    1150 6850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 7050 2150 7050
-Wire Wire Line
-	2150 7050 2150 7250
-Connection ~ 2150 7050
-Wire Wire Line
-	2150 7050 2300 7050
-Wire Wire Line
-	1550 7250 1550 7050
-Wire Wire Line
-	1550 7050 1700 7050
-Wire Wire Line
-	1150 7250 1150 7050
-Wire Wire Line
-	1150 7050 1550 7050
-Connection ~ 1550 7050
-Wire Wire Line
-	1150 7450 1150 7550
-Wire Wire Line
-	1150 7550 1550 7550
-Wire Wire Line
-	1550 7550 1550 7450
-Wire Wire Line
-	1550 7550 2150 7550
-Wire Wire Line
-	2150 7550 2150 7450
-Connection ~ 1550 7550
+	1150 6850 1450 6850
 $Comp
-L power:GND #PWR?
-U 1 1 6083669F
-P 1550 7550
-F 0 "#PWR?" H 1550 7300 50  0001 C CNN
-F 1 "GND" H 1555 7377 50  0000 C CNN
-F 2 "" H 1550 7550 50  0001 C CNN
-F 3 "" H 1550 7550 50  0001 C CNN
-	1    1550 7550
-	1    0    0    -1  
-$EndComp
-Text Notes 2500 6950 0    50   ~ 0
-CLK_OUT
-Text Label 2500 7050 0    50   ~ 0
-CLK_OUT
-Text Label 1150 7050 0    50   ~ 0
-Capacitance_V
-Wire Wire Line
-	850  6300 1150 6300
-Text Label 1800 1550 0    50   ~ 0
-CLK_OUT
-Text Label 1000 1450 0    50   ~ 0
-Capacitance_V
-Wire Wire Line
-	1800 1550 2150 1550
-Wire Wire Line
-	1550 1450 1000 1450
-$Comp
-L power:+3.3V #PWR?
+L temp-sensor-rescue:+3.3V-power #PWR020
 U 1 1 6085A455
-P 5950 800
-F 0 "#PWR?" H 5950 650 50  0001 C CNN
-F 1 "+3.3V" H 5965 973 50  0000 C CNN
-F 2 "" H 5950 800 50  0001 C CNN
-F 3 "" H 5950 800 50  0001 C CNN
-	1    5950 800 
+P 5050 1000
+F 0 "#PWR020" H 5050 850 50  0001 C CNN
+F 1 "+3.3V" H 5065 1173 50  0000 C CNN
+F 2 "" H 5050 1000 50  0001 C CNN
+F 3 "" H 5050 1000 50  0001 C CNN
+	1    5050 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L temp-sensor-rescue:GND-power #PWR019
 U 1 1 6085DBEF
-P 5750 2400
-F 0 "#PWR?" H 5750 2150 50  0001 C CNN
-F 1 "GND" H 5755 2227 50  0000 C CNN
-F 2 "" H 5750 2400 50  0001 C CNN
-F 3 "" H 5750 2400 50  0001 C CNN
-	1    5750 2400
+P 4850 2600
+F 0 "#PWR019" H 4850 2350 50  0001 C CNN
+F 1 "GND" H 4855 2427 50  0000 C CNN
+F 2 "" H 4850 2600 50  0001 C CNN
+F 3 "" H 4850 2600 50  0001 C CNN
+	1    4850 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 2400 5750 2250
+	4850 2600 4850 2450
 Wire Wire Line
-	5950 2100 5950 2250
-Wire Wire Line
-	5950 2250 5750 2250
-Connection ~ 5750 2250
-Wire Wire Line
-	5750 2250 5750 2100
-Text Label 1650 3650 0    50   ~ 0
+	5050 2450 4850 2450
+Connection ~ 4850 2450
+Text Label 1850 3650 0    50   ~ 0
 USB_D+
-Text Label 1650 3550 0    50   ~ 0
+Text Label 1850 3550 0    50   ~ 0
 USB_D-
-Wire Wire Line
-	1650 3550 2150 3550
-Wire Wire Line
-	2150 3650 1650 3650
-Text Label 1650 3950 0    50   ~ 0
+Text Label 1500 3950 0    50   ~ 0
 RTX0
-Text Label 1650 4050 0    50   ~ 0
+Text Label 1100 4050 0    50   ~ 0
 TDX0
 Wire Wire Line
-	1650 3950 2150 3950
-Wire Wire Line
-	2150 4050 1650 4050
-$Comp
-L Connector:Conn_01x04_Male J?
-U 1 1 6086D9A4
-P 6450 5600
-F 0 "J?" H 6558 5881 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 6558 5790 50  0000 C CNN
-F 2 "" H 6450 5600 50  0001 C CNN
-F 3 "~" H 6450 5600 50  0001 C CNN
-	1    6450 5600
-	1    0    0    -1  
-$EndComp
-Text Label 7150 5700 2    50   ~ 0
+	1500 3950 1700 3950
+Text Label 7100 5250 2    50   ~ 0
 RTX0
-Text Label 7150 5600 2    50   ~ 0
+Text Label 7100 5150 2    50   ~ 0
 TDX0
 Wire Wire Line
-	7150 5700 6650 5700
+	7100 5250 6600 5250
 Wire Wire Line
-	6650 5600 7150 5600
+	6600 5150 7100 5150
 $Comp
-L power:GND #PWR?
+L temp-sensor-rescue:GND-power #PWR023
 U 1 1 6087640E
-P 7050 5800
-F 0 "#PWR?" H 7050 5550 50  0001 C CNN
-F 1 "GND" H 7055 5627 50  0000 C CNN
-F 2 "" H 7050 5800 50  0001 C CNN
-F 3 "" H 7050 5800 50  0001 C CNN
-	1    7050 5800
+P 7000 5350
+F 0 "#PWR023" H 7000 5100 50  0001 C CNN
+F 1 "GND" H 7005 5177 50  0000 C CNN
+F 2 "" H 7000 5350 50  0001 C CNN
+F 3 "" H 7000 5350 50  0001 C CNN
+	1    7000 5350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 5800 6650 5800
+	7000 5350 6600 5350
 $Comp
-L power:+3.3V #PWR?
+L temp-sensor-rescue:+3.3V-power #PWR022
 U 1 1 60878F6C
-P 7050 5500
-F 0 "#PWR?" H 7050 5350 50  0001 C CNN
-F 1 "+3.3V" H 7065 5673 50  0000 C CNN
-F 2 "" H 7050 5500 50  0001 C CNN
-F 3 "" H 7050 5500 50  0001 C CNN
-	1    7050 5500
+P 7000 5050
+F 0 "#PWR022" H 7000 4900 50  0001 C CNN
+F 1 "+3.3V" H 7015 5223 50  0000 C CNN
+F 2 "" H 7000 5050 50  0001 C CNN
+F 3 "" H 7000 5050 50  0001 C CNN
+	1    7000 5050
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 5500 6650 5500
-Text Label 9900 5750 2    50   ~ 0
+	7000 5050 6600 5050
+Text Label 10150 5100 2    50   ~ 0
 USB_D+
-Text Label 9900 5850 2    50   ~ 0
-USB_D-
 Wire Wire Line
-	9900 5850 9400 5850
-Wire Wire Line
-	9400 5750 9900 5750
-Text Label 1650 3250 0    50   ~ 0
+	9800 5100 10150 5100
+Text Label 1700 3250 0    50   ~ 0
 Boot_Option
-$Comp
-L Device:C_Small C?
-U 1 1 6088F66D
-P 1150 6400
-F 0 "C?" H 1242 6446 50  0000 L CNN
-F 1 "0.1u" H 1242 6355 50  0000 L CNN
-F 2 "" H 1150 6400 50  0001 C CNN
-F 3 "~" H 1150 6400 50  0001 C CNN
-	1    1150 6400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 60890C11
-P 850 6400
-F 0 "C?" H 942 6446 50  0000 L CNN
-F 1 "10u" H 942 6355 50  0000 L CNN
-F 2 "" H 850 6400 50  0001 C CNN
-F 3 "~" H 850 6400 50  0001 C CNN
-	1    850  6400
-	1    0    0    -1  
-$EndComp
-Connection ~ 850  6300
-Connection ~ 1150 6300
-Wire Wire Line
-	1150 6300 1450 6300
-Text Notes 10050 5500 0    50   ~ 0
+Connection ~ 1150 6850
+Connection ~ 1450 6850
+Text Notes 9150 4850 0    50   ~ 0
 ESD 
-Text Notes 1750 2150 0    50   ~ 0
+Text Notes 1350 2150 0    50   ~ 0
 RTC\n
-Text Notes 1700 2700 0    50   ~ 0
+Text Notes 1200 2750 0    50   ~ 0
 JTAG\n
-Text Label 1700 2750 0    50   ~ 0
+Text Label 2000 2750 0    50   ~ 0
 TMS
-Text Label 1700 2850 0    50   ~ 0
+Text Label 2000 2850 0    50   ~ 0
 TDI
-Text Label 1700 2950 0    50   ~ 0
+Text Label 2000 2950 0    50   ~ 0
 TCK
-Text Label 1700 3050 0    50   ~ 0
+Text Label 2000 3050 0    50   ~ 0
 TDO
-Wire Wire Line
-	1700 2750 2150 2750
-Wire Wire Line
-	1700 2850 2150 2850
-Wire Wire Line
-	1700 2950 2150 2950
-Wire Wire Line
-	1700 3050 2150 3050
-$Comp
-L Device:L L?
-U 1 1 608A2A34
-P 5400 4650
-F 0 "L?" V 5219 4650 50  0000 C CNN
-F 1 "2.2uH" V 5310 4650 50  0000 C CNN
-F 2 "" H 5400 4650 50  0001 C CNN
-F 3 "~" H 5400 4650 50  0001 C CNN
-	1    5400 4650
-	0    1    1    0   
-$EndComp
-Text Notes 4400 4150 0    50   ~ 0
+Text Notes 4350 3700 0    50   ~ 0
 switching power supply\n
 Wire Wire Line
-	5950 800  5950 850 
-Text Notes 8350 5450 2    50   ~ 0
+	5050 1000 5050 1050
+Text Notes 6400 5700 2    50   ~ 0
 JTAG\n
-Text Label 8350 5500 2    50   ~ 0
+Text Label 7100 5950 2    50   ~ 0
 TMS
-Text Label 8350 5600 2    50   ~ 0
+Text Label 7100 6050 2    50   ~ 0
 TDI
-Text Label 8350 5700 2    50   ~ 0
+Text Label 7100 6150 2    50   ~ 0
 TCK
-Text Label 8350 5800 2    50   ~ 0
+Text Label 7100 6250 2    50   ~ 0
 TDO
 Wire Wire Line
-	8350 5500 7900 5500
+	7100 5950 6650 5950
 Wire Wire Line
-	8350 5600 7900 5600
+	7100 6050 6650 6050
 Wire Wire Line
-	8350 5700 7900 5700
+	7100 6150 6650 6150
 Wire Wire Line
-	8350 5800 7900 5800
+	7100 6250 6650 6250
 $Comp
-L Connector:Conn_01x04_Male J?
-U 1 1 608AA734
-P 7700 5600
-F 0 "J?" H 7808 5881 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 7808 5790 50  0000 C CNN
-F 2 "" H 7700 5600 50  0001 C CNN
-F 3 "~" H 7700 5600 50  0001 C CNN
-	1    7700 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
+L temp-sensor-rescue:+5V-power #PWR027
 U 1 1 608B3119
-P 9600 5450
-F 0 "#PWR?" H 9600 5300 50  0001 C CNN
-F 1 "+5V" H 9615 5623 50  0000 C CNN
-F 2 "" H 9600 5450 50  0001 C CNN
-F 3 "" H 9600 5450 50  0001 C CNN
-	1    9600 5450
+P 8400 5250
+F 0 "#PWR027" H 8400 5100 50  0001 C CNN
+F 1 "+5V" H 8415 5423 50  0000 C CNN
+F 2 "" H 8400 5250 50  0001 C CNN
+F 3 "" H 8400 5250 50  0001 C CNN
+	1    8400 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 5550 9600 5550
+	8300 5350 8400 5350
 Wire Wire Line
-	9600 5550 9600 5450
+	8400 5350 8400 5250
 $Comp
-L power:GND #PWR?
+L temp-sensor-rescue:GND-power #PWR025
 U 1 1 608BB683
-P 9100 6300
-F 0 "#PWR?" H 9100 6050 50  0001 C CNN
-F 1 "GND" H 9105 6127 50  0000 C CNN
-F 2 "" H 9100 6300 50  0001 C CNN
-F 3 "" H 9100 6300 50  0001 C CNN
-	1    9100 6300
+P 8000 6100
+F 0 "#PWR025" H 8000 5850 50  0001 C CNN
+F 1 "GND" H 8005 5927 50  0000 C CNN
+F 2 "" H 8000 6100 50  0001 C CNN
+F 3 "" H 8000 6100 50  0001 C CNN
+	1    8000 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 6300 9100 6200
+	8000 6100 8000 6000
 Wire Wire Line
-	9000 6150 9000 6200
+	7900 5950 7900 6000
 Wire Wire Line
-	9000 6200 9100 6200
-Connection ~ 9100 6200
+	7900 6000 8000 6000
+Connection ~ 8000 6000
 Wire Wire Line
-	9100 6200 9100 6150
-$Comp
-L Device:C_Small C?
-U 1 1 608C55BD
-P 3000 5450
-F 0 "C?" H 3092 5496 50  0000 L CNN
-F 1 "C_Small" H 3092 5405 50  0000 L CNN
-F 2 "" H 3000 5450 50  0001 C CNN
-F 3 "~" H 3000 5450 50  0001 C CNN
-	1    3000 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 608C596A
-P 2600 5450
-F 0 "C?" H 2692 5496 50  0000 L CNN
-F 1 "C_Small" H 2692 5405 50  0000 L CNN
-F 2 "" H 2600 5450 50  0001 C CNN
-F 3 "~" H 2600 5450 50  0001 C CNN
-	1    2600 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Crystal Y?
-U 1 1 608C60A3
-P 2800 5150
-F 0 "Y?" H 2800 5418 50  0000 C CNN
-F 1 "Crystal" H 2800 5327 50  0000 C CNN
-F 2 "" H 2800 5150 50  0001 C CNN
-F 3 "~" H 2800 5150 50  0001 C CNN
-	1    2800 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 5350 2600 5150
-Wire Wire Line
-	2600 5150 2650 5150
-Wire Wire Line
-	2950 5150 3000 5150
-Wire Wire Line
-	3000 5150 3000 5350
-$Comp
-L power:GND #PWR?
-U 1 1 608CDCBD
-P 2600 5650
-F 0 "#PWR?" H 2600 5400 50  0001 C CNN
-F 1 "GND" H 2605 5477 50  0000 C CNN
-F 2 "" H 2600 5650 50  0001 C CNN
-F 3 "" H 2600 5650 50  0001 C CNN
-	1    2600 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 608CF0A7
-P 3000 5650
-F 0 "#PWR?" H 3000 5400 50  0001 C CNN
-F 1 "GND" H 3005 5477 50  0000 C CNN
-F 2 "" H 3000 5650 50  0001 C CNN
-F 3 "" H 3000 5650 50  0001 C CNN
-	1    3000 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 5550 2600 5650
-Wire Wire Line
-	3000 5550 3000 5650
-Text Notes 6600 700  0    50   ~ 0
+	8000 6000 8000 5950
+Text Notes 8800 850  0    50   ~ 0
 AHT20\n
-Text Notes 6600 800  0    50   ~ 0
+Text Notes 8800 950  0    50   ~ 0
 ASAIR\n
-$Comp
-L ESP32-C3-MINI-1:AHT20 U?
-U 1 1 608ECA8E
-P 7850 1450
-F 0 "U?" H 7850 2031 50  0000 C CNN
-F 1 "AHT20" H 7850 1940 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8300 1800 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm73.pdf" H 7450 1900 50  0001 C CNN
-	1    7850 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensor:BME680 U?
-U 1 1 608EE2A6
-P 7700 3400
-F 0 "U?" H 7271 3446 50  0000 R CNN
-F 1 "BME680" H 7271 3355 50  0000 R CNN
-F 2 "Package_LGA:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering" H 9150 2950 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf" H 7700 3200 50  0001 C CNN
-	1    7700 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensor_Humidity:HDC1080 U?
-U 1 1 608EF4EC
-P 9550 1150
-F 0 "U?" H 9207 1196 50  0000 R CNN
-F 1 "HDC1080" H 9207 1105 50  0000 R CNN
-F 2 "Package_SON:Texas_PWSON-N6" H 9500 900 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/hdc1080.pdf" H 9150 1400 50  0001 C CNN
-	1    9550 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensor_Pressure:MS5611-01BA U?
-U 1 1 608EFDAE
-P 9450 3200
-F 0 "U?" H 9780 3246 50  0000 L CNN
-F 1 "MS5611-01BA" H 9780 3155 50  0000 L CNN
-F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 9450 3200 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English" H 9450 3200 50  0001 C CNN
-	1    9450 3200
-	1    0    0    -1  
-$EndComp
 Text Label 2000 2150 0    50   ~ 0
 io0
 Text Label 2000 2250 0    50   ~ 0
 io1
-Wire Wire Line
-	2000 2150 2150 2150
-Wire Wire Line
-	2000 2250 2150 2250
-Text Label 2450 5150 0    50   ~ 0
-io0
-Text Label 3150 5150 2    50   ~ 0
-io1
-Wire Wire Line
-	2450 5150 2600 5150
-Wire Wire Line
-	3150 5150 3000 5150
-Connection ~ 2600 5150
-Connection ~ 3000 5150
 $Comp
-L Device:R_Small_US R?
-U 1 1 60909F25
-P 1550 1550
-F 0 "R?" H 1618 1596 50  0000 L CNN
-F 1 "10K" H 1618 1505 50  0000 L CNN
-F 2 "" H 1550 1550 50  0001 C CNN
-F 3 "~" H 1550 1550 50  0001 C CNN
-	1    1550 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 1450 1550 1450
-$Comp
-L power:GND #PWR?
-U 1 1 609100DE
-P 1550 1750
-F 0 "#PWR?" H 1550 1500 50  0001 C CNN
-F 1 "GND" H 1555 1577 50  0000 C CNN
-F 2 "" H 1550 1750 50  0001 C CNN
-F 3 "" H 1550 1750 50  0001 C CNN
-	1    1550 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 1650 1550 1750
-$Comp
-L power:GND #PWR?
+L temp-sensor-rescue:GND-power #PWR05
 U 1 1 60914CC4
-P 850 6600
-F 0 "#PWR?" H 850 6350 50  0001 C CNN
-F 1 "GND" H 855 6427 50  0000 C CNN
-F 2 "" H 850 6600 50  0001 C CNN
-F 3 "" H 850 6600 50  0001 C CNN
-	1    850  6600
+P 1150 7150
+F 0 "#PWR05" H 1150 6900 50  0001 C CNN
+F 1 "GND" H 1155 6977 50  0000 C CNN
+F 2 "" H 1150 7150 50  0001 C CNN
+F 3 "" H 1150 7150 50  0001 C CNN
+	1    1150 7150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  6500 850  6550
+	1150 7050 1150 7100
 Wire Wire Line
-	1150 6500 1150 6550
+	1450 7050 1450 7100
 Wire Wire Line
-	1150 6550 850  6550
-Connection ~ 850  6550
+	1450 7100 1150 7100
+Connection ~ 1150 7100
 Wire Wire Line
-	850  6550 850  6600
+	1150 7100 1150 7150
 Text Label 1900 1750 0    50   ~ 0
 EN
 Wire Wire Line
 	2150 1750 1900 1750
-Text Label 1850 5500 2    50   ~ 0
+Text Label 4150 7200 2    50   ~ 0
 EN
 Wire Wire Line
-	1600 5500 1850 5500
+	3900 7200 4150 7200
+Wire Wire Line
+	3700 7200 3900 7200
+Wire Wire Line
+	3350 7200 3500 7200
 $Comp
-L Device:C_Small C?
-U 1 1 609271A1
-P 1100 5600
-F 0 "C?" V 1329 5600 50  0000 C CNN
-F 1 "C_Small" V 1238 5600 50  0000 C CNN
-F 2 "" H 1100 5600 50  0001 C CNN
-F 3 "~" H 1100 5600 50  0001 C CNN
-	1    1100 5600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 60927BBC
-P 1500 5500
-F 0 "R?" V 1295 5500 50  0000 C CNN
-F 1 "10K" V 1386 5500 50  0000 C CNN
-F 2 "" H 1500 5500 50  0001 C CNN
-F 3 "~" H 1500 5500 50  0001 C CNN
-	1    1500 5500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1200 5600 1400 5600
-Wire Wire Line
-	1400 5600 1400 5500
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 60942E7E
-P 1150 5000
-F 0 "J?" V 1212 5044 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 1303 5044 50  0000 L CNN
-F 2 "" H 1150 5000 50  0001 C CNN
-F 3 "~" H 1150 5000 50  0001 C CNN
-	1    1150 5000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1150 5200 1150 5350
-Wire Wire Line
-	1150 5350 1400 5350
-Wire Wire Line
-	1400 5350 1400 5500
-Connection ~ 1400 5500
-Wire Wire Line
-	1050 5200 850  5200
-Wire Wire Line
-	850  5200 850  5600
-Wire Wire Line
-	850  5600 1000 5600
-$Comp
-L power:GND #PWR?
+L temp-sensor-rescue:GND-power #PWR03
 U 1 1 6094DF59
-P 850 5700
-F 0 "#PWR?" H 850 5450 50  0001 C CNN
-F 1 "GND" H 855 5527 50  0000 C CNN
-F 2 "" H 850 5700 50  0001 C CNN
-F 3 "" H 850 5700 50  0001 C CNN
-	1    850  5700
+P 3350 7300
+F 0 "#PWR03" H 3350 7050 50  0001 C CNN
+F 1 "GND" H 3355 7127 50  0000 C CNN
+F 2 "" H 3350 7300 50  0001 C CNN
+F 3 "" H 3350 7300 50  0001 C CNN
+	1    3350 7300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  5600 850  5700
-Connection ~ 850  5600
-$Comp
-L Device:L_Core_Ferrite_Small L?
-U 1 1 6096912D
-P 1550 6300
-F 0 "L?" V 1755 6300 50  0000 C CNN
-F 1 "L_Core_Ferrite_Small" V 1664 6300 50  0000 C CNN
-F 2 "" H 1550 6300 50  0001 C CNN
-F 3 "~" H 1550 6300 50  0001 C CNN
-	1    1550 6300
-	0    -1   -1   0   
-$EndComp
+	3350 7200 3350 7300
+Connection ~ 3350 7200
 Text Label 1850 1250 0    50   ~ 0
 3v3
 Wire Wire Line
 	1850 1250 2150 1250
-Text Label 1950 6300 2    50   ~ 0
-3v3
-Wire Wire Line
-	1950 6300 1650 6300
-Text Notes 2550 6550 0    50   ~ 0
+Text Notes 850  5350 0    50   ~ 0
 Strapping pins\nGPIO2\nGPIO8\nGPIO9\nGPIO10\n
-$Comp
-L Device:R_Small_US R?
-U 1 1 60975D2C
-P 1100 3250
-F 0 "R?" H 1168 3296 50  0000 L CNN
-F 1 "10K" H 1168 3205 50  0000 L CNN
-F 2 "" H 1100 3250 50  0001 C CNN
-F 3 "~" H 1100 3250 50  0001 C CNN
-	1    1100 3250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2150 3150 1100 3150
-$Comp
-L power:GND #PWR?
-U 1 1 60975D37
-P 1100 3450
-F 0 "#PWR?" H 1100 3200 50  0001 C CNN
-F 1 "GND" H 1105 3277 50  0000 C CNN
-F 2 "" H 1100 3450 50  0001 C CNN
-F 3 "" H 1100 3450 50  0001 C CNN
-	1    1100 3450
-	1    0    0    -1  
-$EndComp
+	8500 1750 8700 1750
 Wire Wire Line
-	1100 3350 1100 3450
-$Comp
-L Device:R_Small_US R?
-U 1 1 6098F432
-P 1400 3350
-F 0 "R?" H 1468 3396 50  0000 L CNN
-F 1 "10K" H 1468 3305 50  0000 L CNN
-F 2 "" H 1400 3350 50  0001 C CNN
-F 3 "~" H 1400 3350 50  0001 C CNN
-	1    1400 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6098F43C
-P 1400 3550
-F 0 "#PWR?" H 1400 3300 50  0001 C CNN
-F 1 "GND" H 1405 3377 50  0000 C CNN
-F 2 "" H 1400 3550 50  0001 C CNN
-F 3 "" H 1400 3550 50  0001 C CNN
-	1    1400 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 3450 1400 3550
-Wire Wire Line
-	1400 3250 2150 3250
-$Comp
-L Device:R_Small_US R?
-U 1 1 6099C7E5
-P 1400 2650
-F 0 "R?" H 1468 2696 50  0000 L CNN
-F 1 "10K" H 1468 2605 50  0000 L CNN
-F 2 "" H 1400 2650 50  0001 C CNN
-F 3 "~" H 1400 2650 50  0001 C CNN
-	1    1400 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6099C7EF
-P 1400 2850
-F 0 "#PWR?" H 1400 2600 50  0001 C CNN
-F 1 "GND" H 1405 2677 50  0000 C CNN
-F 2 "" H 1400 2850 50  0001 C CNN
-F 3 "" H 1400 2850 50  0001 C CNN
-	1    1400 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 2750 1400 2850
-Wire Wire Line
-	1400 2550 2150 2550
-Connection ~ 1550 1450
-Text Label 10050 1050 2    50   ~ 0
-SCL
-Text Label 10050 1150 2    50   ~ 0
+	8700 1950 8500 1950
+Text Label 8500 1750 0    50   ~ 0
 SDA
-Wire Wire Line
-	9850 1050 10050 1050
-Wire Wire Line
-	10050 1150 9850 1150
-Wire Wire Line
-	7050 1550 7250 1550
-Wire Wire Line
-	7250 1350 7050 1350
-Text Label 7050 1550 0    50   ~ 0
-SDA
-Text Label 7050 1350 0    50   ~ 0
-SCL
-$Comp
-L Sensor:BME280 U?
-U 1 1 608272E9
-P 5850 1500
-F 0 "U?" H 5421 1546 50  0000 R CNN
-F 1 "BME280" H 5421 1455 50  0000 R CNN
-F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 7350 1050 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf" H 5850 1300 50  0001 C CNN
-	1    5850 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 3200 9050 3200
-Wire Wire Line
-	9050 3300 8850 3300
-Text Label 8850 3200 0    50   ~ 0
-SDA
-Text Label 8850 3300 0    50   ~ 0
+Text Label 8500 1950 0    50   ~ 0
 SCL
 Wire Wire Line
-	8500 3500 8300 3500
+	5750 1800 5550 1800
 Wire Wire Line
-	8300 3300 8500 3300
-Text Label 8500 3500 2    50   ~ 0
+	5550 1600 5750 1600
+Text Label 5750 1800 2    50   ~ 0
 SDA
-Text Label 8500 3300 2    50   ~ 0
-SCL
-Wire Wire Line
-	6650 1600 6450 1600
-Wire Wire Line
-	6450 1400 6650 1400
-Text Label 6650 1600 2    50   ~ 0
-SDA
-Text Label 6650 1400 2    50   ~ 0
+Text Label 5750 1600 2    50   ~ 0
 SCL
 $Comp
-L power:GND #PWR?
-U 1 1 60A2672E
-P 7600 4300
-F 0 "#PWR?" H 7600 4050 50  0001 C CNN
-F 1 "GND" H 7605 4127 50  0000 C CNN
-F 2 "" H 7600 4300 50  0001 C CNN
-F 3 "" H 7600 4300 50  0001 C CNN
-	1    7600 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7600 4300 7600 4150
-Wire Wire Line
-	7800 4000 7800 4150
-Wire Wire Line
-	7800 4150 7600 4150
-Connection ~ 7600 4150
-Wire Wire Line
-	7600 4150 7600 4000
-$Comp
-L power:+5V #PWR?
+L temp-sensor-rescue:+5V-power #PWR013
 U 1 1 608B4F61
-P 4300 4650
-F 0 "#PWR?" H 4300 4500 50  0001 C CNN
-F 1 "+5V" H 4315 4823 50  0000 C CNN
-F 2 "" H 4300 4650 50  0001 C CNN
-F 3 "" H 4300 4650 50  0001 C CNN
-	1    4300 4650
+P 4250 4200
+F 0 "#PWR013" H 4250 4050 50  0001 C CNN
+F 1 "+5V" H 4265 4373 50  0000 C CNN
+F 2 "" H 4250 4200 50  0001 C CNN
+F 3 "" H 4250 4200 50  0001 C CNN
+	1    4250 4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 850  5750 850 
-Connection ~ 5950 850 
+	5050 1050 4850 1050
+Connection ~ 5050 1050
 Wire Wire Line
-	5950 850  5950 900 
+	5050 1050 5050 1100
 Wire Wire Line
-	5750 850  5750 900 
+	4850 1050 4850 1100
 $Comp
-L power:+3.3V #PWR?
-U 1 1 60A4E060
-P 7800 2700
-F 0 "#PWR?" H 7800 2550 50  0001 C CNN
-F 1 "+3.3V" H 7815 2873 50  0000 C CNN
-F 2 "" H 7800 2700 50  0001 C CNN
-F 3 "" H 7800 2700 50  0001 C CNN
-	1    7800 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 2700 7800 2750
-Wire Wire Line
-	7800 2750 7600 2750
-Connection ~ 7800 2750
-Wire Wire Line
-	7800 2750 7800 2800
-Wire Wire Line
-	7600 2750 7600 2800
-$Comp
-L power:+3.3V #PWR?
-U 1 1 60A5F700
-P 7850 800
-F 0 "#PWR?" H 7850 650 50  0001 C CNN
-F 1 "+3.3V" H 7865 973 50  0000 C CNN
-F 2 "" H 7850 800 50  0001 C CNN
-F 3 "" H 7850 800 50  0001 C CNN
-	1    7850 800 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 800  7850 1050
-$Comp
-L power:+3.3V #PWR?
-U 1 1 60A6784E
-P 9450 800
-F 0 "#PWR?" H 9450 650 50  0001 C CNN
-F 1 "+3.3V" H 9465 973 50  0000 C CNN
-F 2 "" H 9450 800 50  0001 C CNN
-F 3 "" H 9450 800 50  0001 C CNN
-	1    9450 800 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9450 800  9450 850 
-$Comp
-L power:GND #PWR?
+L temp-sensor-rescue:GND-power #PWR024
 U 1 1 60A777B9
-P 9450 3750
-F 0 "#PWR?" H 9450 3500 50  0001 C CNN
-F 1 "GND" H 9455 3577 50  0000 C CNN
-F 2 "" H 9450 3750 50  0001 C CNN
-F 3 "" H 9450 3750 50  0001 C CNN
-	1    9450 3750
+P 9100 2300
+F 0 "#PWR024" H 9100 2050 50  0001 C CNN
+F 1 "GND" H 9105 2127 50  0000 C CNN
+F 2 "" H 9100 2300 50  0001 C CNN
+F 3 "" H 9100 2300 50  0001 C CNN
+	1    9100 2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9450 3750 9450 3600
+	9100 2300 9100 2250
 $Comp
-L power:GND #PWR?
-U 1 1 60A7F41F
-P 9450 1600
-F 0 "#PWR?" H 9450 1350 50  0001 C CNN
-F 1 "GND" H 9455 1427 50  0000 C CNN
-F 2 "" H 9450 1600 50  0001 C CNN
-F 3 "" H 9450 1600 50  0001 C CNN
-	1    9450 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9450 1600 9450 1450
-$Comp
-L power:GND #PWR?
-U 1 1 60A9987B
-P 7850 2000
-F 0 "#PWR?" H 7850 1750 50  0001 C CNN
-F 1 "GND" H 7855 1827 50  0000 C CNN
-F 2 "" H 7850 2000 50  0001 C CNN
-F 3 "" H 7850 2000 50  0001 C CNN
-	1    7850 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 2000 7850 1850
-$Comp
-L power:+3.3V #PWR?
+L temp-sensor-rescue:+3.3V-power #PWR026
 U 1 1 60AA195F
-P 9450 2750
-F 0 "#PWR?" H 9450 2600 50  0001 C CNN
-F 1 "+3.3V" H 9465 2923 50  0000 C CNN
-F 2 "" H 9450 2750 50  0001 C CNN
-F 3 "" H 9450 2750 50  0001 C CNN
-	1    9450 2750
+P 9200 1500
+F 0 "#PWR026" H 9200 1350 50  0001 C CNN
+F 1 "+3.3V" H 9215 1673 50  0000 C CNN
+F 2 "" H 9200 1500 50  0001 C CNN
+F 3 "" H 9200 1500 50  0001 C CNN
+	1    9200 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9450 2750 9450 2800
+	9200 1500 9200 1550
+Wire Wire Line
+	4250 4200 4400 4200
+Connection ~ 4250 4200
+Wire Wire Line
+	4500 4300 4400 4300
+Wire Wire Line
+	4400 4300 4400 4200
+Connection ~ 4400 4200
+Wire Wire Line
+	4400 4200 4500 4200
 $Comp
-L Regulator_Switching:TLV62569DBV U?
-U 1 1 60B8C567
-P 4850 4750
-F 0 "U?" H 4850 5117 50  0000 C CNN
-F 1 "TLV62569DBV" H 4850 5026 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4900 4500 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv62569.pdf" H 4600 5200 50  0001 C CNN
-	1    4850 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 4650 4450 4650
-$Comp
-L Device:C_Small C?
-U 1 1 60BA5250
-P 4300 4750
-F 0 "C?" H 4392 4796 50  0000 L CNN
-F 1 "C_Small" H 4392 4705 50  0000 L CNN
-F 2 "" H 4300 4750 50  0001 C CNN
-F 3 "~" H 4300 4750 50  0001 C CNN
-	1    4300 4750
-	1    0    0    -1  
-$EndComp
-Connection ~ 4300 4650
-Wire Wire Line
-	4550 4750 4450 4750
-Wire Wire Line
-	4450 4750 4450 4650
-Connection ~ 4450 4650
-Wire Wire Line
-	4450 4650 4550 4650
-$Comp
-L power:GND #PWR?
+L temp-sensor-rescue:GND-power #PWR017
 U 1 1 60BAD9DE
-P 4850 5250
-F 0 "#PWR?" H 4850 5000 50  0001 C CNN
-F 1 "GND" H 4855 5077 50  0000 C CNN
-F 2 "" H 4850 5250 50  0001 C CNN
-F 3 "" H 4850 5250 50  0001 C CNN
-	1    4850 5250
+P 4800 4800
+F 0 "#PWR017" H 4800 4550 50  0001 C CNN
+F 1 "GND" H 4805 4627 50  0000 C CNN
+F 2 "" H 4800 4800 50  0001 C CNN
+F 3 "" H 4800 4800 50  0001 C CNN
+	1    4800 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 5250 4850 5050
+	4800 4800 4800 4600
 $Comp
-L power:GND #PWR?
+L temp-sensor-rescue:GND-power #PWR014
 U 1 1 60BB6D13
-P 4300 5050
-F 0 "#PWR?" H 4300 4800 50  0001 C CNN
-F 1 "GND" H 4305 4877 50  0000 C CNN
-F 2 "" H 4300 5050 50  0001 C CNN
-F 3 "" H 4300 5050 50  0001 C CNN
-	1    4300 5050
+P 4250 4600
+F 0 "#PWR014" H 4250 4350 50  0001 C CNN
+F 1 "GND" H 4255 4427 50  0000 C CNN
+F 2 "" H 4250 4600 50  0001 C CNN
+F 3 "" H 4250 4600 50  0001 C CNN
+	1    4250 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 4850 4300 5050
+	4250 4400 4250 4600
+Wire Wire Line
+	5600 4250 5600 4200
+Wire Wire Line
+	5100 4300 5350 4300
+Wire Wire Line
+	5350 4300 5350 4500
+Wire Wire Line
+	5350 4500 5600 4500
+Wire Wire Line
+	5600 4500 5600 4450
+Wire Wire Line
+	5600 4500 5600 4550
+Connection ~ 5600 4500
+Wire Wire Line
+	5950 4250 5950 4200
+Wire Wire Line
+	5950 4200 5600 4200
+Connection ~ 5600 4200
+Wire Wire Line
+	5950 4450 5950 4500
 $Comp
-L Device:C_Small C?
-U 1 1 60BBF67B
-P 6000 4800
-F 0 "C?" H 6092 4846 50  0000 L CNN
-F 1 "C_Small" H 6092 4755 50  0000 L CNN
-F 2 "" H 6000 4800 50  0001 C CNN
-F 3 "~" H 6000 4800 50  0001 C CNN
-	1    6000 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 60BC0C5A
-P 5650 4800
-F 0 "R?" V 5445 4800 50  0000 C CNN
-F 1 "10K" V 5536 4800 50  0000 C CNN
-F 2 "" H 5650 4800 50  0001 C CNN
-F 3 "~" H 5650 4800 50  0001 C CNN
-	1    5650 4800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 60BC2DBD
-P 5650 5100
-F 0 "R?" H 5582 5054 50  0000 R CNN
-F 1 "10K" H 5582 5145 50  0000 R CNN
-F 2 "" H 5650 5100 50  0001 C CNN
-F 3 "~" H 5650 5100 50  0001 C CNN
-	1    5650 5100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5650 4700 5650 4650
-Wire Wire Line
-	5650 4650 5550 4650
-Wire Wire Line
-	5150 4650 5250 4650
-Wire Wire Line
-	5150 4750 5400 4750
-Wire Wire Line
-	5400 4750 5400 4950
-Wire Wire Line
-	5400 4950 5650 4950
-Wire Wire Line
-	5650 4950 5650 4900
-Wire Wire Line
-	5650 4950 5650 5000
-Connection ~ 5650 4950
-Wire Wire Line
-	6000 4700 6000 4650
-Wire Wire Line
-	6000 4650 5650 4650
-Connection ~ 5650 4650
-Wire Wire Line
-	6000 4900 6000 4950
-Wire Wire Line
-	6000 4950 5650 4950
-$Comp
-L power:GND #PWR?
+L temp-sensor-rescue:GND-power #PWR018
 U 1 1 60C467F0
-P 5650 5300
-F 0 "#PWR?" H 5650 5050 50  0001 C CNN
-F 1 "GND" H 5655 5127 50  0000 C CNN
-F 2 "" H 5650 5300 50  0001 C CNN
-F 3 "" H 5650 5300 50  0001 C CNN
-	1    5650 5300
+P 5600 4850
+F 0 "#PWR018" H 5600 4600 50  0001 C CNN
+F 1 "GND" H 5605 4677 50  0000 C CNN
+F 2 "" H 5600 4850 50  0001 C CNN
+F 3 "" H 5600 4850 50  0001 C CNN
+	1    5600 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 5200 5650 5300
+	5600 4750 5600 4850
 $Comp
-L power:+3.3V #PWR?
+L temp-sensor-rescue:+3.3V-power #PWR021
 U 1 1 60C50732
-P 6000 4650
-F 0 "#PWR?" H 6000 4500 50  0001 C CNN
-F 1 "+3.3V" H 6015 4823 50  0000 C CNN
-F 2 "" H 6000 4650 50  0001 C CNN
-F 3 "" H 6000 4650 50  0001 C CNN
-	1    6000 4650
+P 5950 4200
+F 0 "#PWR021" H 5950 4050 50  0001 C CNN
+F 1 "+3.3V" H 5965 4373 50  0000 C CNN
+F 2 "" H 5950 4200 50  0001 C CNN
+F 3 "" H 5950 4200 50  0001 C CNN
+	1    5950 4200
 	1    0    0    -1  
 $EndComp
-Connection ~ 6000 4650
-Text Notes 4050 6200 0    50   ~ 0
+Connection ~ 5950 4200
+Text Notes -2500 200  0    50   ~ 0
 ToDo:\n\n
-Text Notes 4050 6250 0    50   ~ 0
-Adjust switching power supply resistor adjust values
-Text Notes 4050 6400 0    50   ~ 0
-Configure temp/humidity IO lines\n
-Text Notes 4050 6550 0    50   ~ 0
+Text Notes -2500 550  0    50   ~ 0
 Figure out boot pulldown resistors
-Text Notes 4050 6700 0    50   ~ 0
+Text Notes 350  -1500 0    50   ~ 0
 check out soil moisture sensor circuit\n
-Text Notes 4050 6850 0    50   ~ 0
+Text Notes -2500 850  0    50   ~ 0
 Figure out GPIO and which are actually needed
-Text Notes 4050 7000 0    50   ~ 0
+Text Notes -2500 1000 0    50   ~ 0
 Prototype USB interface, confirm it works
+Wire Wire Line
+	9600 5100 9400 5100
+Wire Wire Line
+	8950 6500 8550 6500
+Wire Wire Line
+	8550 6500 8550 5650
+Wire Wire Line
+	8550 5650 8300 5650
+Connection ~ 8950 6500
+Wire Wire Line
+	8950 5100 8550 5100
+Wire Wire Line
+	8550 5100 8550 5550
+Wire Wire Line
+	8550 5550 8300 5550
+Connection ~ 8950 5100
+Wire Wire Line
+	8950 6500 8950 6400
+Wire Wire Line
+	8950 5100 8950 5200
+Wire Wire Line
+	9600 6500 9400 6500
+Text Label 10150 6500 2    50   ~ 0
+USB_D-
+Wire Wire Line
+	10150 6500 9800 6500
+Wire Wire Line
+	9400 5900 9400 6100
+Wire Wire Line
+	9250 5900 9400 5900
+Wire Wire Line
+	9400 6300 9400 6500
+Connection ~ 9400 6500
+Wire Wire Line
+	9400 6500 8950 6500
+Wire Wire Line
+	9250 5700 9400 5700
+Wire Wire Line
+	9400 5700 9400 5500
+Wire Wire Line
+	9400 5100 9400 5300
+Connection ~ 9400 5100
+Wire Wire Line
+	9400 5100 8950 5100
+Text Notes 4350 3900 0    50   ~ 0
+M3406-ADJ\nhttps://lcsc.com/product-detail/DC-DC-Converters_M3406_C83224.html
+Text Notes 450  -2150 0    50   ~ 0
+KXOB25-12X1F-TR\nMONOCRYS SOLAR CELL 24.5MW 690MV
+Text Notes 450  -1900 0    50   ~ 0
+MC3479
+Text Notes 450  -1800 0    50   ~ 0
+LIS2DS12
+Text Notes 450  -2000 0    50   ~ 0
+Accelerometer
+Wire Wire Line
+	9100 2250 9300 2250
+Wire Wire Line
+	9300 2250 9300 2150
+Connection ~ 9100 2250
+Wire Wire Line
+	9100 2250 9100 2150
+Text Notes 8800 1150 0    50   ~ 0
+AHT20 pin compatable but rotated 180
+Text Label 1950 1550 0    50   ~ 0
+SCL
+Text Label 1950 1450 0    50   ~ 0
+SDA
+Text Notes 400  -1650 0    50   ~ 0
+Removing Capacitance soil moisture measuring for now
+$Comp
+L temp-sensor-rescue:GND-power #PWR0101
+U 1 1 60946B45
+P 7050 6350
+F 0 "#PWR0101" H 7050 6100 50  0001 C CNN
+F 1 "GND" H 7055 6177 50  0000 C CNN
+F 2 "" H 7050 6350 50  0001 C CNN
+F 3 "" H 7050 6350 50  0001 C CNN
+	1    7050 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 6350 6650 6350
+Text Notes 8800 1050 0    50   ~ 0
+HDC1080
+Wire Wire Line
+	1500 4050 2150 4050
+Text Notes 1600 1250 0    50   ~ 0
+25mil
+Text Label 8300 4300 0    50   ~ 0
+io0
+Text Label 8300 4400 0    50   ~ 0
+io1
+Wire Wire Line
+	2150 3950 1900 3950
+Wire Wire Line
+	8550 4300 8550 4200
+Wire Wire Line
+	8300 4300 8550 4300
+Wire Wire Line
+	8750 4400 8750 4350
+Wire Wire Line
+	8300 4400 8750 4400
+Wire Wire Line
+	8550 4000 8550 3900
+Wire Wire Line
+	8750 3900 8750 4150
+Wire Wire Line
+	8950 4000 8950 3900
+Wire Wire Line
+	8950 4200 8950 4400
+Text Label 2000 2550 0    50   ~ 0
+io10
+Text Label 8950 4400 0    50   ~ 0
+io10
+$Comp
+L temp-sensor-rescue:+3.3V-power #PWR01
+U 1 1 60A1024F
+P 8750 3400
+F 0 "#PWR01" H 8750 3250 50  0001 C CNN
+F 1 "+3.3V" H 8765 3573 50  0000 C CNN
+F 2 "" H 8750 3400 50  0001 C CNN
+F 3 "" H 8750 3400 50  0001 C CNN
+	1    8750 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3500 8550 3400
+Wire Wire Line
+	8550 3400 8750 3400
+Wire Wire Line
+	8750 3400 8750 3500
+Connection ~ 8750 3400
+Wire Wire Line
+	8750 3400 8950 3400
+Wire Wire Line
+	8950 3400 8950 3500
+Text Label 8550 5100 0    50   ~ 0
+D+
+Text Label 8550 6500 0    50   ~ 0
+D-
+Wire Wire Line
+	9800 5700 9400 5700
+Connection ~ 9400 5700
+$Comp
+L temp-sensor-rescue:GND-power #PWR0103
+U 1 1 609FE1D8
+P 9800 5900
+F 0 "#PWR0103" H 9800 5650 50  0001 C CNN
+F 1 "GND" H 9805 5727 50  0000 C CNN
+F 2 "" H 9800 5900 50  0001 C CNN
+F 3 "" H 9800 5900 50  0001 C CNN
+	1    9800 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5900 9400 5900
+Connection ~ 9400 5900
+Wire Wire Line
+	9800 5700 9800 5900
+Connection ~ 9800 5900
+NoConn ~ 8300 5750
+Wire Wire Line
+	6300 1900 6500 1900
+Wire Wire Line
+	7050 1700 6950 1700
+Text Label 6300 1900 0    50   ~ 0
+SDA
+Text Label 6650 1700 0    50   ~ 0
+SCL
+$Comp
+L temp-sensor-rescue:GND-power #PWR0104
+U 1 1 60A57121
+P 7450 2150
+F 0 "#PWR0104" H 7450 1900 50  0001 C CNN
+F 1 "GND" H 7455 1977 50  0000 C CNN
+F 2 "" H 7450 2150 50  0001 C CNN
+F 3 "" H 7450 2150 50  0001 C CNN
+	1    7450 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2150 7450 2100
+$Comp
+L temp-sensor-rescue:+3.3V-power #PWR0105
+U 1 1 60A61176
+P 7450 1300
+F 0 "#PWR0105" H 7450 1150 50  0001 C CNN
+F 1 "+3.3V" H 7465 1473 50  0000 C CNN
+F 2 "" H 7450 1300 50  0001 C CNN
+F 3 "" H 7450 1300 50  0001 C CNN
+	1    7450 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1300 7450 1350
+Wire Wire Line
+	4850 2300 4850 2450
+Wire Wire Line
+	5050 2300 5050 2450
+$Comp
+L temp-sensor-rescue:GND-power #PWR0106
+U 1 1 60AA10BD
+P 5950 4500
+F 0 "#PWR0106" H 5950 4250 50  0001 C CNN
+F 1 "GND" H 5955 4327 50  0000 C CNN
+F 2 "" H 5950 4500 50  0001 C CNN
+F 3 "" H 5950 4500 50  0001 C CNN
+	1    5950 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 6850 3350 7200
+Wire Wire Line
+	7450 1350 8000 1350
+$Comp
+L temp-sensor-rescue:GND-power #PWR0107
+U 1 1 60B43C2D
+P 8000 1800
+F 0 "#PWR0107" H 8000 1550 50  0001 C CNN
+F 1 "GND" H 8005 1627 50  0000 C CNN
+F 2 "" H 8000 1800 50  0001 C CNN
+F 3 "" H 8000 1800 50  0001 C CNN
+	1    8000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1800 8000 1750
+Wire Wire Line
+	6950 1600 6950 1700
+Connection ~ 6950 1700
+Wire Wire Line
+	6950 1700 6650 1700
+Wire Wire Line
+	6500 1600 6500 1900
+Connection ~ 6500 1900
+Wire Wire Line
+	6500 1900 7050 1900
+Wire Wire Line
+	6950 1400 6950 1350
+Wire Wire Line
+	6950 1350 7450 1350
+Connection ~ 7450 1350
+Wire Wire Line
+	6500 1400 6500 1350
+Wire Wire Line
+	6500 1350 6950 1350
+Connection ~ 6950 1350
+Wire Wire Line
+	8000 1350 8000 1550
+Wire Wire Line
+	7450 1350 7450 1500
+$Comp
+L temp-sensor-rescue:+3.3V-power #PWR0108
+U 1 1 60BCEE9B
+P 5900 1950
+F 0 "#PWR0108" H 5900 1800 50  0001 C CNN
+F 1 "+3.3V" H 5915 2123 50  0000 C CNN
+F 2 "" H 5900 1950 50  0001 C CNN
+F 3 "" H 5900 1950 50  0001 C CNN
+	1    5900 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1950 5900 2000
+Wire Wire Line
+	5550 2000 5900 2000
+$Comp
+L temp-sensor-rescue:GND-power #PWR0109
+U 1 1 60BE54E3
+P 5900 1450
+F 0 "#PWR0109" H 5900 1200 50  0001 C CNN
+F 1 "GND" H 5905 1277 50  0000 C CNN
+F 2 "" H 5900 1450 50  0001 C CNN
+F 3 "" H 5900 1450 50  0001 C CNN
+	1    5900 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1450 5900 1400
+Wire Wire Line
+	5550 1400 5900 1400
+Wire Notes Line
+	4000 600  10400 600 
+Wire Notes Line
+	10400 600  10400 3000
+Wire Notes Line
+	10400 3000 4000 3000
+Wire Notes Line
+	4000 3000 4000 600 
+Text Notes 4050 2950 0    50   ~ 0
+Temp/Humidity option
+Text Notes 1250 -2000 0    50   ~ 0
+LTC3109
+Wire Wire Line
+	3900 6850 3900 7200
+Connection ~ 3900 7200
+Wire Wire Line
+	3900 6700 3900 6850
+Connection ~ 3900 6850
+$Comp
+L temp-sensor-rescue:+3.3V-power #PWR0110
+U 1 1 609EE85F
+P 3900 6400
+F 0 "#PWR0110" H 3900 6250 50  0001 C CNN
+F 1 "+3.3V" H 3915 6573 50  0000 C CNN
+F 2 "" H 3900 6400 50  0001 C CNN
+F 3 "" H 3900 6400 50  0001 C CNN
+	1    3900 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 6400 3900 6500
+Text Notes -4500 1700 0    50   ~ 0
+Set the module to UART Download mode by pulling IO0 (pulled up by default) and IO2 (pulled down by\ndefault) low. The chip IOs are pulled down internally by default.
+Text Label 4950 6850 2    50   ~ 0
+Boot_Option
+$Comp
+L temp-sensor-rescue:GND-power #PWR0111
+U 1 1 609D94A2
+P 4450 7350
+F 0 "#PWR0111" H 4450 7100 50  0001 C CNN
+F 1 "GND" H 4455 7177 50  0000 C CNN
+F 2 "" H 4450 7350 50  0001 C CNN
+F 3 "" H 4450 7350 50  0001 C CNN
+	1    4450 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 7250 4450 7350
+Wire Wire Line
+	3900 6850 4100 6850
+Wire Wire Line
+	4300 6850 4450 6850
+Wire Wire Line
+	4450 7050 4450 6850
+Connection ~ 4450 6850
+Wire Wire Line
+	4450 6850 4950 6850
+Wire Wire Line
+	3750 6850 3900 6850
+Wire Wire Line
+	1300 4050 1100 4050
+Text Label 2000 3150 0    50   ~ 0
+io8
+Wire Wire Line
+	7650 1800 7750 1800
+Wire Wire Line
+	7750 1800 7750 2150
+Wire Wire Line
+	7750 2150 7450 2150
+Connection ~ 7450 2150
+Text Notes -2500 350  0    50   ~ 0
+USB Micro B might need to be IP rated
+Wire Wire Line
+	1450 6850 1750 6850
+Wire Wire Line
+	2250 7250 2250 7200
+Wire Wire Line
+	2250 6900 2250 6850
+$Comp
+L temp-sensor-rescue:GND-power #PWR0102
+U 1 1 6098B7A2
+P 2250 7250
+F 0 "#PWR0102" H 2250 7000 50  0001 C CNN
+F 1 "GND" H 2255 7077 50  0000 C CNN
+F 2 "" H 2250 7250 50  0001 C CNN
+F 3 "" H 2250 7250 50  0001 C CNN
+	1    2250 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6850 1950 6850
+Text Label 2250 6850 2    50   ~ 0
+3v3
+$Comp
+L ESP32-C3-MINI-1:ESP32-C3-MINI-1 IC1
+U 1 1 6081109C
+P 2150 1050
+F 0 "IC1" H 2800 1315 50  0000 C CNN
+F 1 "ESP32-C3-MINI-1" H 2800 1224 50  0000 C CNN
+F 2 "ESP32-C3-MINI-1:ESP32C3MINI1" H 3300 1150 50  0001 L CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf" H 3300 1050 50  0001 L CNN
+F 4 "Smallsized module with onboard PCB antenna" H 3300 950 50  0001 L CNN "Description"
+F 5 "2.55" H 3300 850 50  0001 L CNN "Height"
+F 6 "Espressif Systems" H 3300 750 50  0001 L CNN "Manufacturer_Name"
+F 7 "ESP32-C3-MINI-1-H4" H 3300 650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "356-ESP32-C3-MINI1H4" H 3300 550 50  0001 L CNN "Mouser Part Number"
+F 9 "$1.90/0" H 3300 450 50  0001 L CNN "Mouser Price/Stock"
+F 10 "ESP32-PICO-MINI-02" H 2150 1050 50  0001 C CNN "Alternate Part Number 1"
+	1    2150 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:USB_B_Micro-Connector J4
+U 1 1 608282D8
+P 8000 5550
+F 0 "J4" H 8057 6017 50  0000 C CNN
+F 1 "USB_B_Micro" H 8057 5926 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 8150 5500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/1/1050170001_IO_CONNECTORS-230168.pdf" H 8150 5500 50  0001 C CNN
+F 4 "USB Connectors MICRO USB B RECPT BTTM MNT SMT TH TABS" H 8000 5550 50  0001 C CNN "Description"
+F 5 "Molex" H 8000 5550 50  0001 C CNN "Manufacturer_Name"
+F 6 "105017-0001" H 8000 5550 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "538-105017-0001" H 8000 5550 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.88/15,819" H 8000 5550 50  0001 C CNN "Mouser Price/Stock"
+	1    8000 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:Conn_01x04_Male-Connector J2
+U 1 1 6086D9A4
+P 6400 5150
+F 0 "J2" H 6508 5431 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 6508 5340 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6400 5150 50  0001 C CNN
+F 3 "~" H 6400 5150 50  0001 C CNN
+	1    6400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:C_Small-Device C5
+U 1 1 6088F66D
+P 1450 6950
+F 0 "C5" H 1542 6996 50  0000 L CNN
+F 1 "0.1u" H 1542 6905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1450 6950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/taiyo_yuden_12132018_mlcc11_hq_e-1510082.pdf" H 1450 6950 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 16VDC 0.1uF 10% X7R AEC-Q200" H 1450 6950 50  0001 C CNN "Description"
+F 5 "0.9" H 1450 6950 50  0001 C CNN "Height"
+F 6 "Taiyo Yuden" H 1450 6950 50  0001 C CNN "Manufacturer_Name"
+F 7 "EMK107B7104KAHT" H 1450 6950 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "963-EMK107B7104KAHT" H 1450 6950 50  0001 C CNN "Mouser Part Number"
+F 9 "$0.10/110000" H 1450 6950 50  0001 C CNN "Mouser Price/Stock"
+	1    1450 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:C_Small-Device C3
+U 1 1 60890C11
+P 1150 6950
+F 0 "C3" H 1242 6996 50  0000 L CNN
+F 1 "10u" H 1242 6905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1150 6950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 1150 6950 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0805 10VDC 10uF 20% X5R" H 1150 6950 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" H 1150 6950 50  0001 C CNN "Manufacturer_Name"
+F 6 "LMK212ABJ106MG-T" H 1150 6950 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "963-LMK212ABJ106MG-T" H 1150 6950 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.13/104348" H 1150 6950 50  0001 C CNN "Mouser Price/Stock"
+	1    1150 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:Conn_01x05_Male-Connector J3
+U 1 1 608AA734
+P 6450 6150
+F 0 "J3" H 6550 6550 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 6550 6450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6450 6150 50  0001 C CNN
+F 3 "~" H 6450 6150 50  0001 C CNN
+	1    6450 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:C_Small-Device C4
+U 1 1 609271A1
+P 3600 7200
+F 0 "C4" V 3829 7200 50  0000 C CNN
+F 1 "0.1u" V 3738 7200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3600 7200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/taiyo_yuden_12132018_mlcc11_hq_e-1510082.pdf" H 3600 7200 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 16VDC 0.1uF 10% X7R AEC-Q200" H 3600 7200 50  0001 C CNN "Description"
+F 5 "0.9" H 3600 7200 50  0001 C CNN "Height"
+F 6 "Taiyo Yuden" H 3600 7200 50  0001 C CNN "Manufacturer_Name"
+F 7 "EMK107B7104KAHT" H 3600 7200 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "963-EMK107B7104KAHT" H 3600 7200 50  0001 C CNN "Mouser Part Number"
+F 9 "$0.10/110000" H 3600 7200 50  0001 C CNN "Mouser Price/Stock"
+	1    3600 7200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R7
+U 1 1 60927BBC
+P 3900 6600
+F 0 "R7" V 3695 6600 50  0000 C CNN
+F 1 "10K" V 3786 6600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 6600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 3900 6600 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 10 kOhms 100 mW 0603 5%" H 3900 6600 50  0001 C CNN "Description"
+F 5 "Yageo" H 3900 6600 50  0001 C CNN "Manufacturer_Name"
+F 6 "ESR03EZPJ103" H 3900 6600 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "755-ESR03EZPJ103" H 3900 6600 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/256000" H 3900 6600 50  0001 C CNN "Mouser Price/Stock"
+	1    3900 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L temp-sensor-rescue:L_Core_Ferrite_Small-Device L1
+U 1 1 6096912D
+P 1850 6850
+F 0 "L1" V 2055 6850 50  0000 C CNN
+F 1 "L_Core_Ferrite_Small" V 1964 6850 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 1850 6850 50  0001 C CNN
+F 3 "~" H 1850 6850 50  0001 C CNN
+F 4 "Ferrite Beads 100ohms 2A 40mOhms 0603 Ferrite Chip" H 1850 6850 50  0001 C CNN "Description"
+F 5 "TDK" H 1850 6850 50  0001 C CNN "Manufacturer_Name"
+F 6 "MPZ1608Y101BTA00" H 1850 6850 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "810-MPZ1608Y101BTA00" H 1850 6850 50  0001 C CNN "Mouser Part Number"
+	1    1850 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L temp-sensor-rescue:BME280-Sensor U3
+U 1 1 608272E9
+P 4950 1700
+F 0 "U3" H 4521 1746 50  0000 R CNN
+F 1 "BME280" H 4521 1655 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 6450 1250 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf" H 4950 1500 50  0001 C CNN
+F 4 "MEMS humidity, pressure and temperature sensor" H 4950 1700 50  0001 C CNN "Description"
+F 5 "Bosch Sensortec" H 4950 1700 50  0001 C CNN "Manufacturer_Name"
+F 6 "BME280" H 4950 1700 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "262-BME280" H 4950 1700 50  0001 C CNN "Mouser Part Number"
+F 8 "$5.78/0" H 4950 1700 50  0001 C CNN "Mouser Price/Stock"
+	1    4950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:TLV62569DBV-Regulator_Switching U2
+U 1 1 60B8C567
+P 4800 4300
+F 0 "U2" H 4800 4667 50  0000 C CNN
+F 1 "TLV62569DBV" H 4800 4576 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4850 4050 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv62569.pdf" H 4550 4750 50  0001 C CNN
+F 4 "Switching Voltage Regulators 2.5V-5.5V input, 2-A high efficiency step-down buck converter in" H 4800 4300 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 4800 4300 50  0001 C CNN "Manufacturer_Name"
+F 6 "TLV62569DBVR" H 4800 4300 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "595-TLV62569DBVR" H 4800 4300 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.60/0" H 4800 4300 50  0001 C CNN "Mouser Price/Stock"
+F 9 "b2.9/s3.5" H 4800 4300 50  0001 C CNN "Height"
+F 10 "MP2128DT-LF-Z" H 4800 4300 50  0001 C CNN "Alternate Part Number 1"
+	1    4800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:C_Small-Device C8
+U 1 1 60BA5250
+P 4250 4300
+F 0 "C8" H 4342 4346 50  0000 L CNN
+F 1 "4.7u" H 4342 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4250 4300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 4250 4300 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 6.3VDC 4.7uF 10% X6S" H 4250 4300 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden	" H 4250 4300 50  0001 C CNN "Manufacturer_Name"
+F 6 "JMK107C6475KA-T" H 4250 4300 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "963-JMK107C6475KA-T" H 4250 4300 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.16/1200" H 4250 4300 50  0001 C CNN "Mouser Price/Stock"
+	1    4250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:C_Small-Device C9
+U 1 1 60BBF67B
+P 5950 4350
+F 0 "C9" H 6042 4396 50  0000 L CNN
+F 1 "10u" H 6042 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5950 4350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 5950 4350 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0805 10VDC 10uF 20% X5R" H 5950 4350 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" H 5950 4350 50  0001 C CNN "Manufacturer_Name"
+F 6 "LMK212ABJ106MG-T" H 5950 4350 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "963-LMK212ABJ106MG-T" H 5950 4350 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.13/104348" H 5950 4350 50  0001 C CNN "Mouser Price/Stock"
+	1    5950 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R8
+U 1 1 60BC0C5A
+P 5600 4350
+F 0 "R8" V 5395 4350 50  0000 C CNN
+F 1 "680k" V 5486 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5600 4350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 5600 4350 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 680 kOhms 100-200 mW 0603 1%" H 5600 4350 50  0001 C CNN "Description"
+F 5 "Yageo" H 5600 4350 50  0001 C CNN "Manufacturer_Name"
+F 6 "RC0603FR-13680KL" H 5600 4350 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "603-RC0603FR-13680KL" H 5600 4350 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/100000" H 5600 4350 50  0001 C CNN "Mouser Price/Stock"
+	1    5600 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R9
+U 1 1 60BC2DBD
+P 5600 4650
+F 0 "R9" H 5532 4604 50  0000 R CNN
+F 1 "150K" H 5532 4695 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5600 4650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 5600 4650 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 150 kOhms 100mW 0603 1%" H 5600 4650 50  0001 C CNN "Description"
+F 5 "Yageo" H 5600 4650 50  0001 C CNN "Manufacturer_Name"
+F 6 "RC0603FR-07150KL" H 5600 4650 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "603-RC0603FR-07150KL" H 5600 4650 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/100000" H 5600 4650 50  0001 C CNN "Mouser Price/Stock"
+	1    5600 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R12
+U 1 1 60C9F461
+P 9700 5100
+F 0 "R12" V 9905 5100 50  0000 C CNN
+F 1 "27" V 9814 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9700 5100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73B-1825463.pdf" H 9700 5100 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 1/8W 27 OHM 5%" H 9700 5100 50  0001 C CNN "Description"
+F 5 "KOA Speer" H 9700 5100 50  0001 C CNN "Manufacturer_Name"
+F 6 "RK73B1JTTDD270J" H 9700 5100 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "660-RK73B1JTTDD270J" H 9700 5100 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/100000" H 9700 5100 50  0001 C CNN "Mouser Price/Stock"
+	1    9700 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R10
+U 1 1 60D1664F
+P 9400 5400
+F 0 "R10" H 9468 5446 50  0000 L CNN
+F 1 "15K" H 9468 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 5400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 9400 5400 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 15 kOhms 100-200 mW 0603 1%" H 9400 5400 50  0001 C CNN "Description"
+F 5 "Yageo" H 9400 5400 50  0001 C CNN "Manufacturer_Name"
+F 6 "RC0603FR-1315KL" H 9400 5400 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "603-RC0603FR-1315KL" H 9400 5400 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/78000" H 9400 5400 50  0001 C CNN "Mouser Price/Stock"
+	1    9400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R11
+U 1 1 60D182A2
+P 9400 6200
+F 0 "R11" H 9468 6246 50  0000 L CNN
+F 1 "15K" H 9468 6155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 6200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 9400 6200 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 15 kOhms 100-200 mW 0603 1%" H 9400 6200 50  0001 C CNN "Description"
+F 5 "Yageo" H 9400 6200 50  0001 C CNN "Manufacturer_Name"
+F 6 "RC0603FR-1315KL" H 9400 6200 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "603-RC0603FR-1315KL" H 9400 6200 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/78000" H 9400 6200 50  0001 C CNN "Mouser Price/Stock"
+	1    9400 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:SN65220-Power_Protection U5
+U 1 1 60C545EF
+P 8950 5800
+F 0 "U5" V 8996 5888 50  0000 L CNN
+F 1 "SN65220" V 8905 5888 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9300 5650 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn65220.pdf" H 8950 5950 50  0001 C CNN
+F 4 "ESD Suppressors / TVS Diodes Single USB Port" H 8950 5800 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 8950 5800 50  0001 C CNN "Manufacturer_Name"
+F 6 "SN65220DBVT" H 8950 5800 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "595-SN65220DBVT" H 8950 5800 50  0001 C CNN "Mouser Part Number"
+F 8 "$1.03/12.700" H 8950 5800 50  0001 C CNN "Mouser Price/Stock"
+	1    8950 5800
+	0    -1   1    0   
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R13
+U 1 1 60CC5D3E
+P 9700 6500
+F 0 "R13" V 9905 6500 50  0000 C CNN
+F 1 "27" V 9814 6500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9700 6500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/219/RK73B-1825463.pdf" H 9700 6500 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 1/8W 27 OHM 5%" H 9700 6500 50  0001 C CNN "Description"
+F 5 "KOA Speer" H 9700 6500 50  0001 C CNN "Manufacturer_Name"
+F 6 "RK73B1JTTDD270J" H 9700 6500 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "660-RK73B1JTTDD270J" H 9700 6500 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/100000" H 9700 6500 50  0001 C CNN "Mouser Price/Stock"
+	1    9700 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L temp-sensor-rescue:Si7020-A20-Sensor_Humidity U4
+U 1 1 60DEE713
+P 9200 1850
+F 0 "U4" H 9644 1896 50  0000 L CNN
+F 1 "Si7020-A20" H 9644 1805 50  0000 L CNN
+F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 9200 1450 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/Si7020-A20.pdf" H 9000 2150 50  0001 C CNN
+F 4 "Digital RH ( 4% max) & temperature sensor," H 9200 1850 50  0001 C CNN "Description"
+F 5 "Silicon Labs" H 9200 1850 50  0001 C CNN "Manufacturer_Name"
+F 6 "SI7020-A20-GMR" H 9200 1850 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "634-SI7020-A20-GMR" H 9200 1850 50  0001 C CNN "Mouser Part Number"
+F 8 "$2.57/0" H 9200 1850 50  0001 C CNN "Mouser Price/Stock"
+F 9 "0.75" H 9200 1850 50  0001 C CNN "Height"
+F 10 "ASAIR" H 9200 1850 50  0001 C CNN "Alt Part Number 2"
+F 11 "HDC1080" H 9200 1850 50  0001 C CNN "Alt Part Number 3"
+F 12 "AHT20" H 9200 1850 50  0001 C CNN "Alternate Part Number 1"
+	1    9200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R1
+U 1 1 609ADAE9
+P 1400 4050
+F 0 "R1" V 1195 4050 50  0000 C CNN
+F 1 "499R" V 1286 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1400 4050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 1400 4050 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 499 ohm 1%" H 1400 4050 50  0001 C CNN "Description"
+F 5 "Bourns" H 1400 4050 50  0001 C CNN "Manufacturer_Name"
+F 6 "CR0603-FX-4990ELF" H 1400 4050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "652-CR0603FX-4990ELF" H 1400 4050 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/19000" H 1400 4050 50  0001 C CNN "Mouser Price/Stock"
+	1    1400 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L temp-sensor-rescue:LED_RGB-Device D2
+U 1 1 6096940A
+P 8750 3700
+F 0 "D2" V 8796 3370 50  0000 R CNN
+F 1 "LED_RGB" V 8705 3370 50  0000 R CNN
+F 2 "LED_SMD:LED_Cree-PLCC6_4.7x1.5mm" H 8750 3650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/723/1397_QLS6BFKW-2257848.pdf" H 8750 3650 50  0001 C CNN
+F 4 "Standard LEDs - SMD RGB Side View" H 8750 3700 50  0001 C CNN "Description"
+F 5 "Cree LED" H 8750 3700 50  0001 C CNN "Manufacturer_Name"
+F 6 "QLS6A-FKW-CNSNSF043" H 8750 3700 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "941-QLS6AFKWNSNSF043" H 8750 3700 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.40/29,835" H 8750 3700 50  0001 C CNN "Mouser Price/Stock"
+F 9 "1.33" H 8750 3700 50  0001 C CNN "Height"
+	1    8750 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R2
+U 1 1 6096A5B0
+P 1800 3950
+F 0 "R2" V 1595 3950 50  0000 C CNN
+F 1 "499R" V 1686 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 3950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 1800 3950 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 499 ohm 1%" H 1800 3950 50  0001 C CNN "Description"
+F 5 "Bourns" H 1800 3950 50  0001 C CNN "Manufacturer_Name"
+F 6 "CR0603-FX-4990ELF" H 1800 3950 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "652-CR0603FX-4990ELF" H 1800 3950 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/19000" H 1800 3950 50  0001 C CNN "Mouser Price/Stock"
+	1    1800 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R3
+U 1 1 609DAEED
+P 8550 4100
+F 0 "R3" V 8345 4100 50  0000 C CNN
+F 1 "200" V 8436 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8550 4100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 8550 4100 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 200 OHM 1%" H 8550 4100 50  0001 C CNN "Description"
+F 5 "Bourns" H 8550 4100 50  0001 C CNN "Manufacturer_Name"
+F 6 "CR0603-FX-2000ELF" H 8550 4100 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "652-CR0603-FX2000ELF" H 8550 4100 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/78000" H 8550 4100 50  0001 C CNN "Mouser Price/Stock"
+	1    8550 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R14
+U 1 1 609DD244
+P 8750 4250
+F 0 "R14" V 8545 4250 50  0000 C CNN
+F 1 "100" V 8636 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8750 4250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 8750 4250 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 100 Ohms 100 mW 0603 5%" H 8750 4250 50  0001 C CNN "Description"
+F 5 "Yageo" H 8750 4250 50  0001 C CNN "Manufacturer_Name"
+F 6 "RC0603JR-07100RL" H 8750 4250 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "603-RC0603JR-07100RL" H 8750 4250 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/2,633,578" H 8750 4250 50  0001 C CNN "Mouser Price/Stock"
+	1    8750 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R15
+U 1 1 609DDBCB
+P 8950 4100
+F 0 "R15" V 8745 4100 50  0000 C CNN
+F 1 "100" V 8836 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8950 4100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 8950 4100 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 100 Ohms 100 mW 0603 5%" H 8950 4100 50  0001 C CNN "Description"
+F 5 "Yageo" H 8950 4100 50  0001 C CNN "Manufacturer_Name"
+F 6 "RC0603JR-07100RL" H 8950 4100 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "603-RC0603JR-07100RL" H 8950 4100 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/2,633,578" H 8950 4100 50  0001 C CNN "Mouser Price/Stock"
+	1    8950 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L ESP32-C3-MINI-1:SHTC1 U1
+U 1 1 60A2E91B
+P 7350 1800
+F 0 "U1" H 7594 1846 50  0000 L CNN
+F 1 "SHTC3" H 7594 1755 50  0000 L CNN
+F 2 "Sensor_Humidity:Sensirion_DFN-4-1EP_2x2mm_P1mm_EP0.7x1.6mm" H 7550 1450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/682/seri_s_a0003561073_1-2291167.pdf" H 7050 2250 50  0001 C CNN
+F 4 "Board Mount Humidity Sensors Humidity and Temperature Sensor" H 7350 1800 50  0001 C CNN "Description"
+F 5 "Sensirion" H 7350 1800 50  0001 C CNN "Manufacturer_Name"
+F 6 "SHTC3" H 7350 1800 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "403-SHTC3" H 7350 1800 50  0001 C CNN "Mouser Part Number"
+F 8 "$2.44/6,227 " H 7350 1800 50  0001 C CNN "Mouser Price/Stock"
+	1    7350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:SW_Push-Switch SW1
+U 1 1 60AB27C5
+P 3550 6850
+F 0 "SW1" H 3550 7135 50  0000 C CNN
+F 1 "SW_Push" H 3550 7044 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ" H 3550 7050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/60/ksc3-1841668.pdf" H 3550 7050 50  0001 C CNN
+F 4 "Tactile Switches 0.3mA 24VAC, 1.60N 3.5mmH, J lead, IP67" H 3550 6850 50  0001 C CNN "Description"
+F 5 "C&K" H 3550 6850 50  0001 C CNN "Manufacturer_Name"
+F 6 "KSC2TE01JLFS" H 3550 6850 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "611-KSC2TE01JLFS" H 3550 6850 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.39/10000" H 3550 6850 50  0001 C CNN "Mouser Price/Stock"
+	1    3550 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:C_Small-Device C1
+U 1 1 60B376BE
+P 8000 1650
+F 0 "C1" H 8092 1696 50  0000 L CNN
+F 1 "0.1u" H 8092 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8000 1650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/taiyo_yuden_12132018_mlcc11_hq_e-1510082.pdf" H 8000 1650 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 16VDC 0.1uF 10% X7R AEC-Q200" H 8000 1650 50  0001 C CNN "Description"
+F 5 "0.9" H 8000 1650 50  0001 C CNN "Height"
+F 6 "Taiyo Yuden" H 8000 1650 50  0001 C CNN "Manufacturer_Name"
+F 7 "EMK107B7104KAHT" H 8000 1650 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "963-EMK107B7104KAHT" H 8000 1650 50  0001 C CNN "Mouser Part Number"
+F 9 "$0.10/110000" H 8000 1650 50  0001 C CNN "Mouser Price/Stock"
+	1    8000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R17
+U 1 1 60B4E9BA
+P 6950 1500
+F 0 "R17" V 6745 1500 50  0000 C CNN
+F 1 "10K" V 6836 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6950 1500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 6950 1500 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 10 kOhms 100 mW 0603 5%" H 6950 1500 50  0001 C CNN "Description"
+F 5 "Yageo" H 6950 1500 50  0001 C CNN "Manufacturer_Name"
+F 6 "ESR03EZPJ103" H 6950 1500 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "755-ESR03EZPJ103" H 6950 1500 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/256000" H 6950 1500 50  0001 C CNN "Mouser Price/Stock"
+	1    6950 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R16
+U 1 1 60B9115C
+P 6500 1500
+F 0 "R16" V 6295 1500 50  0000 C CNN
+F 1 "10K" V 6386 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6500 1500 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 6500 1500 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 10 kOhms 100 mW 0603 5%" H 6500 1500 50  0001 C CNN "Description"
+F 5 "Yageo" H 6500 1500 50  0001 C CNN "Manufacturer_Name"
+F 6 "ESR03EZPJ103" H 6500 1500 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "755-ESR03EZPJ103" H 6500 1500 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/256000" H 6500 1500 50  0001 C CNN "Mouser Price/Stock"
+	1    6500 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L temp-sensor-rescue:C_Small-Device C2
+U 1 1 609D5B16
+P 4450 7150
+F 0 "C2" H 4542 7196 50  0000 L CNN
+F 1 "0.1u" H 4542 7105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4450 7150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/taiyo_yuden_12132018_mlcc11_hq_e-1510082.pdf" H 4450 7150 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 16VDC 0.1uF 10% X7R AEC-Q200" H 4450 7150 50  0001 C CNN "Description"
+F 5 "0.9" H 4450 7150 50  0001 C CNN "Height"
+F 6 "Taiyo Yuden" H 4450 7150 50  0001 C CNN "Manufacturer_Name"
+F 7 "EMK107B7104KAHT" H 4450 7150 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "963-EMK107B7104KAHT" H 4450 7150 50  0001 C CNN "Mouser Part Number"
+F 9 "$0.10/110000" H 4450 7150 50  0001 C CNN "Mouser Price/Stock"
+	1    4450 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L temp-sensor-rescue:R_Small_US-Device R18
+U 1 1 609FB05C
+P 4200 6850
+F 0 "R18" V 3995 6850 50  0000 C CNN
+F 1 "2.2K" V 4086 6850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4200 6850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 4200 6850 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 0603 2.2KOHMS 5% 1/10WATT" H 4200 6850 50  0001 C CNN "Description"
+F 5 "Bourns" H 4200 6850 50  0001 C CNN "Manufacturer_Name"
+F 6 "CR0603-JW-222ELF" H 4200 6850 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "652-CR0603-JW-222ELF" H 4200 6850 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/375000" H 4200 6850 50  0001 C CNN "Mouser Price/Stock"
+	1    4200 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L temp-sensor-rescue:D_TVS-Device D1
+U 1 1 6098B074
+P 2250 7050
+F 0 "D1" V 2204 7130 50  0000 L CNN
+F 1 "3.3v_TVS" V 2295 7130 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 2250 7050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/SD03C-1594733.pdf" H 2250 7050 50  0001 C CNN
+F 4 "ESD Suppressors / TVS Diodes Surge Protection PP" H 2250 7050 50  0001 C CNN "Description"
+F 5 "Diodes Incorporated" H 2250 7050 50  0001 C CNN "Manufacturer_Name"
+F 6 "SD03C-7" H 2250 7050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "621-SD03C-7" H 2250 7050 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.37/852" H 2250 7050 50  0001 C CNN "Mouser Price/Stock"
+	1    2250 7050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 4200 5250 4200
+Wire Wire Line
+	5450 4200 5600 4200
+$Comp
+L Device:L_Core_Ferrite_Small L2
+U 1 1 608A2A34
+P 5350 4200
+F 0 "L2" V 5169 4200 50  0000 C CNN
+F 1 "2.2uH" V 5260 4200 50  0000 C CNN
+F 2 "Inductor_SMD:L_Taiyo-Yuden_MD-4040" H 5350 4200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/wound09_e-1396591.pdf" H 5350 4200 50  0001 C CNN
+F 4 "Fixed Inductors 4040 2.2uH 79mOhms +/-20%Tol 2.8A HiCur" H 5350 4200 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" H 5350 4200 50  0001 C CNN "Manufacturer_Name"
+F 6 "MDMK4040T2R2MM" H 5350 4200 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "963-MDMK4040T2R2MM" H 5350 4200 50  0001 C CNN "Mouser Part Number"
+F 8 "	$0.78/678" H 5350 4200 50  0001 C CNN "Mouser Price/Stock"
+F 9 "2" H 5350 4200 50  0001 C CNN "Height"
+	1    5350 4200
+	0    -1   1    0   
+$EndComp
+Text Label 1800 1350 0    50   ~ 0
+I36_pico
+Wire Wire Line
+	2150 1350 1800 1350
+Text Label 1600 1450 0    50   ~ 0
+I37_pico
+Text Label 1600 1550 0    50   ~ 0
+I38_pico
+Text Label 1600 1650 0    50   ~ 0
+I39_pico
+Wire Wire Line
+	1600 1450 2150 1450
+Wire Wire Line
+	1600 1550 2150 1550
+Wire Wire Line
+	1600 1650 2150 1650
+Text Label 1600 1850 0    50   ~ 0
+I34_pico
+Text Label 1600 1950 0    50   ~ 0
+I35_pico
+Wire Wire Line
+	1600 1850 2150 1850
+Wire Wire Line
+	2150 1950 1600 1950
+Text Label 1600 2150 0    50   ~ 0
+IO32_pico
+Text Label 1600 2250 0    50   ~ 0
+IO33_pico
+Wire Wire Line
+	1600 2150 2150 2150
+Wire Wire Line
+	1600 2250 2150 2250
+Text Label 1600 2450 0    50   ~ 0
+IO25_pico
+Wire Wire Line
+	1600 2450 2150 2450
+Text Label 1600 2550 0    50   ~ 0
+IO26_pico
+Text Label 1600 2650 0    50   ~ 0
+IO27_pico
+Text Label 1600 2750 0    50   ~ 0
+IO14_pico
+Text Label 1600 2850 0    50   ~ 0
+IO12_pico
+Text Label 1600 2950 0    50   ~ 0
+IO13_pico
+Text Label 1600 3050 0    50   ~ 0
+IO15_pico
+Wire Wire Line
+	1600 2550 2150 2550
+Wire Wire Line
+	1600 2650 2150 2650
+Wire Wire Line
+	1600 2750 2150 2750
+Wire Wire Line
+	1600 2850 2150 2850
+Wire Wire Line
+	1600 2950 2150 2950
+Wire Wire Line
+	1600 3050 2150 3050
+Text Label 1350 3150 0    50   ~ 0
+IO2_pico
+Text Label 1350 3250 0    50   ~ 0
+IO0_pico
+Text Label 1350 3350 0    50   ~ 0
+IO4_pico
+Wire Wire Line
+	1350 3150 2150 3150
+Wire Wire Line
+	1350 3250 2150 3250
+Wire Wire Line
+	1350 3350 2150 3350
+Text Label 1450 3550 0    50   ~ 0
+IO20_pico
+Text Label 1450 3650 0    50   ~ 0
+IO7_pico
+Text Label 1450 3750 0    50   ~ 0
+IO8_pico
+Text Label 1450 3850 0    50   ~ 0
+IO5_pico
+Wire Wire Line
+	1450 3550 2150 3550
+Wire Wire Line
+	1450 3650 2150 3650
+Wire Wire Line
+	1450 3750 2150 3750
+Wire Wire Line
+	2150 3850 1450 3850
+Text Label 3950 1150 2    50   ~ 0
+IO19_pico
+Text Label 3950 1250 2    50   ~ 0
+IO22_pico
+Text Label 3950 1350 2    50   ~ 0
+IO21_pico
+Wire Wire Line
+	3950 1150 3450 1150
+Wire Wire Line
+	3450 1250 3950 1250
+Wire Wire Line
+	3950 1350 3450 1350
+NoConn ~ 2150 3150
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60C49CC8
+P 5600 4200
+F 0 "#FLG0101" H 5600 4275 50  0001 C CNN
+F 1 "PWR_FLAG" H 5600 4373 50  0000 C CNN
+F 2 "" H 5600 4200 50  0001 C CNN
+F 3 "~" H 5600 4200 50  0001 C CNN
+	1    5600 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 1900 650  0    50   ~ 0
+pin compatable with ESP32-PICO-MINI-02
 $EndSCHEMATC
