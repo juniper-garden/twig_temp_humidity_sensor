@@ -17,7 +17,7 @@ NoConn ~ 3450 1050
 NoConn ~ 3450 1150
 NoConn ~ 3450 1250
 NoConn ~ 3450 1350
-NoConn ~ 2150 1350
+NoConn ~ 1800 1350
 NoConn ~ 2150 3750
 NoConn ~ 2150 3850
 NoConn ~ 2150 2450
@@ -237,20 +237,16 @@ Wire Wire Line
 Wire Wire Line
 	5050 2450 4850 2450
 Connection ~ 4850 2450
-Text Label 1650 3650 0    50   ~ 0
+Text Label 1850 3650 0    50   ~ 0
 USB_D+
-Text Label 1650 3550 0    50   ~ 0
+Text Label 1850 3550 0    50   ~ 0
 USB_D-
-Wire Wire Line
-	1650 3550 2150 3550
-Wire Wire Line
-	2150 3650 1650 3650
-Text Label 1600 3950 0    50   ~ 0
+Text Label 1500 3950 0    50   ~ 0
 RTX0
-Text Label 1200 4050 0    50   ~ 0
+Text Label 1100 4050 0    50   ~ 0
 TDX0
 Wire Wire Line
-	1600 3950 1800 3950
+	1500 3950 1700 3950
 Text Label 7100 5250 2    50   ~ 0
 RTX0
 Text Label 7100 5150 2    50   ~ 0
@@ -289,32 +285,24 @@ Text Label 10150 5100 2    50   ~ 0
 USB_D+
 Wire Wire Line
 	9800 5100 10150 5100
-Text Label 1650 3250 0    50   ~ 0
+Text Label 1700 3250 0    50   ~ 0
 Boot_Option
 Connection ~ 1150 6850
 Connection ~ 1450 6850
 Text Notes 9150 4850 0    50   ~ 0
 ESD 
-Text Notes 1750 2150 0    50   ~ 0
+Text Notes 1350 2150 0    50   ~ 0
 RTC\n
-Text Notes 1450 2650 0    50   ~ 0
+Text Notes 1200 2750 0    50   ~ 0
 JTAG\n
-Text Label 1650 2750 0    50   ~ 0
+Text Label 2000 2750 0    50   ~ 0
 TMS
-Text Label 1650 2850 0    50   ~ 0
+Text Label 2000 2850 0    50   ~ 0
 TDI
-Text Label 1650 2950 0    50   ~ 0
+Text Label 2000 2950 0    50   ~ 0
 TCK
-Text Label 1650 3050 0    50   ~ 0
+Text Label 2000 3050 0    50   ~ 0
 TDO
-Wire Wire Line
-	1650 2750 2150 2750
-Wire Wire Line
-	1650 2850 2150 2850
-Wire Wire Line
-	1650 2950 2150 2950
-Wire Wire Line
-	1650 3050 2150 3050
 Text Notes 4350 3700 0    50   ~ 0
 switching power supply\n
 Wire Wire Line
@@ -380,10 +368,6 @@ Text Label 2000 2150 0    50   ~ 0
 io0
 Text Label 2000 2250 0    50   ~ 0
 io1
-Wire Wire Line
-	2000 2150 2150 2150
-Wire Wire Line
-	2000 2250 2150 2250
 $Comp
 L temp-sensor-rescue:GND-power #PWR05
 U 1 1 60914CC4
@@ -631,8 +615,6 @@ Wire Wire Line
 Connection ~ 9400 5100
 Wire Wire Line
 	9400 5100 8950 5100
-Text Notes 1900 650  0    50   ~ 0
-pin compatable with ESP32-PICO-MINI-02
 Text Notes 4350 3900 0    50   ~ 0
 M3406-ADJ\nhttps://lcsc.com/product-detail/DC-DC-Converters_M3406_C83224.html
 Text Notes 450  -2150 0    50   ~ 0
@@ -656,10 +638,6 @@ Text Label 1950 1550 0    50   ~ 0
 SCL
 Text Label 1950 1450 0    50   ~ 0
 SDA
-Wire Wire Line
-	2150 1550 1950 1550
-Wire Wire Line
-	1950 1450 2150 1450
 Text Notes 400  -1650 0    50   ~ 0
 Removing Capacitance soil moisture measuring for now
 $Comp
@@ -678,7 +656,7 @@ Wire Wire Line
 Text Notes 8800 1050 0    50   ~ 0
 HDC1080
 Wire Wire Line
-	1600 4050 2150 4050
+	1500 4050 2150 4050
 Text Notes 1600 1250 0    50   ~ 0
 25mil
 Text Label 8300 4300 0    50   ~ 0
@@ -686,7 +664,7 @@ io0
 Text Label 8300 4400 0    50   ~ 0
 io1
 Wire Wire Line
-	2150 3950 2000 3950
+	2150 3950 1900 3950
 Wire Wire Line
 	8550 4300 8550 4200
 Wire Wire Line
@@ -703,7 +681,7 @@ Wire Wire Line
 	8950 4000 8950 3900
 Wire Wire Line
 	8950 4200 8950 4400
-Text Label 1650 2550 0    50   ~ 0
+Text Label 2000 2550 0    50   ~ 0
 io10
 Text Label 8950 4400 0    50   ~ 0
 io10
@@ -934,15 +912,9 @@ Wire Wire Line
 Wire Wire Line
 	3750 6850 3900 6850
 Wire Wire Line
-	1650 3250 2150 3250
-Wire Wire Line
-	1400 4050 1200 4050
-Wire Wire Line
-	1650 2550 2150 2550
-Text Label 1650 3150 0    50   ~ 0
+	1300 4050 1100 4050
+Text Label 2000 3150 0    50   ~ 0
 io8
-Wire Wire Line
-	2150 3150 1650 3150
 Wire Wire Line
 	7650 1800 7750 1800
 Wire Wire Line
@@ -1050,23 +1022,6 @@ F 7 "963-LMK212ABJ106MG-T" H 1150 6950 50  0001 C CNN "Mouser Part Number"
 F 8 "$0.13/104348" H 1150 6950 50  0001 C CNN "Mouser Price/Stock"
 	1    1150 6950
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L_Core_Ferrite_Small L2
-U 1 1 608A2A34
-P 5350 4200
-F 0 "L2" V 5169 4200 50  0000 C CNN
-F 1 "2.2uH" V 5260 4200 50  0000 C CNN
-F 2 "Inductor_SMD:L_Taiyo-Yuden_MD-4040" H 5350 4200 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/396/wound09_e-1396591.pdf" H 5350 4200 50  0001 C CNN
-F 4 "Fixed Inductors 4040 2.2uH 79mOhms +/-20%Tol 2.8A HiCur" H 5350 4200 50  0001 C CNN "Description"
-F 5 "Taiyo Yuden" H 5350 4200 50  0001 C CNN "Manufacturer_Name"
-F 6 "MDMK4040T2R2MM" H 5350 4200 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "963-MDMK4040T2R2MM" H 5350 4200 50  0001 C CNN "Mouser Part Number"
-F 8 "	$0.78/678" H 5350 4200 50  0001 C CNN "Mouser Price/Stock"
-F 9 "2" H 5350 4200 50  0001 C CNN "Height"
-	1    5350 4200
-	0    -1   1    0   
 $EndComp
 $Comp
 L temp-sensor-rescue:Conn_01x05_Male-Connector J3
@@ -1328,17 +1283,17 @@ $EndComp
 $Comp
 L temp-sensor-rescue:R_Small_US-Device R1
 U 1 1 609ADAE9
-P 1500 4050
-F 0 "R1" V 1295 4050 50  0000 C CNN
-F 1 "499R" V 1386 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1500 4050 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 1500 4050 50  0001 C CNN
-F 4 "Thick Film Resistors - SMD 499 ohm 1%" H 1500 4050 50  0001 C CNN "Description"
-F 5 "Bourns" H 1500 4050 50  0001 C CNN "Manufacturer_Name"
-F 6 "CR0603-FX-4990ELF" H 1500 4050 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "652-CR0603FX-4990ELF" H 1500 4050 50  0001 C CNN "Mouser Part Number"
-F 8 "$0.10/19000" H 1500 4050 50  0001 C CNN "Mouser Price/Stock"
-	1    1500 4050
+P 1400 4050
+F 0 "R1" V 1195 4050 50  0000 C CNN
+F 1 "499R" V 1286 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1400 4050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 1400 4050 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 499 ohm 1%" H 1400 4050 50  0001 C CNN "Description"
+F 5 "Bourns" H 1400 4050 50  0001 C CNN "Manufacturer_Name"
+F 6 "CR0603-FX-4990ELF" H 1400 4050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "652-CR0603FX-4990ELF" H 1400 4050 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/19000" H 1400 4050 50  0001 C CNN "Mouser Price/Stock"
+	1    1400 4050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1361,17 +1316,17 @@ $EndComp
 $Comp
 L temp-sensor-rescue:R_Small_US-Device R2
 U 1 1 6096A5B0
-P 1900 3950
-F 0 "R2" V 1695 3950 50  0000 C CNN
-F 1 "499R" V 1786 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1900 3950 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 1900 3950 50  0001 C CNN
-F 4 "Thick Film Resistors - SMD 499 ohm 1%" H 1900 3950 50  0001 C CNN "Description"
-F 5 "Bourns" H 1900 3950 50  0001 C CNN "Manufacturer_Name"
-F 6 "CR0603-FX-4990ELF" H 1900 3950 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "652-CR0603FX-4990ELF" H 1900 3950 50  0001 C CNN "Mouser Part Number"
-F 8 "$0.10/19000" H 1900 3950 50  0001 C CNN "Mouser Price/Stock"
-	1    1900 3950
+P 1800 3950
+F 0 "R2" V 1595 3950 50  0000 C CNN
+F 1 "499R" V 1686 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 3950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 1800 3950 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 499 ohm 1%" H 1800 3950 50  0001 C CNN "Description"
+F 5 "Bourns" H 1800 3950 50  0001 C CNN "Manufacturer_Name"
+F 6 "CR0603-FX-4990ELF" H 1800 3950 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "652-CR0603FX-4990ELF" H 1800 3950 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/19000" H 1800 3950 50  0001 C CNN "Mouser Price/Stock"
+	1    1800 3950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1556,4 +1511,135 @@ Wire Wire Line
 	5100 4200 5250 4200
 Wire Wire Line
 	5450 4200 5600 4200
+$Comp
+L Device:L_Core_Ferrite_Small L2
+U 1 1 608A2A34
+P 5350 4200
+F 0 "L2" V 5169 4200 50  0000 C CNN
+F 1 "2.2uH" V 5260 4200 50  0000 C CNN
+F 2 "Inductor_SMD:L_Taiyo-Yuden_MD-4040" H 5350 4200 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/wound09_e-1396591.pdf" H 5350 4200 50  0001 C CNN
+F 4 "Fixed Inductors 4040 2.2uH 79mOhms +/-20%Tol 2.8A HiCur" H 5350 4200 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" H 5350 4200 50  0001 C CNN "Manufacturer_Name"
+F 6 "MDMK4040T2R2MM" H 5350 4200 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "963-MDMK4040T2R2MM" H 5350 4200 50  0001 C CNN "Mouser Part Number"
+F 8 "	$0.78/678" H 5350 4200 50  0001 C CNN "Mouser Price/Stock"
+F 9 "2" H 5350 4200 50  0001 C CNN "Height"
+	1    5350 4200
+	0    -1   1    0   
+$EndComp
+Text Label 1800 1350 0    50   ~ 0
+I36_pico
+Wire Wire Line
+	2150 1350 1800 1350
+Text Label 1600 1450 0    50   ~ 0
+I37_pico
+Text Label 1600 1550 0    50   ~ 0
+I38_pico
+Text Label 1600 1650 0    50   ~ 0
+I39_pico
+Wire Wire Line
+	1600 1450 2150 1450
+Wire Wire Line
+	1600 1550 2150 1550
+Wire Wire Line
+	1600 1650 2150 1650
+Text Label 1600 1850 0    50   ~ 0
+I34_pico
+Text Label 1600 1950 0    50   ~ 0
+I35_pico
+Wire Wire Line
+	1600 1850 2150 1850
+Wire Wire Line
+	2150 1950 1600 1950
+Text Label 1600 2150 0    50   ~ 0
+IO32_pico
+Text Label 1600 2250 0    50   ~ 0
+IO33_pico
+Wire Wire Line
+	1600 2150 2150 2150
+Wire Wire Line
+	1600 2250 2150 2250
+Text Label 1600 2450 0    50   ~ 0
+IO25_pico
+Wire Wire Line
+	1600 2450 2150 2450
+Text Label 1600 2550 0    50   ~ 0
+IO26_pico
+Text Label 1600 2650 0    50   ~ 0
+IO27_pico
+Text Label 1600 2750 0    50   ~ 0
+IO14_pico
+Text Label 1600 2850 0    50   ~ 0
+IO12_pico
+Text Label 1600 2950 0    50   ~ 0
+IO13_pico
+Text Label 1600 3050 0    50   ~ 0
+IO15_pico
+Wire Wire Line
+	1600 2550 2150 2550
+Wire Wire Line
+	1600 2650 2150 2650
+Wire Wire Line
+	1600 2750 2150 2750
+Wire Wire Line
+	1600 2850 2150 2850
+Wire Wire Line
+	1600 2950 2150 2950
+Wire Wire Line
+	1600 3050 2150 3050
+Text Label 1350 3150 0    50   ~ 0
+IO2_pico
+Text Label 1350 3250 0    50   ~ 0
+IO0_pico
+Text Label 1350 3350 0    50   ~ 0
+IO4_pico
+Wire Wire Line
+	1350 3150 2150 3150
+Wire Wire Line
+	1350 3250 2150 3250
+Wire Wire Line
+	1350 3350 2150 3350
+Text Label 1450 3550 0    50   ~ 0
+IO20_pico
+Text Label 1450 3650 0    50   ~ 0
+IO7_pico
+Text Label 1450 3750 0    50   ~ 0
+IO8_pico
+Text Label 1450 3850 0    50   ~ 0
+IO5_pico
+Wire Wire Line
+	1450 3550 2150 3550
+Wire Wire Line
+	1450 3650 2150 3650
+Wire Wire Line
+	1450 3750 2150 3750
+Wire Wire Line
+	2150 3850 1450 3850
+Text Label 3950 1150 2    50   ~ 0
+IO19_pico
+Text Label 3950 1250 2    50   ~ 0
+IO22_pico
+Text Label 3950 1350 2    50   ~ 0
+IO21_pico
+Wire Wire Line
+	3950 1150 3450 1150
+Wire Wire Line
+	3450 1250 3950 1250
+Wire Wire Line
+	3950 1350 3450 1350
+NoConn ~ 2150 3150
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60C49CC8
+P 5600 4200
+F 0 "#FLG0101" H 5600 4275 50  0001 C CNN
+F 1 "PWR_FLAG" H 5600 4373 50  0000 C CNN
+F 2 "" H 5600 4200 50  0001 C CNN
+F 3 "~" H 5600 4200 50  0001 C CNN
+	1    5600 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 1900 650  0    50   ~ 0
+pin compatable with ESP32-PICO-MINI-02
 $EndSCHEMATC
