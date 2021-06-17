@@ -1263,17 +1263,17 @@ $EndComp
 $Comp
 L temp-sensor-rescue:R_Small_US-Device R3
 U 1 1 609DAEED
-P 8750 4300
-F 0 "R3" V 8545 4300 50  0000 C CNN
-F 1 "200" V 8636 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8750 4300 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 8750 4300 50  0001 C CNN
-F 4 "Thick Film Resistors - SMD 200 OHM 1%" H 8750 4300 50  0001 C CNN "Description"
-F 5 "Bourns" H 8750 4300 50  0001 C CNN "Manufacturer_Name"
-F 6 "CR0603-FX-2000ELF" H 8750 4300 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "652-CR0603-FX2000ELF" H 8750 4300 50  0001 C CNN "Mouser Part Number"
-F 8 "$0.10/78000" H 8750 4300 50  0001 C CNN "Mouser Price/Stock"
-	1    8750 4300
+P 9150 4300
+F 0 "R3" V 8945 4300 50  0000 C CNN
+F 1 "200" V 9036 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9150 4300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/crxxxxx-1858361.pdf" H 9150 4300 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 200 OHM 1%" H 9150 4300 50  0001 C CNN "Description"
+F 5 "Bourns" H 9150 4300 50  0001 C CNN "Manufacturer_Name"
+F 6 "CR0603-FX-2000ELF" H 9150 4300 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "652-CR0603-FX2000ELF" H 9150 4300 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/78000" H 9150 4300 50  0001 C CNN "Mouser Price/Stock"
+	1    9150 4300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1295,17 +1295,17 @@ $EndComp
 $Comp
 L temp-sensor-rescue:R_Small_US-Device R15
 U 1 1 609DDBCB
-P 9150 4300
-F 0 "R15" V 8945 4300 50  0000 C CNN
-F 1 "100" V 9036 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9150 4300 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 9150 4300 50  0001 C CNN
-F 4 "Thick Film Resistors - SMD 100 Ohms 100 mW 0603 5%" H 9150 4300 50  0001 C CNN "Description"
-F 5 "Yageo" H 9150 4300 50  0001 C CNN "Manufacturer_Name"
-F 6 "RC0603JR-07100RL" H 9150 4300 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "603-RC0603JR-07100RL" H 9150 4300 50  0001 C CNN "Mouser Part Number"
-F 8 "$0.10/2,633,578" H 9150 4300 50  0001 C CNN "Mouser Price/Stock"
-	1    9150 4300
+P 8750 4300
+F 0 "R15" V 8545 4300 50  0000 C CNN
+F 1 "100" V 8636 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8750 4300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/Yageo_03_18_2021_PYu_RC_Group_51_RoHS_L_11-2199992.pdf" H 8750 4300 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 100 Ohms 100 mW 0603 5%" H 8750 4300 50  0001 C CNN "Description"
+F 5 "Yageo" H 8750 4300 50  0001 C CNN "Manufacturer_Name"
+F 6 "RC0603JR-07100RL" H 8750 4300 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "603-RC0603JR-07100RL" H 8750 4300 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.10/2,633,578" H 8750 4300 50  0001 C CNN "Mouser Price/Stock"
+	1    8750 4300
 	-1   0    0    1   
 $EndComp
 $Comp

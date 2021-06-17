@@ -1330,13 +1330,15 @@ U 1 1 60AB27C5
 P 3550 6850
 F 0 "SW1" H 3550 7135 50  0000 C CNN
 F 1 "SW_Push" H 3550 7044 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ" H 3550 7050 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/60/ksc3-1841668.pdf" H 3550 7050 50  0001 C CNN
-F 4 "Tactile Switches 0.3mA 24VAC, 1.60N 3.5mmH, J lead, IP67" H 3550 6850 50  0001 C CNN "Description"
-F 5 "C&K" H 3550 6850 50  0001 C CNN "Manufacturer_Name"
-F 6 "KSC2TE01JLFS" H 3550 6850 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "611-KSC2TE01JLFS" H 3550 6850 50  0001 C CNN "Mouser Part Number"
-F 8 "$0.39/10000" H 3550 6850 50  0001 C CNN "Mouser Price/Stock"
+F 2 "Twig:SW_Push_1P1T-MP_NO_Horizontal_TL6340" H 3550 7050 50  0001 C CNN
+F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/256/TL6340.pdf" H 3550 7050 50  0001 C CNN
+F 4 "Tactile Switch SPST-NO Side Actuated Surface Mount, Right Angle" H 3550 6850 50  0001 C CNN "Description"
+F 5 "E-Switch" H 3550 6850 50  0001 C CNN "Manufacturer_Name"
+F 6 "TL6340AF160QG" H 3550 6850 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "" H 3550 6850 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.48/10000" H 3550 6850 50  0001 C CNN "Mouser Price/Stock"
+F 9 "SKTDLHE010" H 3550 6850 50  0001 C CNN "Alt Part Number 3"
+F 10 "EVP-AKE31A" H 3550 6850 50  0001 C CNN "Alternate Part Number 1"
 	1    3550 6850
 	1    0    0    -1  
 $EndComp
@@ -1563,13 +1565,15 @@ U 1 1 60C90D43
 P 4700 6850
 F 0 "SW2" H 4700 7135 50  0000 C CNN
 F 1 "SW_Push" H 4700 7044 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxJ" H 4700 7050 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/60/ksc3-1841668.pdf" H 4700 7050 50  0001 C CNN
-F 4 "Tactile Switches 0.3mA 24VAC, 1.60N 3.5mmH, J lead, IP67" H 4700 6850 50  0001 C CNN "Description"
-F 5 "C&K" H 4700 6850 50  0001 C CNN "Manufacturer_Name"
-F 6 "KSC2TE01JLFS" H 4700 6850 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "611-KSC2TE01JLFS" H 4700 6850 50  0001 C CNN "Mouser Part Number"
-F 8 "$0.39/10000" H 4700 6850 50  0001 C CNN "Mouser Price/Stock"
+F 2 "Twig:SW_Push_1P1T-MP_NO_Horizontal_TL6340" H 4700 7050 50  0001 C CNN
+F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/256/TL6340.pdf" H 4700 7050 50  0001 C CNN
+F 4 "Tactile Switch SPST-NO Side Actuated Surface Mount, Right Angle" H 4700 6850 50  0001 C CNN "Description"
+F 5 "E-Switch" H 4700 6850 50  0001 C CNN "Manufacturer_Name"
+F 6 "TL6340AF160QG" H 4700 6850 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "" H 4700 6850 50  0001 C CNN "Mouser Part Number"
+F 8 "$0.48/10000" H 4700 6850 50  0001 C CNN "Mouser Price/Stock"
+F 9 "SKTDLHE010" H 4700 6850 50  0001 C CNN "Alt Part Number 3"
+F 10 "EVP-AKE31A" H 4700 6850 50  0001 C CNN "Alternate Part Number 1"
 	1    4700 6850
 	1    0    0    -1  
 $EndComp
