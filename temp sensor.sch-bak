@@ -1763,47 +1763,6 @@ F 3 "~" H 6650 5100 50  0001 C CNN
 	1    6650 5100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5800 6100
-$Comp
-L Connector:Conn_01x06_Male J1
-U 1 1 60DE7F5D
-P 5600 6100
-F 0 "J1" H 5708 6481 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 5708 6390 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Right" H 5600 6100 50  0001 C CNN
-F 3 "~" H 5600 6100 50  0001 C CNN
-	1    5600 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 6400 6300 6400
-Text Label 6300 6400 2    50   ~ 0
-RTS
-Wire Wire Line
-	6050 6000 5800 6000
-Text Label 6050 6000 2    50   ~ 0
-DTR
-Wire Wire Line
-	6200 5900 5800 5900
-$Comp
-L temp-sensor-rescue:GND-power #PWR023
-U 1 1 6087640E
-P 6200 5900
-F 0 "#PWR023" H 6200 5650 50  0001 C CNN
-F 1 "GND" H 6205 5727 50  0000 C CNN
-F 2 "" H 6200 5900 50  0001 C CNN
-F 3 "" H 6200 5900 50  0001 C CNN
-	1    6200 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 6200 6300 6200
-Wire Wire Line
-	6300 6300 5800 6300
-Text Label 6300 6200 2    50   ~ 0
-TDX0
-Text Label 6300 6300 2    50   ~ 0
-RTX0
 Wire Wire Line
 	6850 5500 7350 5500
 Text Label 7350 5500 2    50   ~ 0
