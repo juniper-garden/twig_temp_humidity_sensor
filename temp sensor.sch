@@ -273,24 +273,24 @@ Text Notes 4350 3700 0    50   ~ 0
 switching power supply\n
 Wire Wire Line
 	5050 1000 5050 1050
-Text Notes 6700 5750 2    50   ~ 0
+Text Notes 7550 5900 2    50   ~ 0
 JTAG\n
-Text Label 7400 6000 2    50   ~ 0
+Text Label 6300 5900 2    50   ~ 0
 TMS
-Text Label 7400 6100 2    50   ~ 0
+Text Label 6300 6000 2    50   ~ 0
 TDI
-Text Label 7400 6200 2    50   ~ 0
+Text Label 6300 6100 2    50   ~ 0
 TCK
-Text Label 7400 6300 2    50   ~ 0
+Text Label 6300 6200 2    50   ~ 0
 TDO
 Wire Wire Line
-	7400 6000 6950 6000
+	6300 5900 5850 5900
 Wire Wire Line
-	7400 6100 6950 6100
+	6300 6100 5850 6100
 Wire Wire Line
-	7400 6200 6950 6200
+	6300 6000 5850 6000
 Wire Wire Line
-	7400 6300 6950 6300
+	6300 6200 5850 6200
 $Comp
 L temp-sensor-rescue:+5V-power #PWR027
 U 1 1 608B3119
@@ -598,25 +598,25 @@ Wire Wire Line
 	9100 2250 9100 2150
 Text Notes 8800 1150 0    50   ~ 0
 AHT20 pin compatable but rotated 180
-Text Label 1950 1550 0    50   ~ 0
+Text Label 1200 1600 0    50   ~ 0
 SCL
-Text Label 1950 1450 0    50   ~ 0
+Text Label 1200 1500 0    50   ~ 0
 SDA
 Text Notes 400  -1650 0    50   ~ 0
 Removing Capacitance soil moisture measuring for now
 $Comp
 L temp-sensor-rescue:GND-power #PWR0101
 U 1 1 60946B45
-P 7350 6400
-F 0 "#PWR0101" H 7350 6150 50  0001 C CNN
-F 1 "GND" H 7355 6227 50  0000 C CNN
-F 2 "" H 7350 6400 50  0001 C CNN
-F 3 "" H 7350 6400 50  0001 C CNN
-	1    7350 6400
-	1    0    0    -1  
+P 5950 6300
+F 0 "#PWR0101" H 5950 6050 50  0001 C CNN
+F 1 "GND" H 5955 6127 50  0000 C CNN
+F 2 "" H 5950 6300 50  0001 C CNN
+F 3 "" H 5950 6300 50  0001 C CNN
+	1    5950 6300
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	7350 6400 6950 6400
+	5850 6300 5950 6300
 Text Notes 8800 1050 0    50   ~ 0
 HDC1080
 Wire Wire Line
@@ -955,15 +955,15 @@ F 8 "$0.13/104348" H 1150 6950 50  0001 C CNN "Mouser Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L temp-sensor-rescue:Conn_01x05_Male-Connector J3
+L Connector_Generic:Conn_01x07 J3
 U 1 1 608AA734
-P 6750 6200
-F 0 "J3" H 6850 6600 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 6850 6500 50  0000 C CNN
-F 2 "Connector_PinSocket_1.00mm:PinSocket_1x06_P1.00mm_Vertical_SMD_Pin1Right" H 6750 6200 50  0001 C CNN
-F 3 "~" H 6750 6200 50  0001 C CNN
-	1    6750 6200
-	1    0    0    -1  
+P 5650 6100
+F 0 "J3" H 5750 6500 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 5750 6400 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x07_P1.00mm_Vertical_SMD_Pin1Right" H 5650 6100 50  0001 C CNN
+F 3 "~" H 5650 6100 50  0001 C CNN
+	1    5650 6100
+	-1   0    0    -1  
 $EndComp
 $Comp
 L temp-sensor-rescue:C_Small-Device C4
@@ -1329,7 +1329,7 @@ L temp-sensor-rescue:SW_Push-Switch SW1
 U 1 1 60AB27C5
 P 3550 6850
 F 0 "SW1" H 3550 7135 50  0000 C CNN
-F 1 "SW_Push" H 3550 7044 50  0000 C CNN
+F 1 "SW_Push_Right_Angle" H 3550 7044 50  0000 C CNN
 F 2 "Twig:SW_Push_1P1T-MP_NO_Horizontal_TL6340" H 3550 7050 50  0001 C CNN
 F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/256/TL6340.pdf" H 3550 7050 50  0001 C CNN
 F 4 "Tactile Switch SPST-NO Side Actuated Surface Mount, Right Angle" H 3550 6850 50  0001 C CNN "Description"
@@ -1564,7 +1564,7 @@ L temp-sensor-rescue:SW_Push-Switch SW2
 U 1 1 60C90D43
 P 4700 6850
 F 0 "SW2" H 4700 7135 50  0000 C CNN
-F 1 "SW_Push" H 4700 7044 50  0000 C CNN
+F 1 "SW_Push_Right_Angle" H 4700 7044 50  0000 C CNN
 F 2 "Twig:SW_Push_1P1T-MP_NO_Horizontal_TL6340" H 4700 7050 50  0001 C CNN
 F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/256/TL6340.pdf" H 4700 7050 50  0001 C CNN
 F 4 "Tactile Switch SPST-NO Side Actuated Surface Mount, Right Angle" H 4700 6850 50  0001 C CNN "Description"
@@ -1811,4 +1811,23 @@ Wire Wire Line
 	4850 5550 4850 5650
 Wire Wire Line
 	4450 5650 4850 5650
+Text Notes 850  950  0    50   ~ 0
+can't use Ixx GPIO lines
+Text Label 6300 5800 2    50   ~ 0
+EN
+$Comp
+L temp-sensor-rescue:+3.3V-power #PWR0114
+U 1 1 613FB3C4
+P 6050 6400
+F 0 "#PWR0114" H 6050 6250 50  0001 C CNN
+F 1 "+3.3V" H 6065 6573 50  0000 C CNN
+F 2 "" H 6050 6400 50  0001 C CNN
+F 3 "" H 6050 6400 50  0001 C CNN
+	1    6050 6400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6300 5800 5850 5800
+Wire Wire Line
+	5850 6400 6050 6400
 $EndSCHEMATC
