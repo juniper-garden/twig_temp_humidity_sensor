@@ -598,9 +598,9 @@ Wire Wire Line
 	9100 2250 9100 2150
 Text Notes 8800 1150 0    50   ~ 0
 AHT20 pin compatable but rotated 180
-Text Label 1200 1600 0    50   ~ 0
+Text Label 1400 2950 0    50   ~ 0
 SCL
-Text Label 1200 1500 0    50   ~ 0
+Text Label 1750 3150 0    50   ~ 0
 SDA
 Text Notes 400  -1650 0    50   ~ 0
 Removing Capacitance soil moisture measuring for now
@@ -632,19 +632,13 @@ Wire Wire Line
 Wire Wire Line
 	8750 4500 8750 4400
 Wire Wire Line
-	8500 4500 8750 4500
-Wire Wire Line
 	8950 4600 8950 4550
-Wire Wire Line
-	8500 4600 8950 4600
 Wire Wire Line
 	8750 4200 8750 4100
 Wire Wire Line
 	8950 4100 8950 4350
 Wire Wire Line
 	9150 4200 9150 4100
-Wire Wire Line
-	9150 4400 9150 4600
 Text Label 2000 2550 0    50   ~ 0
 io10
 Text Label 9150 4600 0    50   ~ 0
@@ -787,21 +781,6 @@ Wire Wire Line
 Wire Wire Line
 	7450 1350 7450 1500
 $Comp
-L temp-sensor-rescue:+3.3V-power #PWR0108
-U 1 1 60BCEE9B
-P 5900 1950
-F 0 "#PWR0108" H 5900 1800 50  0001 C CNN
-F 1 "+3.3V" H 5915 2123 50  0000 C CNN
-F 2 "" H 5900 1950 50  0001 C CNN
-F 3 "" H 5900 1950 50  0001 C CNN
-	1    5900 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 1950 5900 2000
-Wire Wire Line
-	5550 2000 5900 2000
-$Comp
 L temp-sensor-rescue:GND-power #PWR0109
 U 1 1 60BE54E3
 P 5900 1450
@@ -893,7 +872,7 @@ U 1 1 6081109C
 P 2150 1050
 F 0 "IC1" H 2800 1315 50  0000 C CNN
 F 1 "ESP32-C3-MINI-1" H 2800 1224 50  0000 C CNN
-F 2 "ESP32-C3-MINI-1:ESP32C3MINI1" H 3300 1150 50  0001 L CNN
+F 2 "Twig:ESP32C3MINI1" H 3300 1150 50  0001 L CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf" H 3300 1050 50  0001 L CNN
 F 4 "Smallsized module with onboard PCB antenna" H 3300 950 50  0001 L CNN "Description"
 F 5 "2.55" H 3300 850 50  0001 L CNN "Height"
@@ -1475,8 +1454,6 @@ Text Label 1600 2250 0    50   ~ 0
 IO33_pico
 Wire Wire Line
 	1600 2150 2150 2150
-Wire Wire Line
-	1600 2250 2150 2250
 Text Label 1600 2450 0    50   ~ 0
 IO25_pico
 Wire Wire Line
@@ -1501,8 +1478,6 @@ Wire Wire Line
 	1600 2750 2150 2750
 Wire Wire Line
 	1600 2850 2150 2850
-Wire Wire Line
-	1600 2950 2150 2950
 Wire Wire Line
 	1600 3050 2150 3050
 Text Label 1350 3150 0    50   ~ 0
@@ -1830,4 +1805,35 @@ Wire Wire Line
 	6300 5800 5850 5800
 Wire Wire Line
 	5850 6400 6050 6400
+Text Label 8100 4600 0    50   ~ 0
+LED_Green
+Text Label 8150 4500 0    50   ~ 0
+LED_Blue
+Text Label 9150 4650 0    50   ~ 0
+LED_Red
+Wire Wire Line
+	9150 4400 9150 4650
+Wire Wire Line
+	8100 4600 8950 4600
+Wire Wire Line
+	8150 4500 8750 4500
+Wire Wire Line
+	1400 2250 2150 2250
+Wire Wire Line
+	1400 2950 2150 2950
+Wire Wire Line
+	5550 2000 5900 2000
+Wire Wire Line
+	5900 1950 5900 2000
+$Comp
+L temp-sensor-rescue:+3.3V-power #PWR0108
+U 1 1 60BCEE9B
+P 5900 1950
+F 0 "#PWR0108" H 5900 1800 50  0001 C CNN
+F 1 "+3.3V" H 5915 2123 50  0000 C CNN
+F 2 "" H 5900 1950 50  0001 C CNN
+F 3 "" H 5900 1950 50  0001 C CNN
+	1    5900 1950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

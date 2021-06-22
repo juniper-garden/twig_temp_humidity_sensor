@@ -273,24 +273,24 @@ Text Notes 4350 3700 0    50   ~ 0
 switching power supply\n
 Wire Wire Line
 	5050 1000 5050 1050
-Text Notes 6700 5750 2    50   ~ 0
+Text Notes 7550 5900 2    50   ~ 0
 JTAG\n
-Text Label 6800 6000 2    50   ~ 0
+Text Label 6300 5900 2    50   ~ 0
 TMS
-Text Label 6800 6300 2    50   ~ 0
+Text Label 6300 6000 2    50   ~ 0
 TDI
-Text Label 6800 6100 2    50   ~ 0
+Text Label 6300 6100 2    50   ~ 0
 TCK
-Text Label 6800 6200 2    50   ~ 0
+Text Label 6300 6200 2    50   ~ 0
 TDO
 Wire Wire Line
-	6800 6000 6350 6000
+	6300 5900 5850 5900
 Wire Wire Line
-	6800 6100 6350 6100
+	6300 6100 5850 6100
 Wire Wire Line
-	6800 6300 6350 6300
+	6300 6000 5850 6000
 Wire Wire Line
-	6800 6200 6350 6200
+	6300 6200 5850 6200
 $Comp
 L temp-sensor-rescue:+5V-power #PWR027
 U 1 1 608B3119
@@ -598,25 +598,25 @@ Wire Wire Line
 	9100 2250 9100 2150
 Text Notes 8800 1150 0    50   ~ 0
 AHT20 pin compatable but rotated 180
-Text Label 1200 1600 0    50   ~ 0
+Text Label 1400 2950 0    50   ~ 0
 SCL
-Text Label 1200 1500 0    50   ~ 0
+Text Label 1750 3150 0    50   ~ 0
 SDA
 Text Notes 400  -1650 0    50   ~ 0
 Removing Capacitance soil moisture measuring for now
 $Comp
 L temp-sensor-rescue:GND-power #PWR0101
 U 1 1 60946B45
-P 6500 6550
-F 0 "#PWR0101" H 6500 6300 50  0001 C CNN
-F 1 "GND" H 6505 6377 50  0000 C CNN
-F 2 "" H 6500 6550 50  0001 C CNN
-F 3 "" H 6500 6550 50  0001 C CNN
-	1    6500 6550
-	-1   0    0    -1  
+P 5950 6300
+F 0 "#PWR0101" H 5950 6050 50  0001 C CNN
+F 1 "GND" H 5955 6127 50  0000 C CNN
+F 2 "" H 5950 6300 50  0001 C CNN
+F 3 "" H 5950 6300 50  0001 C CNN
+	1    5950 6300
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	6350 6500 6500 6500
+	5850 6300 5950 6300
 Text Notes 8800 1050 0    50   ~ 0
 HDC1080
 Wire Wire Line
@@ -632,19 +632,13 @@ Wire Wire Line
 Wire Wire Line
 	8750 4500 8750 4400
 Wire Wire Line
-	8500 4500 8750 4500
-Wire Wire Line
 	8950 4600 8950 4550
-Wire Wire Line
-	8500 4600 8950 4600
 Wire Wire Line
 	8750 4200 8750 4100
 Wire Wire Line
 	8950 4100 8950 4350
 Wire Wire Line
 	9150 4200 9150 4100
-Wire Wire Line
-	9150 4400 9150 4600
 Text Label 2000 2550 0    50   ~ 0
 io10
 Text Label 9150 4600 0    50   ~ 0
@@ -957,12 +951,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x07 J3
 U 1 1 608AA734
-P 6150 6200
-F 0 "J3" H 6250 6600 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 6250 6500 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x07_P1.00mm_Vertical_SMD_Pin1Right" H 6150 6200 50  0001 C CNN
-F 3 "~" H 6150 6200 50  0001 C CNN
-	1    6150 6200
+P 5650 6100
+F 0 "J3" H 5750 6500 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 5750 6400 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x07_P1.00mm_Vertical_SMD_Pin1Right" H 5650 6100 50  0001 C CNN
+F 3 "~" H 5650 6100 50  0001 C CNN
+	1    5650 6100
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1475,8 +1469,6 @@ Text Label 1600 2250 0    50   ~ 0
 IO33_pico
 Wire Wire Line
 	1600 2150 2150 2150
-Wire Wire Line
-	1600 2250 2150 2250
 Text Label 1600 2450 0    50   ~ 0
 IO25_pico
 Wire Wire Line
@@ -1501,8 +1493,6 @@ Wire Wire Line
 	1600 2750 2150 2750
 Wire Wire Line
 	1600 2850 2150 2850
-Wire Wire Line
-	1600 2950 2150 2950
 Wire Wire Line
 	1600 3050 2150 3050
 Text Label 1350 3150 0    50   ~ 0
@@ -1813,25 +1803,37 @@ Wire Wire Line
 	4450 5650 4850 5650
 Text Notes 850  950  0    50   ~ 0
 can't use Ixx GPIO lines
-Text Label 6800 6400 2    50   ~ 0
+Text Label 6300 5800 2    50   ~ 0
 EN
 $Comp
 L temp-sensor-rescue:+3.3V-power #PWR0114
 U 1 1 613FB3C4
-P 6500 5800
-F 0 "#PWR0114" H 6500 5650 50  0001 C CNN
-F 1 "+3.3V" H 6515 5973 50  0000 C CNN
-F 2 "" H 6500 5800 50  0001 C CNN
-F 3 "" H 6500 5800 50  0001 C CNN
-	1    6500 5800
-	-1   0    0    -1  
+P 6050 6400
+F 0 "#PWR0114" H 6050 6250 50  0001 C CNN
+F 1 "+3.3V" H 6065 6573 50  0000 C CNN
+F 2 "" H 6050 6400 50  0001 C CNN
+F 3 "" H 6050 6400 50  0001 C CNN
+	1    6050 6400
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	6500 5800 6500 5900
+	6300 5800 5850 5800
 Wire Wire Line
-	6800 6400 6350 6400
+	5850 6400 6050 6400
+Text Label 8100 4600 0    50   ~ 0
+LED_Green
+Text Label 8150 4500 0    50   ~ 0
+LED_Blue
+Text Label 9150 4650 0    50   ~ 0
+LED_Red
 Wire Wire Line
-	6500 5900 6350 5900
+	9150 4400 9150 4650
 Wire Wire Line
-	6500 6500 6500 6550
+	8100 4600 8950 4600
+Wire Wire Line
+	8150 4500 8750 4500
+Wire Wire Line
+	1400 2250 2150 2250
+Wire Wire Line
+	1400 2950 2150 2950
 $EndSCHEMATC
