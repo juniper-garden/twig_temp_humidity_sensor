@@ -1,4 +1,8 @@
 (sym_lib_table
   (lib (name ESP32-C3-MINI-1)(type Legacy)(uri ${KIPRJMOD}/ESP32-C3-MINI-1.lib)(options "")(descr ""))
   (lib (name temp-sensor-rescue)(type Legacy)(uri "${KIPRJMOD}/temp sensor-rescue.lib")(options "")(descr ""))
+  (lib (name temp_sensor-cache)(type Legacy)(uri "${KIPRJMOD}/temp sensor-cache.lib")(options "")(descr ""))
+  (lib (name Switch)(type Legacy)(uri ${KIPRJMOD}/Switch.lib)(options "")(descr ""))
+  (lib (name test_switch)(type Legacy)(uri "${KIPRJMOD}/test switch.lib")(options "")(descr ""))
+  (lib (name twig)(type Legacy)(uri ${KIPRJMOD}/twig.lib)(options "")(descr ""))
 )
