@@ -1424,9 +1424,9 @@ Wire Wire Line
 	1200 3250 2150 3250
 Wire Wire Line
 	1600 3350 2150 3350
-Text Label 1600 3550 0    50   ~ 0
+Text Label 2200 3550 2    50   ~ 0
 IO20_pico
-Text Label 1600 3650 0    50   ~ 0
+Text Label 2200 3650 2    50   ~ 0
 IO7_pico
 Text Label 1450 3750 0    50   ~ 0
 IO8_pico

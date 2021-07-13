@@ -1,32 +1,260 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# SN65220-Power_Protection-temp-sensor-rescue
+# +3.3V-power-temp-sensor-rescue
 #
-DEF SN65220-Power_Protection-temp-sensor-rescue U 0 0 Y Y 1 F N
-F0 "U" 0 225 50 H V C CNN
-F1 "SN65220-Power_Protection-temp-sensor-rescue" 0 150 50 H V C CNN
-F2 "Package_TO_SOT_SMD:SOT-23-6" 350 -150 50 H I L CNN
-F3 "" 0 150 50 H I C CNN
+DEF +3.3V-power-temp-sensor-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+3.3V-power-temp-sensor-rescue" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# +5V-power-temp-sensor-rescue
+#
+DEF +5V-power-temp-sensor-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+5V-power-temp-sensor-rescue" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# BME280-Sensor-temp-sensor-rescue
+#
+DEF BME280-Sensor-temp-sensor-rescue U 0 20 Y Y 1 F N
+F0 "U" -350 450 50 H V C CNN
+F1 "BME280-Sensor-temp-sensor-rescue" 300 450 50 H V C CNN
+F2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" 1500 -450 50 H I C CNN
+F3 "" 0 -200 50 H I C CNN
+$FPLIST
+ *LGA*2.5x2.5mm*P0.65mm*Clockwise*
+$ENDFPLIST
+DRAW
+S -400 400 400 -400 0 1 10 f
+X GND 1 -100 -600 200 U 50 50 1 1 W
+X CSB 2 600 -300 200 L 50 50 1 1 I
+X SDI 3 600 -100 200 L 50 50 1 1 B
+X SCK 4 600 100 200 L 50 50 1 1 I
+X SDO 5 600 300 200 L 50 50 1 1 B
+X VDDIO 6 -100 600 200 D 50 50 1 1 W
+X GND 7 100 -600 200 U 50 50 1 1 W
+X VDD 8 100 600 200 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# C_Small-Device-temp-sensor-rescue
+#
+DEF C_Small-Device-temp-sensor-rescue C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "C_Small-Device-temp-sensor-rescue" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# D_TVS-Device-temp-sensor-rescue
+#
+DEF D_TVS-Device-temp-sensor-rescue D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "D_TVS-Device-temp-sensor-rescue" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 20 50 0 50 0 -50 -20 -50 N
+P 5 0 1 10 -100 50 -100 -50 100 50 100 -50 -100 50 N
+X A1 1 -150 0 100 R 50 50 1 1 P
+X A2 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GND-power-temp-sensor-rescue
+#
+DEF GND-power-temp-sensor-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND-power-temp-sensor-rescue" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# L_Core_Ferrite_Small-Device-temp-sensor-rescue
+#
+DEF L_Core_Ferrite_Small-Device-temp-sensor-rescue L 0 10 N N 1 F N
+F0 "L" 50 40 50 H V L CNN
+F1 "L_Core_Ferrite_Small-Device-temp-sensor-rescue" 50 -50 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -60 20 -899 899 0 1 0 N 0 -80 0 -40
+A 0 -20 20 -899 899 0 1 0 N 0 -40 0 0
+A 0 20 20 -899 899 0 1 0 N 0 0 0 40
+A 0 60 20 -899 899 0 1 0 N 0 40 0 80
+P 2 0 1 0 30 -75 30 -65 N
+P 2 0 1 0 30 -55 30 -45 N
+P 2 0 1 0 30 -35 30 -25 N
+P 2 0 1 0 30 -15 30 -5 N
+P 2 0 1 0 30 5 30 15 N
+P 2 0 1 0 30 25 30 35 N
+P 2 0 1 0 30 45 30 55 N
+P 2 0 1 0 30 65 30 75 N
+P 2 0 1 0 40 -65 40 -75 N
+P 2 0 1 0 40 -45 40 -55 N
+P 2 0 1 0 40 -25 40 -35 N
+P 2 0 1 0 40 -5 40 -15 N
+P 2 0 1 0 40 15 40 5 N
+P 2 0 1 0 40 35 40 25 N
+P 2 0 1 0 40 55 40 45 N
+P 2 0 1 0 40 75 40 65 N
+X ~ 1 0 100 20 D 50 50 1 1 P
+X ~ 2 0 -100 20 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# R_Small_US-Device-temp-sensor-rescue
+#
+DEF R_Small_US-Device-temp-sensor-rescue R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "R_Small_US-Device-temp-sensor-rescue" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 5 1 1 0 0 0 40 -15 0 -30 -40 -45 0 -60 N
+P 5 1 1 0 0 60 40 45 0 30 -40 15 0 0 N
+X ~ 1 0 100 40 D 50 50 1 1 P
+X ~ 2 0 -100 40 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SW_Push-Switch-temp-sensor-rescue
+#
+DEF SW_Push-Switch-temp-sensor-rescue SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "SW_Push-Switch-temp-sensor-rescue" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# Si7020-A20-Sensor_Humidity-temp-sensor-rescue
+#
+DEF Si7020-A20-Sensor_Humidity-temp-sensor-rescue U 0 20 Y Y 1 F N
+F0 "U" -200 300 50 H V C CNN
+F1 "Si7020-A20-Sensor_Humidity-temp-sensor-rescue" -400 400 50 H V C CNN
+F2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" 0 -400 50 H I C CNN
+F3 "" -200 300 50 H I C CNN
+$FPLIST
+ DFN*1EP*3x3mm*P1mm*
+$ENDFPLIST
+DRAW
+S -400 200 400 -200 0 1 10 f
+X SDA 1 -500 100 100 R 50 50 1 1 B
+X GND 2 -100 -300 100 U 50 50 1 1 W
+X NC 3 400 100 100 L 50 50 1 1 N N
+X NC 4 400 -100 100 L 50 50 1 1 N N
+X VDD 5 0 300 100 D 50 50 1 1 W
+X SCL 6 -500 -100 100 R 50 50 1 1 I
+X PAD 7 100 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# TLV62569DBV-Regulator_Switching-temp-sensor-rescue
+#
+DEF TLV62569DBV-Regulator_Switching-temp-sensor-rescue U 0 20 Y Y 1 F N
+F0 "U" -200 250 50 H V L CNN
+F1 "TLV62569DBV-Regulator_Switching-temp-sensor-rescue" 0 250 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23-5" 50 -250 50 H I L CIN
+F3 "" -250 450 50 H I C CNN
 $FPLIST
  SOT?23*
 $ENDFPLIST
 DRAW
-C -100 0 10 0 1 0 F
-C 100 0 10 0 1 0 F
-P 2 0 1 0 -100 -100 -100 0 N
-P 2 0 1 0 100 -100 100 0 N
-P 2 0 1 0 400 0 -400 0 N
-P 3 0 1 0 -220 -40 -240 -40 -240 40 N
-P 3 0 1 0 220 40 240 40 240 -40 N
-P 4 0 1 0 -240 0 -160 40 -160 -40 -240 0 N
-P 4 0 1 0 240 0 160 40 160 -40 240 0 N
-X ~ 1 100 0 100 L 50 50 1 1 N N
-X GND 2 100 -300 200 U 50 50 1 1 P
-X ~ 3 -100 0 100 R 50 50 1 1 N N
-X B 4 600 0 200 L 50 50 1 1 P
-X GND 5 -100 -300 200 U 50 50 1 1 P
-X A 6 -600 0 200 R 50 50 1 1 P
+S -200 200 200 -200 0 1 10 f
+X EN 1 -300 0 100 R 50 50 1 1 I
+X GND 2 0 -300 100 U 50 50 1 1 W
+X SW 3 300 100 100 L 50 50 1 1 w
+X VIN 4 -300 100 100 R 50 50 1 1 W
+X FB 5 300 0 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# USB_B_Micro-Connector-temp-sensor-rescue
+#
+DEF USB_B_Micro-Connector-temp-sensor-rescue J 0 40 Y Y 1 F N
+F0 "J" -200 450 50 H V L CNN
+F1 "USB_B_Micro-Connector-temp-sensor-rescue" -200 350 50 H V L CNN
+F2 "" 150 -50 50 H I C CNN
+F3 "" 150 -50 50 H I C CNN
+$FPLIST
+ USB*
+$ENDFPLIST
+DRAW
+C -150 85 25 0 1 10 F
+C -25 135 15 0 1 10 F
+S -200 -300 200 300 0 1 10 f
+S -5 -300 5 -270 0 1 0 N
+S 10 50 -20 20 0 1 10 F
+S 200 -205 170 -195 0 1 0 N
+S 200 -105 170 -95 0 1 0 N
+S 200 -5 170 5 0 1 0 N
+S 200 195 170 205 0 1 0 N
+P 2 0 1 10 -75 85 25 85 N
+P 4 0 1 10 -125 85 -100 85 -50 135 -25 135 N
+P 4 0 1 10 -100 85 -75 85 -50 35 0 35 N
+P 4 0 1 10 25 110 25 60 75 85 25 110 F
+P 5 0 1 0 -170 220 -70 220 -80 190 -160 190 -170 220 F
+P 9 0 1 0 -185 230 -185 220 -175 190 -175 180 -65 180 -65 190 -55 220 -55 230 -185 230 N
+X VBUS 1 300 200 100 L 50 50 1 1 w
+X D- 2 300 -100 100 L 50 50 1 1 P
+X D+ 3 300 0 100 L 50 50 1 1 P
+X ID 4 300 -200 100 L 50 50 1 1 P
+X GND 5 0 -400 100 U 50 50 1 1 w
+X Shield 6 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
