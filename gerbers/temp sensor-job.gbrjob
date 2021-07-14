@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.10)-1"
     },
-    "CreationDate":  "2021-05-15T21:05:10-05:00"
+    "CreationDate":  "2021-07-14T09:56:37-05:00"
   },
   "GeneralSpecs":
   {
@@ -15,11 +15,11 @@
     {
       "Name": "temp sensor",
       "GUID": "74656d70-2073-4656-9e73-6f722e6b6963",
-      "Revision": "rev?"
+      "Revision": "0.2"
     },
     "Size":
     {
-      "X": 48.251,
+      "X": 48.253,
       "Y": 24.942
     },
     "LayerNumber": 2,
@@ -29,10 +29,10 @@
   [
     {
       "Layers": "Outer",
-      "PadToPad":  0.200,
-      "PadToTrack":  0.200,
-      "TrackToTrack":  0.200,
-      "MinLineWidth":  0.200,
+      "PadToPad":  0.152,
+      "PadToTrack":  0.152,
+      "TrackToTrack":  0.152,
+      "MinLineWidth":  0.152,
       "TrackToRegion":  0.400,
       "RegionToRegion":  0.400
     }
