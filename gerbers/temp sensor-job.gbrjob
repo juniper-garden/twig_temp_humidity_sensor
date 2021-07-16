@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.10)-1"
     },
-    "CreationDate":  "2021-07-14T09:56:37-05:00"
+    "CreationDate":  "2021-07-16T00:37:02-05:00"
   },
   "GeneralSpecs":
   {
@@ -40,47 +40,47 @@
   "FilesAttributes":
   [
     {
-      "Path":  "temp sensor-F_Cu.gbr",
+      "Path":  "temp sensor-F_Cu.gtl",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "temp sensor-B_Cu.gbr",
+      "Path":  "temp sensor-B_Cu.gbl",
       "FileFunction":  "Copper,L2,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "temp sensor-F_Paste.gbr",
+      "Path":  "temp sensor-F_Paste.gtp",
       "FileFunction":  "SolderPaste,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "temp sensor-B_Paste.gbr",
+      "Path":  "temp sensor-B_Paste.gbp",
       "FileFunction":  "SolderPaste,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "temp sensor-F_SilkS.gbr",
+      "Path":  "temp sensor-F_SilkS.gto",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "temp sensor-B_SilkS.gbr",
+      "Path":  "temp sensor-B_SilkS.gbo",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "temp sensor-F_Mask.gbr",
+      "Path":  "temp sensor-F_Mask.gts",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "temp sensor-B_Mask.gbr",
+      "Path":  "temp sensor-B_Mask.gbs",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "temp sensor-Edge_Cuts.gbr",
+      "Path":  "temp sensor-Edge_Cuts.gm1",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     }
