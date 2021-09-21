@@ -19,7 +19,7 @@
   )
 
   (layers
-    (0 F.Cu signal hide)
+    (0 F.Cu signal)
     (31 B.Cu signal hide)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
@@ -2613,6 +2613,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "Y:/Juniper Garden/Twig/ESP32-pico-mini-02 v2.step"
+      (offset (xyz 0 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 60EEB061)
@@ -2721,6 +2726,11 @@
       (net 1 GND))
     (model ${KISYS3DMOD}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl
       (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/HRO_TYPE-C-31-M-12.step
+      (offset (xyz -4.5 -3.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
