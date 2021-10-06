@@ -1,0 +1,10 @@
+This design has redundant footprints and pads for various alternative parts due to the 2021 part shortage.
+
+
+U3 should be populated with BME280 if available
+IC1 should be populated with ESP32-C3-Mini-1-H4 if available
+J2,J3,J4,J5,J6 are NP
+U1, U4 are NP, alt sensor footprints
+
+All other parts should be as listed in the Manufacturer_Part_Number column in temp sensor_0v2.xls
+
