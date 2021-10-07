@@ -1,3 +1,12 @@
+Board Thickness:  0.062in (1.57mm) or 1.6mm
+Material: FR-4
+PCB Color: Green
+SilkScreen: White
+Surface Finish: HASL - RoHS
+Copper Weight: 1 oz
+
+
+
 This design has redundant footprints and pads for various alternative parts due to the 2021 part shortage.
 
 
