@@ -2193,4 +2193,26 @@ Wire Wire Line
 Connection ~ 3300 5400
 Wire Wire Line
 	3300 5400 3350 5400
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61669284
+P 5550 5750
+F 0 "H1" H 5650 5796 50  0000 L CNN
+F 1 "MountingHole" H 5650 5705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5550 5750 50  0001 C CNN
+F 3 "~" H 5550 5750 50  0001 C CNN
+	1    5550 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6166A57D
+P 5550 6100
+F 0 "H2" H 5650 6146 50  0000 L CNN
+F 1 "MountingHole" H 5650 6055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5550 6100 50  0001 C CNN
+F 3 "~" H 5550 6100 50  0001 C CNN
+	1    5550 6100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
