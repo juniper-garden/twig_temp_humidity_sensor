@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.10)-1*
-G04 #@! TF.CreationDate,2021-10-06T20:45:53-05:00*
+G04 #@! TF.CreationDate,2021-10-24T01:26:48-05:00*
 G04 #@! TF.ProjectId,temp sensor,74656d70-2073-4656-9e73-6f722e6b6963,0.2*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Soldermask,Bot*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX45Y45*%
 G04 Gerber Fmt 4.5, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.10)-1) date 2021-10-06 20:45:53*
+G04 Created by KiCad (PCBNEW (5.1.10)-1) date 2021-10-24 01:26:48*
 %MOMM*%
 %LPD*%
 G01*
@@ -22,6 +22,7 @@ G04 APERTURE LIST*
 %ADD18O,1.600000X1.000000*%
 %ADD19C,0.650000*%
 %ADD20O,2.100000X1.000000*%
+%ADD21C,3.200000*%
 G04 APERTURE END LIST*
 D10*
 G04 #@! TO.C,SW1*
@@ -225,5 +226,12 @@ X15849696Y-9553396D03*
 D20*
 X15796696Y-9696396D03*
 X15796696Y-8832396D03*
+G04 #@! TD*
+D21*
+G04 #@! TO.C,H1*
+X12870000Y-8300000D03*
+G04 #@! TD*
+G04 #@! TO.C,H2*
+X15195000Y-8300000D03*
 G04 #@! TD*
 M02*
