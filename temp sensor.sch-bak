@@ -1923,10 +1923,10 @@ V_USB
 Text Label 8550 5350 2    50   ~ 0
 V_USB
 $Comp
-L Graphic:Logo_Open_Hardware_Small #LOGO1
+L Graphic:Logo_Open_Hardware_Small LOGO1
 U 1 1 61678681
 P 10200 7100
-F 0 "#LOGO1" H 10200 7375 50  0001 C CIN
+F 0 "LOGO1" H 10200 7375 50  0001 C CIN
 F 1 "Logo_Open_Hardware_Small" H 10200 6875 50  0001 C CNN
 F 2 "Twig:FabDrawing-2Layer-Metric" H 10200 7100 50  0001 C CNN
 F 3 "~" H 10200 7100 50  0001 C CNN

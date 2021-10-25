@@ -1938,7 +1938,7 @@ Wire Notes Line
 Wire Notes Line
 	5200 6600 10400 6600
 Wire Notes Line
-	10400 500  10400 6500
+	10400 500  10400 6600
 Text Notes 4050 4500 0    50   ~ 0
 Connectors and LED
 Wire Notes Line
@@ -1948,7 +1948,7 @@ Wire Notes Line
 Wire Notes Line
 	600  7950 5200 7950
 Wire Notes Line
-	4000 500  4000 4650
+	4000 500  4000 4750
 Wire Notes Line
 	5200 4550 5200 7950
 Text Notes 700  4900 0    50   ~ 0
