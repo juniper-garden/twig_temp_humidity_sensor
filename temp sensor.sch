@@ -1827,7 +1827,7 @@ F 1 "Jumper_3_Bridged12" H 6100 1413 50  0000 C CNN
 F 2 "Twig:Jumper_0603_1608Metric" H 6100 1300 50  0001 C CNN
 F 3 "~" H 6100 1300 50  0001 C CNN
 	1    6100 1300
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	6100 950  6100 1050
