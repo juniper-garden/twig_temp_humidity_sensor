@@ -1,5 +1,5 @@
-Drill report for Y:/Juniper Garden/Twig/temp sensor.kicad_pcb
-Created on 10/24/2021 1:27:03 AM
+Drill report for temp sensor.kicad_pcb
+Created on 2/21/2022 2:52:54 PM
 
 Copper Layer Stackup:
     =============================================================
@@ -10,18 +10,17 @@ Copper Layer Stackup:
 Drill file 'temp sensor-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.400mm  0.0157"  (97 holes)
+    T1  0.400mm  0.0157"  (100 holes)
     T2  0.600mm  0.0236"  (10 holes)  (with 6 slots)
-    T3  0.650mm  0.0256"  (2 holes)
-    T4  0.850mm  0.0335"  (2 holes)
-    T5  1.000mm  0.0394"  (6 holes)
+    T3  0.850mm  0.0335"  (2 holes)
 
-    Total plated holes count 117
+    Total plated holes count 112
 
 
 Drill file 'temp sensor-NPTH.drl' contains
     unplated through holes:
     =============================================================
-    T1  3.200mm  0.1260"  (2 holes)
+    T1  0.650mm  0.0256"  (2 holes)
+    T2  1.152mm  0.0454"  (3 holes)
 
-    Total unplated holes count 2
+    Total unplated holes count 5
