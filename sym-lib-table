@@ -5,4 +5,5 @@
   (lib (name "Switch")(type "Legacy")(uri "${KIPRJMOD}/Switch.lib")(options "")(descr ""))
   (lib (name "test_switch")(type "Legacy")(uri "${KIPRJMOD}/test switch.lib")(options "")(descr ""))
   (lib (name "twig")(type "KiCad")(uri "${KIPRJMOD}/twig.kicad_sym")(options "")(descr ""))
+  (lib (name "AS7341-DLGT")(type "KiCad")(uri "${KIPRJMOD}/AS7341-DLGT.kicad_sym")(options "")(descr ""))
 )

@@ -48,8 +48,26 @@
           "min_clearance": 0.35
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        "courtyards_overlap|117830001|90370001|00000000-0000-0000-0000-000060eeb1f9|00000000-0000-0000-0000-0000616f9f12",
+        "courtyards_overlap|125984550|100722528|00000000-0000-0000-0000-000060eeb0a2|00000000-0000-0000-0000-000060eeb405",
+        "silk_over_copper|131443000|80640000|00000000-0000-0000-0000-000060eeb4b7|6f5a9f10-1b2c-4916-b4e5-cb5bd0f851a0",
+        "silk_over_copper|133730000|86046000|00000000-0000-0000-0000-000060eeb4c0|2bf3f24b-fd30-41a7-a274-9b519491916b",
+        "silk_over_copper|146930000|86046000|00000000-0000-0000-0000-000060eeb4c0|4e66a44f-7fa6-4e16-bf9b-62ec864301a5",
+        "silk_over_copper|149248000|80640000|00000000-0000-0000-0000-000060eeb49f|81c9fb2d-81aa-42b7-9b37-76d3e0980ec6",
+        "silk_over_copper|162112500|88750000|6595b9c7-02ee-4647-bde5-6b566e35163e|015f5586-ba76-4a98-9114-f5cd2c67134d",
+        "silk_over_copper|162112500|96550000|cdfb07af-801b-44ba-8c30-d021a6ad3039|96315415-cfed-47d2-b3dd-d782358bd0df",
+        "silk_over_copper|164662500|88750000|00000000-0000-0000-0000-000060eeb4b1|e6b860cc-cb76-4220-acfb-68f1eb348bfa",
+        "silk_over_copper|164662500|96550000|00000000-0000-0000-0000-000060eeb4b1|b7199d9b-bebb-4100-9ad3-c2bd31e21d65",
+        "silk_over_copper|164996960|88200244|00000000-0000-0000-0000-000060eeb4a2|e69c64f9-717d-4a97-b3df-80325ec2fa63"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -119,7 +137,12 @@
         0.4,
         0.6
       ],
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -397,7 +420,7 @@
       "netlist": "temp sensor.net",
       "specctra_dsn": "",
       "step": "temp sensor.step",
-      "vrml": ""
+      "vrml": "temp sensor.wrl"
     },
     "page_layout_descr_file": ""
   },
