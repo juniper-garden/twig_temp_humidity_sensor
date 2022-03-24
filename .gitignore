@@ -8,13 +8,14 @@
 *.kicad_pcb-bak
 *.sch-bak
 *~
+*#
 Thumbs.db
 _autosave-*
 *.tmp
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
-
+*-backups/*
 # Netlist files (exported from Eeschema)
 *.net
 

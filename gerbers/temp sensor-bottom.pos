@@ -1,0 +1,11 @@
+### Module positions - created on Wed Mar 23 01:10:25 2022 ###
+### Printed by Pcbnew version (6.0.0)
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val              Package                                             PosX       PosY       Rot  Side
+J2        Conn_01x02_Male  PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left   -135.1980  -101.2000  180.0000  bottom
+J3        Conn_01x06_Male  PinHeader_1x07_P1.00mm_Vertical_SMD_Pin1Right  -142.7100   -97.3700  -90.0000  bottom
+J4        USB_B_Micro      USB_Micro-B_Molex-105017-0001                  -162.0250   -92.6500  -90.0000  bottom
+J5        Conn_01x02_Male  PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left   -150.9980   -88.9000  180.0000  bottom
+J6        Conn_01x02_Male  PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left   -128.2480   -98.1000  180.0000  bottom
+## End

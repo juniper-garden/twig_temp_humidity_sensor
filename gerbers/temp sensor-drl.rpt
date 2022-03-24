@@ -1,5 +1,5 @@
 Drill report for temp sensor.kicad_pcb
-Created on 2/21/2022 2:52:54 PM
+Created on 3/23/2022 1:09:23 AM
 
 Copper Layer Stackup:
     =============================================================
@@ -10,11 +10,11 @@ Copper Layer Stackup:
 Drill file 'temp sensor-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.400mm  0.0157"  (100 holes)
+    T1  0.400mm  0.0157"  (115 holes)
     T2  0.600mm  0.0236"  (10 holes)  (with 6 slots)
     T3  0.850mm  0.0335"  (2 holes)
 
-    Total plated holes count 112
+    Total plated holes count 127
 
 
 Drill file 'temp sensor-NPTH.drl' contains

@@ -6953,6 +6953,23 @@
     (pin "2" (uuid 5bac264e-1262-4bf1-b7e3-ec7f68348412))
   )
 
+  (symbol (lib_id "Graphic:SYM_Arrow_Normal") (at 363.22 78.74 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 4a8586ae-174b-41e6-93c1-296c6bd66835)
+    (property "Reference" "SYM2" (id 0) (at 363.22 77.216 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "SYM_Arrow_Normal" (id 1) (at 363.474 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "Twig:LED Keepout block" (id 2) (at 393.7 80.01 0)
+      (effects (font (size 1.27 1.27)) (justify right bottom))
+    )
+    (property "Datasheet" "~" (id 3) (at 363.22 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
   (symbol (lib_id "Graphic:SYM_Arrow_Normal") (at 105.41 68.58 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 6ceea7e6-4d24-45dd-9479-b992a3af50d4)
@@ -7437,6 +7454,9 @@
     )
     (path "/6ceea7e6-4d24-45dd-9479-b992a3af50d4"
       (reference "SYM1") (unit 1) (value "SYM_Arrow_Normal") (footprint "Twig:Sensor Keepout block")
+    )
+    (path "/4a8586ae-174b-41e6-93c1-296c6bd66835"
+      (reference "SYM2") (unit 1) (value "SYM_Arrow_Normal") (footprint "Twig:LED Keepout block")
     )
     (path "/00000000-0000-0000-0000-000060a2e91b"
       (reference "U1") (unit 1) (value "SHTC3") (footprint "Sensor_Humidity:Sensirion_DFN-4-1EP_2x2mm_P1mm_EP0.7x1.6mm")
